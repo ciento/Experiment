@@ -63,3 +63,7 @@ DerivedDataCache/*
 
 # Blender Backup Files
 *.blend?
+
+# Explorer files
+desktop.ini
+*.DS_Store
