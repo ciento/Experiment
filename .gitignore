@@ -67,3 +67,4 @@ DerivedDataCache/*
 # Explorer files
 desktop.ini
 *.DS_Store
+Thumbs.db
