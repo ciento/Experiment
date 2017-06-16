@@ -1,1 +1,0 @@
-git doesnt allow to push empty folders
