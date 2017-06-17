@@ -1,5 +1,5 @@
 19.06.2017:
-Reihenfolge 1 | TS-TL-SS-SL (Kein Teleport)
+Reihenfolge 1 | 
 Reihenfolge 2 | 
 Reihenfolge 3 | 
 Reihenfolge 4 | 
@@ -13,3 +13,4 @@ Reihenfolge 4 |
 24.06.2017:
 
 26.06.2017:
+
