@@ -77,3 +77,6 @@ Experiment_v2/DerivedDataCache/*
 desktop.ini
 *.DS_Store
 Thumbs.db
+
+# ignorieren
+*ignorieredashier*
