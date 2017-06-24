@@ -80,3 +80,11 @@ Thumbs.db
 
 # ignorieren
 *ignorieredashier*
+
+# LaTex
+Dokumentation/*/*.aux
+Dokumentation/*/*.bcf
+Dokumentation/*/*.log
+Dokumentation/*/*.xml
+Dokumentation/*/*.gz
+Dokumentation/*/*.toc
