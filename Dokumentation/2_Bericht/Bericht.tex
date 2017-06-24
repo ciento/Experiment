@@ -1,0 +1,32 @@
+% !TEX program = arara
+% arara: pdflatex
+% arara: biber
+% arara: pdflatex
+% arara: pdflatex
+% arara: clean: { files: [ Bericht.out ] }
+% arara: clean: { files: [ Bericht.aux, Bericht.bbl ] }
+% arara: clean: { files: [ Bericht.bcf, Bericht.blg ] }
+% arara: clean: { files: [ Bericht.log, Bericht.run.xml ] }
+% arara: clean: { files: [ Bericht.toc, Bericht-blx.bib ] }
+% 
+
+\documentclass{Bericht}
+\usepackage{todonotes}
+
+\begin{document}
+
+\maketitle
+
+% % % % %
+
+\tableofcontents
+\clearpage
+
+\section{Einleitung}
+	Hier steht die Einleitung.
+	
+\vfill %Zum Seitenende Verschieben
+
+\printbibliography
+
+\end{document}
