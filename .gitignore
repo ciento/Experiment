@@ -82,9 +82,13 @@ Thumbs.db
 *ignorieredashier*
 
 # LaTex
+Dokumentation/*/*-blx.bib
 Dokumentation/*/*.aux
+Dokumentation/*/*.bbl
 Dokumentation/*/*.bcf
-Dokumentation/*/*.log
-Dokumentation/*/*.xml
+Dokumentation/*/*.blg
 Dokumentation/*/*.gz
+Dokumentation/*/*.log
+Dokumentation/*/*.out
+Dokumentation/*/*.run.xml
 Dokumentation/*/*.toc
