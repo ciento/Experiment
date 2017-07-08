@@ -14,9 +14,21 @@
 \usepackage{ngerman}
 \usepackage[utf8]{inputenc}
 \usepackage{todonotes}
+\usepackage{xcolor}
 \usepackage{tikz}
 \usepackage{pgf-pie}
 \usepackage{pgfplots}
+
+
+% define custom colours
+\definecolor{greenOfApproval}{HTML}{009933}
+\definecolor{redOfDisapproval}{HTML}{cc0000}
+\definecolor{yellowOfBrevity}{HTML}{ffcc66}
+\definecolor{purpleOfLengthiness}{HTML}{6600cc}
+
+
+
+
 
 \begin{document}
 
@@ -42,6 +54,8 @@
 \section{Ergebnisse}
 \todo{Autor: Jana \& Chovi (\& Nicole \& Svenja)}
 
+
+
 kleines test pie chart mit richtigen zahlen
 
 
@@ -50,11 +64,11 @@ kleines test pie chart mit richtigen zahlen
 \begin{figure}[ht]
 \begin{tikzpicture}
 \tikzset{lines/.style={draw=white},}
-\pie[color={cyan!90, cyan!60, cyan!30},radius = 2 ,sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{29/0-7 Minuten,9/7-15 Minuten,3/15-25 Minuten}
+\pie[color={greenOfApproval!90, greenOfApproval!60, greenOfApproval!30},radius = 2 ,sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{29/0-7 Minuten,9/7-15 Minuten,3/15-25 Minuten}
 
 
 \tikzset{lines/.style={draw=white},}
-\pie[pos={8,0},radius = 2, color={magenta!60, magenta!30},sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{5/0-7 Minuten,2/7-15 Minuten}
+\pie[pos={8,0},radius = 2, color={redOfDisapproval!80, redOfDisapproval!40},sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{5/0-7 Minuten,2/7-15 Minuten}
 \end{tikzpicture}
 \caption{Links: hatten Spaß. Rechts: hatten \textit{keinen} Spaß}
 \end{figure}
@@ -93,6 +107,27 @@ weitere werte: s. zettel
 
 \textit{an den balken fehlen die zahlen}
 
+	
+Aus diesen Daten kann man herleiten, wie viele Personen ein Szenario als das kürzeste (bzw. längste empfunden haben): 
+
+
+\begin{figure}[ht]
+\begin{tikzpicture}
+\tikzset{lines/.style={draw=white},}
+\pie[color={yellowOfBrevity!80, yellowOfBrevity!60, yellowOfBrevity!40, yellowOfBrevity!20},radius = 2 ,sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{15/Szenario a,14/Szenario b,9/Szenario c, 8/Szenario d}
+\end{tikzpicture}
+\caption{Bildunterschrift}
+\end{figure}
+	
+\textit{keine besonders eindeutigen ergebnisse. besonders schlimm: b oftmals gleichzeitig längtes und kürzestes}	
+	
+\begin{figure}[ht]
+\begin{tikzpicture}
+\tikzset{lines/.style={draw=white},}
+\pie[color={purpleOfLengthiness!80, purpleOfLengthiness!60, purpleOfLengthiness!40, purpleOfLengthiness!20},radius = 2 ,sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{17/Szenario c,14/Szenario b,10/Szenario d, 5/Szenario a}
+\end{tikzpicture}
+\caption{Bildunterschrift}
+\end{figure}	
 	
 	
 \section{Referenzen}
