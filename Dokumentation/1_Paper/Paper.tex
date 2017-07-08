@@ -16,6 +16,7 @@
 \usepackage{todonotes}
 \usepackage{tikz}
 \usepackage{pgf-pie}
+\usepackage{pgfplots}
 
 \begin{document}
 
@@ -44,6 +45,8 @@
 kleines test pie chart mit richtigen zahlen
 
 
+
+- ,,Hatten Sie Spaß?'' $<=>$ Zeitwahrnehmung  ? 
 \begin{figure}[ht]
 \begin{tikzpicture}
 \tikzset{lines/.style={draw=white},}
@@ -56,6 +59,41 @@ kleines test pie chart mit richtigen zahlen
 \caption{Links: hatten Spaß. Rechts: hatten \textit{keinen} Spaß}
 \end{figure}
 
+	
+- Szenarien sortieren kurz $->$ lang
+
+\begin{tikzpicture}
+\begin{axis}[
+     width  = 12cm,
+     hide y axis,
+     axis x line*=bottom,
+     height = 8cm,
+    bar width=20pt,
+     symbolic x coords={b-a-d-c, a-c-d-b, a-b-d-c, c-a-d-b, b-c-a-d},
+     %nodes near coords,
+     ymin=0,
+     xtick=data
+     ]
+     
+     
+     \addplot[ybar, fill=black] coordinates {
+          (b-a-d-c,7)
+          (a-c-d-b,6)
+          (a-b-d-c,4)
+          (c-a-d-b,4)
+          (b-c-a-d,3)
+     };
+\end{axis}
+\end{tikzpicture}
+
+Oben zu sehen: die Anzahl der Probanden, die die Szenarien entsprechend von kurz nach lang sortiert haben. D.h. konkret, dass insgesamt sieben Probanden   \textbf{b} für das kürzeste Szenario hielten und dann aufsteigend über \textbf{a} und \textbf{d} nach  \textbf{c} sortiert haben. \\
+Sechs Probanden waren der Ansicht, \textbf{a} sei das kürzeste Szenario gewesen, gefolgt von \textbf{c}, \textbf{d} und schließlich \textbf{b}. 
+
+weitere werte: s. zettel
+
+\textit{an den balken fehlen die zahlen}
+
+	
 	
 \section{Referenzen}
 \todo{Autor: Svenja}
