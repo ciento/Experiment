@@ -776,54 +776,71 @@ x y label
 \end{tikzpicture}
 
 
-
-- ,,Hatten Sie Spaß?'' $<=>$ Zeitwahrnehmung  ? 
-\begin{figure}[ht]
-\begin{tikzpicture}
-\tikzset{lines/.style={draw=white},}
-\pie[color={greenOfApproval!90, greenOfApproval!60, greenOfApproval!30},radius = 2 ,sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{29/0-7 Minuten,9/7-15 Minuten,3/15-25 Minuten}
-
-
-\tikzset{lines/.style={draw=white},}
-\pie[pos={8,0},radius = 2, color={redOfDisapproval!80, redOfDisapproval!40},sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{5/0-7 Minuten,2/7-15 Minuten}
-\end{tikzpicture}
-\caption{Links: hatten Spaß. Rechts: hatten \textit{keinen} Spaß}
-\end{figure}[H]
-
 	
 - Szenarien sortieren kurz $->$ lang
 
 \begin{tikzpicture}
-\begin{axis}[
-     width  = 12cm,
-     hide y axis,
-     axis x line*=bottom,
-     height = 8cm,
-    bar width=20pt,
-     symbolic x coords={b-a-d-c, a-c-d-b, a-b-d-c, c-a-d-b, b-c-a-d},
-     %nodes near coords,
-     ymin=0,
-     xtick=data
-     ]
+%{axis}
      
      
-     \addplot[ybar, fill=black] coordinates {
-          (b-a-d-c,7)
+    % \addplot[xbar, fill=black] coordinates {
+   %       (b-a-d-c,7)
           (a-c-d-b,6)
-          (a-b-d-c,4)
-          (c-a-d-b,4)
-          (b-c-a-d,3)
-     };
-\end{axis}
+    %%      (a-b-d-c,4)
+     %     (c-a-d-b,4)
+     %     (b-c-a-d,3)
+  %   };
+%\end{axis}
 \end{tikzpicture}
+
+\begin{tikzpicture} 
+\begin{axis}[ xbar, xmin=0, width=12cm, height=15.5cm, enlarge y limits=0.04, 
+xlabel={Probanden}, 
+symbolic y coords={a-b-c-d,a-d-c-b,b-c-d-a,c-a-b-d,c-b-a-d,c-d-b-a,d-a-b-c,d-a-c-b,d-b-c-a,d-c-b-a,a-c-b-d,a-d-b-c,b-a-c-d,b-d-a-c,d-b-a-c,d-c-a-b,b-c-a-d,c-a-d-b,a-b-d-c,a-c-d-b,b-a-d-c}, 
+ytick=data,
+ nodes near coords,
+  nodes near coords align={horizontal}, ] 
+  
+  
+\addplot[xbar, fill=black] coordinates {
+
+
+(1,a-b-c-d)
+(1,a-d-c-b)
+(1,b-c-d-a)
+(1,c-a-b-d)
+(1,c-b-a-d)
+(1,c-d-b-a)
+(1,d-a-b-c)
+(1,d-a-c-b)
+(1,d-b-c-a)
+(1,d-c-b-a)
+
+(2,a-c-b-d)
+(2,a-d-b-c)
+(2,b-a-c-d)
+(2,b-d-a-c)
+(2,d-b-a-c)
+(2,d-c-a-b)
+
+
+(3,b-c-a-d)
+(4,c-a-d-b)
+(4,a-b-d-c)
+(6,a-c-d-b)
+(7,b-a-d-c)
+ 
+ 
+ 
+ 
+};
+ \end{axis}
+  \end{tikzpicture}
 
 Oben zu sehen: die Anzahl der Probanden, die die Szenarien entsprechend von kurz nach lang sortiert haben. D.h. konkret, dass insgesamt sieben Probanden   \textbf{b} für das kürzeste Szenario hielten und dann aufsteigend über \textbf{a} und \textbf{d} nach  \textbf{c} sortiert haben. \\
 Sechs Probanden waren der Ansicht, \textbf{a} sei das kürzeste Szenario gewesen, gefolgt von \textbf{c}, \textbf{d} und schließlich \textbf{b}. 
 
-weitere werte: s. zettel
-
-\textit{an den balken fehlen die zahlen}
-
+\textit{die diagramme sind noch auf der falschen seite}
 	
 Aus diesen Daten kann man herleiten, wie viele Personen ein Szenario als das kürzeste (Diagramm in gelb) bzw. längste (Diagramm in lila) empfunden haben. 
 
@@ -852,14 +869,49 @@ Auffällig ist allerdings auch, dass die Meinungen bei \textbf{b} recht stark au
 	
 	
 	
+	%%%%%%%%%% DURCHSCHNITTZEITEN DER SZENARIEN
 	
-\textit{korrelieren gutundschlecht und schnellundlangsam? im folgenden diese und jene diagramme etc pp}
+\begin{tikzpicture}
+\begin{axis}[
+     width  = 8cm,
+     %hide y axis,
+     axis x line*=bottom,
+     height = 8cm,
+     bar width=20pt,
+     symbolic x coords={a,b,c,d},
+     nodes near coords,
+     ymin=0,
+     xtick=data
+     ]
+     
+     \addplot[ybar, fill=black] coordinates {
+          (a,6.5)
+          (b,12.5)
+          (c,7)
+          (d,13)
+     };
+\end{axis}
+\end{tikzpicture}
+	
+	
+	\newpage
+	
+	
+\begin{figure}[ht]
+\begin{tikzpicture}
+\tikzset{lines/.style={draw=white},}
+\pie[color={greenOfApproval!90, greenOfApproval!60, greenOfApproval!30},radius = 2 ,sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{29/0-7 Minuten,9/7-15 Minuten,3/15-25 Minuten}
+
+
+\tikzset{lines/.style={draw=white},}
+\pie[pos={8,0},radius = 2, color={redOfDisapproval!80, redOfDisapproval!40},sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{5/0-7 Minuten,2/7-15 Minuten}
+\end{tikzpicture}
+\caption{Links: hatten Spaß. Rechts: hatten \textit{keinen} Spaß}
+\end{figure}[H]
 
 
 	
 	
-	Die Probanden wurden darum gebeten, die vier erlebten Szenarien ebenfalls von \textit{gut} nach \textit{schlecht} zu sortieren. Nach unserer Hypothese (HIER HYPOTHESE EINFÜGEN),  
-
 
 \textit{TODO drei probandenzahlen fehlen noch. text und diagramme beizeiten anpassen\\
 TODO einheitliche zeitform}
