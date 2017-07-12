@@ -1211,6 +1211,28 @@ Bei der Sortierung von \textit{gut} nach \textit{schlecht} fällt auf, dass gera
 
 Vergleicht man die Verteilungen \textit{kurz nach lang} und \textit{gut nach schlecht}, fällt ins Auge	
 
+\begin{tikzpicture}
+\begin{axis}[
+     width  = 8cm,
+     %hide y axis,
+     axis x line*=bottom,
+     height = 8cm,
+     bar width=20pt,
+     symbolic x coords={40s ohne,30s ohne,40s mit},
+     nodes near coords,
+     ymin=0,
+     xtick=data
+     ]
+     
+     \addplot[ybar, fill=black] coordinates {
+          (40s ohne,39.82)
+          (30s ohne,47.43)
+          (40s mit,31.44)
+          
+     };
+\end{axis}
+\end{tikzpicture}
+
 \section{Diskussion}
 \todo{Bilder-Referenzen hinzufügen}
 Nach dem Aufenthalt der Probanden in der VR-Welt wurden diese nach ihrem Spaßempfinden befragt (siehe Diagramm x). Dieses Ergebnis kann damit erklärt werden, dass die gewählten Zeitspannen letztendlich nicht mehr auf unser Experiment, das zwischenzeitlich noch stark umgebaut wurde, passten. Geschickter wären kleinere Zeitspannen (0-2 Minuten, 3-4 Minuten,...) gewesen.\\
