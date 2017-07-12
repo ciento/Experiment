@@ -1076,10 +1076,10 @@ Interessant ist, dass eine Differenz von 0,5 Sekunden sowohl zwischen \textbf{a}
 
 	
 	
-	\newpage
 	
 	
-\begin{figure}[ht]
+	
+\begin{figure}[H]
 \begin{tikzpicture}
 \tikzset{lines/.style={draw=white},}
 \pie[color={greenOfApproval!90, greenOfApproval!60, greenOfApproval!30},radius = 2 ,sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{29/0-7 Minuten,9/7-15 Minuten,3/15-25 Minuten}
@@ -1093,44 +1093,97 @@ Interessant ist, dass eine Differenz von 0,5 Sekunden sowohl zwischen \textbf{a}
 Die obigen beiden Tortendiagramme stellen unsere Probanden separiert dar. Links die Gruppe derer die Spaß an ihrem VR-Aufenthalt hatten und rechts die Probanden die angaben, dass sie keinen Spaß hatten. Innerhalb dieser Gruppen sind die Zeitschätzungen des VR-Aufenthalts abgebildet.Von den 41 Probanden die Spaß hatten, hat eine klare Mehrheit von 29 Personen geschätzt, dass die Dauer ihres VR-Aufenthalts im Intervall von 0-7 Minuten liegt. Weitere 9 Personen wählten die Zeitspanne von 7-15 Minuten und lediglich 3 schätzten die Dauer länger als 15 Minuten. Im rechten Tortendiagramm sind 7 Personen abgebildet, davon hat wieder die Mehrheit geschätzt, dass sie bis zu 7 Minuten in der VR waren und die restlichen 2 wählten das Intervall von 7-15 Minuten. Insgesamt entschieden sich also ca. 70\% von den insgesamt 48 Probanden für eine Zeitspanne von bis zu 7 Minuten.
 
 
-	
+
+
+	\begin{figure}[H]
 	\begin{tikzpicture} 
-\begin{axis}[ xbar, xmin=0, width=12cm, height=15.5cm, enlarge y limits=0.04, 
-xlabel={Probanden}, 
-symbolic y coords={a-b-c-d,a-d-c-b,b-c-d-a,c-a-b-d,c-b-a-d,c-d-b-a,d-a-b-c,d-a-c-b,d-b-c-a,d-c-b-a,a-c-b-d,a-d-b-c,b-a-c-d,b-d-a-c,d-b-a-c,d-c-a-b,b-c-a-d,c-a-d-b,a-b-d-c,a-c-d-b,b-a-d-c}, 
+\begin{axis}[ xbar, xmin=0, width=12cm, height=8cm, enlarge y limits=0.04, 
+xlabel={Tatsächliche Zeit in Sekunden}, 
+symbolic y coords={330,252,197,190,185,168,165}, 
 ytick=data,
- nodes near coords,
-  nodes near coords align={horizontal}, ] 
-  
-  
+% nodes near coords,
+ % nodes near coords align={horizontal}, 
+ ] 
+ 
 \addplot[xbar, fill=black] coordinates {
-(1,a-b-c-d)
-(1,a-d-c-b)
-(1,b-c-d-a)
-(1,c-a-b-d)
-(1,c-b-a-d)
-(1,c-d-b-a)
-(1,d-a-b-c)
-(1,d-a-c-b)
-(1,d-b-c-a)
-(1,d-c-b-a)
-(2,a-c-b-d)
-(2,a-d-b-c)
-(2,b-a-c-d)
-(2,b-d-a-c)
-(2,d-b-a-c)
-(2,d-c-a-b)
-(3,b-c-a-d)
-(4,c-a-d-b)
-(4,a-b-d-c)
-(6,a-c-d-b)
-(7,b-a-d-c)
+(165,165)
+(168,168)
+(185,185)
+(190,190)
+(197,197)
+(252,252)
+(330,330)
 };
  \end{axis}
   \end{tikzpicture}
+  \caption{Tatsächliche Zeit der Probanden, die keinen Spaß hatten}
+  DURCHSCHNITT: 
+~ 212,42 sek
+	\end{figure}
 
-\textit{TODO drei probandenzahlen fehlen noch. text und diagramme beizeiten anpassen\\
-TODO einheitliche zeitform}
+
+
+		\begin{figure}[H]
+	\begin{tikzpicture} 
+\begin{axis}[ xbar, xmin=0, width=12cm, height=22cm, enlarge y limits=0.04, 
+xlabel={Tatsächliche Zeit in Sekunden}, 
+symbolic y coords={152,156,165,167,174,177,180,185,187,190,193,194,199,204,205,210,212,216,217,220,221,231,232,235,239,242,243,249,251,273,278,301,309,310,316,326,335,336,354,380,399}, 
+ytick=data,
+% nodes near coords,
+ % nodes near coords align={horizontal}, 
+ ] 
+ 
+\addplot[xbar, fill=black] coordinates {
+(152,152)
+(156,156)
+(165,165)
+(167,167)
+(174,174)
+(177,177)
+(180,180)
+(185,185)
+(187,187)
+(190,190)
+(193,193)
+(194,194)
+(199,199)
+(204,204)
+(205,205)
+(210,210)
+(212,212)
+(216,216)
+(217,217)
+(220,220)
+(221,221)
+(231,231)
+(232,232)
+(235,235)
+(239,239)
+(242,242)
+(243,243)
+(249,249)
+(251,251)
+(273,273)
+(278,278)
+(301,301)
+(309,309)
+(310,310)
+(316,316)
+(326,326)
+(335,335)
+(336,336)
+(354,354)
+(380,380)
+(399,399)
+};
+ \end{axis}
+  \end{tikzpicture}
+  \caption{Tatsächliche Zeit der Probanden, die Spaß hatten}
+	\end{figure}
+	
+	
+\newpage
+
 
 	\begin{figure}[ht]
 \begin{tikzpicture}
