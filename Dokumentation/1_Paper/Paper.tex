@@ -955,7 +955,7 @@ x y label
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+\begin{figure}
 \begin{tikzpicture}
 \begin{axis}[
      width  = 8cm,
@@ -978,6 +978,8 @@ x y label
 \end{axis}
 \label{time}
 \end{tikzpicture}
+\caption{Zeitschätzung mit und ohne Gespräch}
+\end{figure}
 \par
 Unsere Probanden schätzten mehrfach vierzig und dreißig Sekunden zeitlich ein. Bezüglich der vierzig Sekunden gab es zusätzlich den Fall, in dem sich unsere Test-Betreuer mit dem Probanden unterhalten haben, sodass eine Ablenkung gegeben war. Es gibt also drei Fälle, von welchen die berechneten Durchschnittswerte im obigen Diagramm dargestellt sind. Von links nach rechts sind es die Einschätzungen von vierzig, dann dreißig und zuletzt wieder die vierzig Sekunden mit dem Gespräch als mögliche Beeinflussung. Auffallend ist, dass die dreißig Sekunden ziemlich genau getroffen wurden. Die Differenz zum Zielwert beträgt nicht einmal eine ganze Sekunde. Die vierzig Sekunden ohne das Gespräch, wurden durchschnittlich von den Probanden mit 36,41 um ca. vier Sekunden kürzer wahrgenommen. Die Variante mit dem Gespräch weist mit ca. 5 Sekunden Überschätzung der Zeit wie erwartet die größte Abweichung zum Zielwert auf, auch wenn sich dieser Differenzwert nicht sonderlich stark von dem des ersten Balken unterscheidet.
 
@@ -1001,10 +1003,10 @@ Die tatsächliche Dauer aller Szenarien betrug achtzehn Sekunden. Die sich hier 
 
 Im Folgenden sind unsere tatsächlichen Ergebnisse des Experiments dargestellt: 
 
-
+\begin{figure}[ht]
 \begin{tikzpicture} 
 \begin{axis}[ xbar, xmin=0, width=12cm, height=15.5cm, enlarge y limits=0.04, 
-xlabel={Probanden}, 
+%xlabel={Probanden}, 
 symbolic y coords={a-b-c-d,a-d-c-b,b-c-d-a,c-a-b-d,c-b-a-d,c-d-b-a,d-a-b-c,d-a-c-b,d-b-c-a,d-c-b-a,a-c-b-d,a-d-b-c,b-a-c-d,b-d-a-c,d-b-a-c,d-c-a-b,b-c-a-d,c-a-d-b,a-b-d-c,a-c-d-b,b-a-d-c}, 
 ytick=data,
  nodes near coords,
@@ -1036,6 +1038,8 @@ ytick=data,
 };
  \end{axis}
   \end{tikzpicture}
+  \caption{Szenarien von kurz nach lang}
+  \end{figure}
 
 Oben zu sehen: die Anzahl der Probanden, die die Szenarien entsprechend von kurz nach lang sortiert haben. D.h. konkret, dass insgesamt sieben Probanden   \textbf{b} für das kürzeste Szenario hielten und dann aufsteigend über \textbf{a} und \textbf{d} nach  \textbf{c} sortiert haben. \\
 Sechs Probanden waren der Ansicht, \textbf{a} sei das kürzeste Szenario gewesen, gefolgt von \textbf{c}, \textbf{d} und schließlich \textbf{b}. 
@@ -1070,7 +1074,7 @@ Auffällig ist allerdings auch, dass die Meinungen bei \textbf{b} recht stark au
 	
 	
 	%%%%%%%%%% DURCHSCHNITTZEITEN DER SZENARIEN
-	
+\begin{figure}	
 \begin{tikzpicture}
 \begin{axis}[
      width  = 8cm,
@@ -1092,6 +1096,8 @@ Auffällig ist allerdings auch, dass die Meinungen bei \textbf{b} recht stark au
      };
 \end{axis}
 \end{tikzpicture}
+\caption{Durchschnittlich geschätzte Längen der Szenarien}
+\end{figure}
 \par
 Die zeitlichen Einschätzungen bezüglich der Längen der einzelnen Szenarien sind als ermittelte Durchschnittswerte im obigen Balkendiagramm je Szenarium dargestellt. Hier zu erkennen ist nun, dass das Szenario \textbf{d} mit durchschnittlichen 13 Sekunden als das Längste eingeschätzt wurde. Knapp dahinter liegt \textbf{b} mit 12,5 Sekunden, gefolgt von \textbf{a} mit 6,5 und \textbf{c} mit 7 Sekunden durchschnittlicher Schätzung.
 Interessant ist, dass eine Differenz von 0,5 Sekunden sowohl zwischen \textbf{a} und \textbf{c}, als auch \textbf{b} und \textbf{d} zu finden ist. Außerdem werden \textbf{b} und \textbf{d} nahezu doppelt solang geschätzt wie \textbf{a} und \textbf{c}.
@@ -1229,12 +1235,10 @@ Die Mehrheit der Probanden stimmt mit 19 Stimmen für Szenario \textbf{b} als da
 	
 
 Bei der Frage nach dem schlechtesten Szenario sind sich ca. 67\% Prozent der Probanden einig, dass ihnen \textbf{a} am wenigsten gefallen hat. Deutlich abgeschlagen mit nur 6, 5 und 4 Stimmen die Szenarien \textbf{d}, \textbf{b} und \textbf{c}. 
-Bei der Sortierung von \textit{gut} nach \textit{schlecht} fällt auf, dass gerade Szenario \textbf{a} wieder eine klare Tendenz hat und es als allgemein schlechter wahrgenommen wurde als alle anderen. 
+Bei der Sortierung von \textit{gut} nach \textit{schlecht} fällt auf, dass gerade Szenario \textbf{a} wieder eine klare Tendenz hat und es als allgemein schlechter wahrgenommen wurde als alle anderen.
 
-
-Vergleicht man die Verteilungen \textit{kurz nach lang} und \textit{gut nach schlecht}, fällt ins Auge	
-
-Entgegen unserer Hypothese stellen wir fest, dass sich dieses Muster in der Abbildung 1(ZENTRUM) nicht bewahrheiten lässt, da z.B. Szenarium a als längerer eingestuft wurde. Dementsprechend hat der Spaßfaktor, im Rahmen unseres Projekts, keinen verkürzenden Einfluss auf die Zeitwahrnehmung.
+\par
+Entsprechend der Annahme, dass die Zeit schneller vergeht wenn man Spaß empfindet, müssten also in der Abbildung 14 die meisten Personen \textbf{b c d a} als Reihenfolge mit Aufsteigender Dauer gewählt haben. Gemäß der Abbildung 13 hat die Mehrzahl die Reihenfolge \textbf{b a d c} gewählt. \textbf{b} und \textbf{d} stimmen in beiden Möglichkeiten überein, \textbf{a} und \textbf{c} sind vertauscht. In diesem Fall lässt sich die Annahme nicht zu hundert Prozent belegen. Auch in den weiteren Reihenfolgen der Abbildung 13 lässt sich das gesuchte Muster, dass der Spaß einen Faktor darstellt, nicht eindeutig erkennen.
 
 \begin{figure}
 \begin{tikzpicture}
