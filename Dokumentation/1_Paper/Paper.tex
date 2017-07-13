@@ -71,8 +71,7 @@ scatter/classes={%
     x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
     y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
     xlabel={Alter},
-    ylabel={Zeiteinschätzung}]
-    
+    ylabel={Zeiteinschaetzung}]
     % Orientierungslinie
 	\addplot[domain=15:80]{40};
 	% Scatter
@@ -132,6 +131,7 @@ x y label
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden ohne Gespräch nach Alter}
+\label{Zeit40sek}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.49\linewidth}
@@ -206,6 +206,7 @@ x y label
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 30 Sekunden ohne Gespräch nach Alter}
+\label{Zeit30sek}
 \end{minipage}
 \end{figure}
 
@@ -282,6 +283,7 @@ x y label
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden ohne Gespräch nach Intelligenz}
+\label{Zeit40sekInt}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.49\linewidth}
@@ -355,6 +357,7 @@ x y label
     \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 30 Sekunden ohne Gespräch nach Intelligenz}
+\label{Zeit30sekInt}
 \end{minipage}
 \end{figure}
 
@@ -432,6 +435,7 @@ x y label
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden ohne Gespräch nach Temperatur}
+\label{Zeit40sekTemp}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.49\linewidth}
@@ -505,6 +509,7 @@ x y label
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 30 Sekunden ohne Gespräch nach Temperatur}
+\label{Zeit30sekTemp}
 \end{minipage}
 \end{figure}
 
@@ -581,6 +586,7 @@ x y label
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden ohne Gespräch nach Müdigkeit}
+\label{Zeit40sekMued}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.49\linewidth}
@@ -654,6 +660,7 @@ x y label
 \end{axis}
 \end{tikzpicture}	
 \caption{Zeiteinschätzung von 30 Sekunden ohne Gespräch nach Müdigkeit}
+\label{Zeit30sekMued}
 \end{minipage}
 \end{figure}
 
@@ -734,6 +741,7 @@ x y label
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden mit Gespräch nach Alter}
+\label{Zeit40sekAlt}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
@@ -804,6 +812,7 @@ x y label
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden mit Gespräch nach Intelligenz}
+\label{Zeit40sekGesprInt}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -877,6 +886,7 @@ x y label
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden mit Gespräch nach Temperatur}
+\label{Zeit40sekGesprTemp}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -950,6 +960,7 @@ x y label
 \end{axis}
 \end{tikzpicture}	
 \caption{Zeiteinschätzung von 40 Sekunden mit Gespräch nach Müdigkeit}
+\label{Zeit40sekGesprMued}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -975,9 +986,9 @@ x y label
           
      };
 \end{axis}
-\label{time}
 \end{tikzpicture}
 \caption{Zeitschätzung mit und ohne Gespräch}
+\label{ZeitGespr}
 \end{figure}
 \par
 Unsere Probanden schätzten mehrfach vierzig und dreißig Sekunden zeitlich ein. Bezüglich der vierzig Sekunden gab es zusätzlich den Fall, in dem sich unsere Test-Betreuer mit dem Probanden unterhalten haben, sodass eine Ablenkung gegeben war. Es gibt also drei Fälle, von welchen die berechneten Durchschnittswerte in der Abbildung 13 dargestellt sind. Von links nach rechts sind es die Einschätzungen von vierzig, dann dreißig und zuletzt wieder die vierzig Sekunden mit dem Gespräch als mögliche Beeinflussung. Auffallend ist, dass die dreißig Sekunden ziemlich genau getroffen wurden. Die Differenz zum Zielwert beträgt nicht einmal eine ganze Sekunde. Die vierzig Sekunden ohne das Gespräch, wurden durchschnittlich von den Probanden mit 36,41 um ca. vier Sekunden kürzer wahrgenommen. Die Variante mit dem Gespräch weist mit ca. 5 Sekunden Überschätzung der Zeit wie erwartet die größte Abweichung zum Zielwert auf, auch wenn sich dieser Differenzwert nicht sonderlich stark von dem des ersten Balken unterscheidet.
@@ -987,7 +998,7 @@ Unsere Probanden schätzten mehrfach vierzig und dreißig Sekunden zeitlich ein.
 Die tatsächliche Dauer aller Szenarien betrug achtzehn Sekunden. Die sich hier unterhalb befindliche Tabelle veranschaulicht je Szenarium knapp den darin dargestellten Inhalt, die Art des Zeitgebers und unsere Erwartungen, ob die Zeitwahrnehmung dadurch entsprechend gedehnt oder verkürzt wird.
 \begin{table}[H]
 \centering
-\begin{tabular}{1111}
+\begin{tabular}{llll}
 	\hline
 	\textbf{Szenarium} & \textbf{Inhalt} & \textbf{Zeitgeber}& \textbf{Erwartungen} \\
 	\hline
@@ -998,6 +1009,7 @@ Die tatsächliche Dauer aller Szenarien betrug achtzehn Sekunden. Die sich hier 
 	\hline
 \end{tabular}
 \caption{a=akustisch, v=visuell}
+\label{AkVis}
 \end{table}
 
 Im Folgenden sind unsere tatsächlichen Ergebnisse des Experiments dargestellt: 
@@ -1038,6 +1050,7 @@ ytick=data,
  \end{axis}
   \end{tikzpicture}
   \caption{Szenarien von kurz nach lang}
+  \label{SzenarienKurzLang}
   \end{figure}
 
 Oben zu sehen: die Anzahl der Probanden, die die Szenarien entsprechend von kurz nach lang sortiert haben. D.h. konkret, dass insgesamt sieben Probanden   \textbf{b} für das kürzeste Szenario hielten und dann aufsteigend über \textbf{a} und \textbf{d} nach  \textbf{c} sortiert haben. \\
@@ -1053,6 +1066,7 @@ Aus diesen Daten kann man herleiten, wie viele Personen ein Szenario als das kü
 \pie[color={yellowOfBrevity!80, yellowOfBrevity!60, yellowOfBrevity!40, yellowOfBrevity!20},radius = 2 ,sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{16/Szenario a,15/Szenario b,9/Szenario c, 8/Szenario d}
 \end{tikzpicture}
 \caption{Welches Szenario war das kürzeste?}
+\label{SzenarienKurz}
 \end{figure}
 	
 Von allen Probanden haben 15 angegeben Szenario \textbf{a} als das kürzeste empfunden zu haben, knapp dahinter steht Szenario \textbf{b} mit 14 Stimmen. Im Vergleich dazu sind die Szenarien \textbf{c} und \textbf{d} mit 9 und 8 Stimmen etwas abgeschlagen. Eine eindeutige Mehrheit gibt es dennoch nicht.\\
@@ -1064,6 +1078,7 @@ Gleichermaßen kann man feststellen, welches Szenario von den meisten Personen a
 \pie[color={purpleOfLengthiness!80, purpleOfLengthiness!60, purpleOfLengthiness!40, purpleOfLengthiness!20},radius = 2 ,sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{17/Szenario c,14/Szenario b,10/Szenario d, 5/Szenario a}
 \end{tikzpicture}
 \caption{Welches Szenario war das längste?}
+\label{SzenarienLang}
 \end{figure}	
 
 Auch bei der Bewertung des \textit{längsten} Szenarios gibt es keine ganz klare Mehrheit, dennoch heben sich zwei Szenarien etwas ab. 17 Probanden sind der Meinung, Szenario \textbf{c} sei das längste gewesen, danach kommen die Szenarien \textbf{b} mit 14 Stimmen und \textbf{d} mit 10 Stimmen. Abgeschlagen zum Schluss wird Szenario \textbf{a} mit nur 5 Stimmen genannt.\\
@@ -1096,6 +1111,7 @@ Auffällig ist allerdings auch, dass die Meinungen bei \textbf{b} recht stark au
 \end{axis}
 \end{tikzpicture}
 \caption{Durchschnittlich geschätzte Längen der Szenarien}
+\label{LaengeSzenarien}
 \end{figure}
 \par
 Die zeitlichen Einschätzungen bezüglich der Längen der einzelnen Szenarien sind als ermittelte Durchschnittswerte im obigen Balkendiagramm je Szenarium dargestellt. Hier zu erkennen ist nun, dass das Szenario \textbf{d} mit durchschnittlichen 13 Sekunden als das Längste eingeschätzt wurde. Knapp dahinter liegt \textbf{b} mit 12,5 Sekunden, gefolgt von \textbf{a} mit 6,5 und \textbf{c} mit 7 Sekunden durchschnittlicher Schätzung.
@@ -1116,7 +1132,9 @@ Hierzu unsere Ergebnisse:
 \pie[pos={8,0},radius = 2, color={redOfDisapproval!80, redOfDisapproval!40},sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{5/0-7 Minuten,2/7-15 Minuten}
 \end{tikzpicture}
 \caption{Links: Spaß. Rechts: \textit{kein} Spaß}
+\label{Spass}
 \end{figure} %[H]
+
 Die obigen beiden Tortendiagramme stellen unsere Probanden separiert dar. Links die Gruppe derer die Spaß an ihrem VR-Aufenthalt hatten und rechts die Probanden die angaben, dass sie keinen Spaß hatten. Innerhalb dieser Gruppen sind die Zeitschätzungen des VR-Aufenthalts abgebildet.Von den 41 Probanden die Spaß hatten, hat eine klare Mehrheit von 29 Personen geschätzt, dass die Dauer ihres VR-Aufenthalts im Intervall von 0-7 Minuten liegt. Weitere 9 Personen wählten die Zeitspanne von 7-15 Minuten und lediglich 3 schätzten die Dauer länger als 15 Minuten. Im rechten Tortendiagramm sind 7 Personen abgebildet, davon hat wieder die Mehrheit geschätzt, dass sie bis zu 7 Minuten in der VR waren und die restlichen 2 wählten das Intervall von 7-15 Minuten. Insgesamt entschieden sich also ca. 70\% von den insgesamt 48 Probanden für eine Zeitspanne von bis zu 7 Minuten. Was sich durch die im Rahmen haltende Größe unserer Welt und der Geschwindigkeit mit der man sich darin bewegen kann, eigentlich auch hätte erahnen lassen können.
 
 \par
@@ -1144,6 +1162,7 @@ ytick=data,
  \end{axis}
   \end{tikzpicture}
   \caption{Tatsächliche Zeit der Probanden, die keinen Spaß hatten}
+  \label{ZeitKeinSpass}
   DURCHSCHNITT: 
 ~ 212,42 sek
 	\end{figure}
@@ -1206,6 +1225,7 @@ ytick=data,
  \end{axis}
   \end{tikzpicture}
   \caption{Tatsächliche Zeit der Probanden, die Spaß hatten}
+  \label{ZeitSpass}
 	\end{figure}
 	Analog zum vorherigen Balkendiagramm werden hier auch die tatsächlichen Zeiten der VR-Aufenthalte veranschaulicht, nur mit dem Unterschied, dass es sich hier um jene Personen handelt die nach eigenen Angaben Spaß am Geschehen empfunden hatten.
 Die Wertespanne beginnt unten mit 152 Sekunden, umgerechnet sind das ca. 2,5 Minuten und endet oben mit 399 Sekunden oder auch als Minutenwert, 6,65. Die ersten größeren zeitlichen Sprünge lassen sich im Bereich der oberen zwölf Probanden beobachten, insbesondere hinsichtlich der ersten beiden. Der Wertebereich $[165-330]$ aus dem vorherigem Diagramm ist auch in das hier Betrachtete inkludiert. Somit sind abgesehen davon, dass es sich hier um weitaus mehr Beteiligte handelt, keine sonderlichen Verschiedenheiten zwischen den beiden Varianten bemerkbar.
@@ -1219,6 +1239,7 @@ Die Wertespanne beginnt unten mit 152 Sekunden, umgerechnet sind das ca. 2,5 Min
 \pie[color={yellowOfBrevity!80, yellowOfBrevity!60, yellowOfBrevity!40, yellowOfBrevity!20},radius = 2 ,sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{19/Szenario b,13/Szenario c,12/Szenario d, 1/Szenario a}
 \end{tikzpicture}
 \caption{Welches war das beste Szenario?}
+\label{SzenarioGut}
 \end{figure}
 
 Die Mehrheit der Probanden stimmt mit 19 Stimmen für Szenario \textbf{b} als das beste. \textbf{c} und darauffolgend \textbf{d} liegen im Mittelfeld. Weit abgeschlagen mit nur einer Stimme steht Szenario \textbf{a} auf dem letzten Platz.
@@ -1230,6 +1251,7 @@ Die Mehrheit der Probanden stimmt mit 19 Stimmen für Szenario \textbf{b} als da
 \pie[color={purpleOfLengthiness!80, purpleOfLengthiness!60, purpleOfLengthiness!40, purpleOfLengthiness!20},radius = 2 ,sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{30/Szenario a,6/Szenario d,5/Szenario b, 4/Szenario c}
 \end{tikzpicture}
 \caption{Welches war das schlechteste Szenario?}
+\label{SzenarioSchlecht}
 \end{figure}
 	
 
@@ -1263,6 +1285,7 @@ Entsprechend der Annahme, dass die Zeit schneller vergeht wenn man Spaß empfind
 \end{tikzpicture}
 \label{time}
 \caption{Geschätzte Zeiten}
+\label{ZeitGeschaetzt}
 \end{figure}
 
 
