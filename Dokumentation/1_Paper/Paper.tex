@@ -216,8 +216,11 @@ Da wir die Probanden aber auch nicht langweilen wollten, musste es eine Dauer se
 \section{Ergebnisse}
 Wir hatten 48 Probanden, davon waren 13 Frauen und 35 Männer mit einer Altersspanne von siebzehn bis achtzig Jahren. Außer vier Testpersonen waren alle deutsche Muttersprachler und eine Mehrheit von 32 Personen hat unserem IQ-Test zufolge eine durchschnittliche Intelligenz.
 
-\par
-In den folgenden sogenannten \textit{Scatterplots} werden weibliche Probandinnen als helle Kreise repräsentiert und männliche Probanden als dunkle Kreise.
+Folgende Streudiagramme zeigen die ersten Daten, die von den Probanden erhoben wurden. Erste Zeiteinschätzungen werden in Relation zu Alter, Intelligenz, Körpertemperatur und Müdigkeit der Probanden gestellt.
+Die Streudiagramme sind gruppiert nach den Einschätzungen, die Probanden entweder \textit{ohne} oder \textit{mit} Gespräch absolviert haben: die ersten acht Diagramm zeigen je die 40 bzw. 30 Sekunden-Einschätzungen in Relation zu oben genannten Parametern. Die darauffolgenden acht Diagramme zeigen 40 Sekunden Zeiteinschätzung während der Proband sich unterhält.\\
+Zu unterscheiden sind hier die Helligkeiten der Kreise, welche das Geschlecht des Probanden indizieren. Helle Kreise stellen hier die weiblichen Probanden dar und dunkle Kreise die männlichen.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%% SCATTERPLOT ALTER
 \begin{figure}[H]
 \begin{minipage}[t]{0.49\linewidth}
@@ -231,10 +234,11 @@ scatter/classes={%
     x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
     y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
     xlabel={Alter},
-    ylabel={Zeiteinschaetzung}]
+    ylabel={Zeiteinschätzung}]
+    
     % Orientierungslinie
-	\addplot[domain=15:80]{40};
-	% Scatter
+    \addplot[domain=15:80]{40};
+    % Scatter
     \addplot[scatter,only marks,%
     scatter src=explicit symbolic]%
 table[meta=label] {
@@ -285,13 +289,12 @@ x y label
 56 38.93 a
 59 21.42 b
 60 31.49 a
-62 46.73 b	
+62 46.73 b    
 80 31.3 a
-	};
+    };
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden ohne Gespräch nach Alter}
-\label{Zeit40sek}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.49\linewidth}
@@ -306,10 +309,9 @@ scatter/classes={%
     y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
     xlabel={Alter},
     ylabel={Zeiteinschätzung}]
-    
     % Orientierungslinie
-	\addplot[domain=15:80]{30};
-	% Scatter
+    \addplot[domain=15:80]{30};
+    % Scatter
     \addplot[scatter,only marks,%
     scatter src=explicit symbolic]%
 table[meta=label] {
@@ -360,21 +362,21 @@ x y label
 56 34.33 a
 59 15.61 b
 60 24.17 a
-62 38.94 b	
+62 38.94 b    
 80 36.2 a
-	};
+    };
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 30 Sekunden ohne Gespräch nach Alter}
-\label{Zeit30sek}
 \end{minipage}
 \end{figure}
 
 
-
+Die obigen Streudiagramme zeigen die ersten Zeiteinschätzungen ohne Gespräch in Relation zum Alter der Probanden. Der Großteil der Probanden ist unter 30 Jahre alt, dementsprechend sind für diese Alterskategorie die meisten Daten verfügbar.\\
+In der Zeitspanne $+/-$ 10 Sekunden der angestrebten Zeit befinden sich die meisten der Probanden mit ihren Einschätzungen. Ebenfalls gibt es sowohl bei der 40- als auch bei der 30 Sekundeneinschätzung in nahezu jeder Alterskategorie Ausreißer, die sich stärker verschätzt haben. Aus diesen Diagrammen kann man schließen, dass es keine altersspezifischen Vor- oder Nachteile in einer Zeiteinschätzung gibt.
 
 %%%%%%%%%%%%%% SCATTERPLOT INTELLIGENZ
-\begin{figure}[H]
+\begin{figure}[ht]
 \begin{minipage}[t]{0.49\linewidth}
 \begin{tikzpicture}
 \begin{axis}[%
@@ -424,7 +426,7 @@ x y label
 30 40.53 b
 30 63.00 b
 30 39.72 a
-30 44.19 a 
+30 44.19 a
 30 52.78 b
 31 22 b
 32 25.47 a
@@ -438,12 +440,11 @@ x y label
 33 21.42 b
 34 9.48 a
 35 30.52 a
-35 27.2 a 
+35 27.2 a
     };
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden ohne Gespräch nach Intelligenz}
-\label{Zeit40sekInt}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.49\linewidth}
@@ -460,8 +461,8 @@ scatter/classes={%
     ylabel={Zeiteinschätzung}]
     
     % Orientierungslinie
-	\addplot[domain=18:37]{30};
-	% Scatter
+    \addplot[domain=18:37]{30};
+    % Scatter
     \addplot[scatter,only marks,%
     scatter src=explicit symbolic]%
 table[meta=label] {
@@ -498,7 +499,7 @@ x y label
 30 35.53 b
 30 41.49 b
 30 31.79 a
-30 28.53 a 
+30 28.53 a
 30 47.09 b
 31 28.16 b
 32 36.04 a
@@ -512,15 +513,16 @@ x y label
 33 15.61 b
 34 8.33 a
 35 24.32 a
-35 33.2 a 
+35 33.2 a
     };
     \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 30 Sekunden ohne Gespräch nach Intelligenz}
-\label{Zeit30sekInt}
 \end{minipage}
 \end{figure}
 
+Nach Definition des benutzten Intelligenztests (hier Werte von Intelligenz einfügen)
+Sortiert man die Daten nach Intelligenz, fällt bei der normalen Zeiteinschätzung auf, dass die gemessenen Werte auch hier relativ gleichmäßig verteilt sind. Es gibt zwei besonders starke Ausreißer in der durchschnittlichen und höheren Intelligenz, aber ähnlich wie in der Altersverteilung befinden sich die meisten Werte $+/-$10 Sekunden vom erwünschten Wert.
 
 
 
@@ -563,7 +565,7 @@ x y label
 36.7 31.93 a
 36.8 40.48 a
 36.8 52.94 a
-36.8 25.54 b	
+36.8 25.54 b    
 36.8 38.2 a
 36.8 37.42 a
 36.9 23.42 a
@@ -588,14 +590,13 @@ x y label
 37.2 28 b
 37.2 50.3 a
 37.3 49.7 a
-37.4 39.43 a 
+37.4 39.43 a
 37.5 36.04 a
-39.9 36.1 a 
+39.9 36.1 a
     };
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden ohne Gespräch nach Temperatur}
-\label{Zeit40sekTemp}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.49\linewidth}
@@ -611,8 +612,8 @@ scatter/classes={%
     xlabel={Temperatur},
     ylabel={Zeiteinschätzung}]
     % Orientierungslinie
-	\addplot[domain=36:40]{30};
-	% Scatter
+    \addplot[domain=36:40]{30};
+    % Scatter
     \addplot[scatter,only marks,%
     scatter src=explicit symbolic]%
 table[meta=label] {
@@ -662,20 +663,20 @@ x y label
 37.2 24.07 b
 37.2 38.56 a
 37.3 34.49 a
-37.4 27.15 a 
+37.4 27.15 a
 37.5 34.9 a
-39.9 18.44 a 
-	};
+39.9 18.44 a
+    };
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 30 Sekunden ohne Gespräch nach Temperatur}
-\label{Zeit30sekTemp}
 \end{minipage}
 \end{figure}
 
+Die meisten der Probanden hatten eine durchschnittliche Körpertemperatur, lediglich einer lag mit 39,9°C über dem Durchschnitt. Auffällig ist, dass es die meisten Abweichungen im direkten Umfeld von 37°C gab, bei niedrigerer Temperatur nähern sich die Zeiteinschätzungen dem gewünschten Ergebnis etwas mehr an. Auch der Proband mit der sehr hohen Temperatur lag in einer Schätzung recht nah am gewünschten Ergebnis und in der anderen Schätzung immernoch in der normalen Abweichung.
+    
 
-
-%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \begin{minipage}[t]{0.49\linewidth}
 \begin{tikzpicture}
@@ -746,7 +747,6 @@ x y label
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden ohne Gespräch nach Müdigkeit}
-\label{Zeit40sekMued}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.49\linewidth}
@@ -762,8 +762,8 @@ scatter/classes={%
     xlabel={Müdigkeit},
     ylabel={Zeiteinschätzung}]
     % Orientierungslinie
-	\addplot[domain=0:8]{30};
-	% Scatter
+    \addplot[domain=0:8]{30};
+    % Scatter
     \addplot[scatter,only marks,%
     scatter src=explicit symbolic]%
 table[meta=label] {
@@ -816,21 +816,27 @@ x y label
 7 24.95 b
 7 31.93 a
 7 44.73 b
-	};
+    };
 \end{axis}
-\end{tikzpicture}	
+\end{tikzpicture}    
 \caption{Zeiteinschätzung von 30 Sekunden ohne Gespräch nach Müdigkeit}
-\label{Zeit30sekMued}
 \end{minipage}
 \end{figure}
 
+Die Müdigkeitsskala erstreckt sich von 1 (nicht müde) bis 10 (sehr müde).\\
+Die meisten Probanden waren wenig bis durchschnittlich müde, haben aber nicht besser geschätzt als jene, die angaben überdurchschnittlich müde zu sein. Allerdings muss man hier beachten, dass wir nur wenige Probanden, die sehr müde waren und entsprechend weniger aussagekräftige Daten.
+Auch hier sind die gemessenen Werte wieder recht weit gestreut.
+\linebreak
+\linebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% SCATTERPLOTS MIT GESRPÄCH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SCATTERPLOT ALTER
 
-\begin{figure}[H]
+Im folgenden werden die erhobenen Attribute der Probanden im Verhältnis zu ihrer Zeiteinschätzung im Gespräch dargestellt.
+
+\begin{figure}[ht]
 \begin{tikzpicture}
 \begin{axis}[%
 scatter/classes={%
@@ -843,8 +849,8 @@ scatter/classes={%
     xlabel={Alter},
     ylabel={Zeiteinschätzung}]
     % Orientierungslinie
-	\addplot[domain=15:80]{40};
-	% Scatter
+    \addplot[domain=15:80]{40};
+    % Scatter
     \addplot[scatter,only marks,%
     scatter src=explicit symbolic]%
 table[meta=label] {
@@ -895,16 +901,18 @@ x y label
 56 45.31 a
 59 25.54 b
 60 48.9 a
-62 43.1 b	
+62 43.1 b    
 80 39.1 a
-	};
+    };
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden mit Gespräch nach Alter}
-\label{Zeit40sekAlt}
 \end{figure}
+
+Es ist auffällig, dass viele der jüngeren Probanden die Zeit im Gespräch unterschätzten. Nichtsdestoweniger lagen aber auch viele der Probanden immernoch recht nah am gefragten Wert und das aus allen Altersklassen.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}
+\begin{figure}[ht]
 \begin{tikzpicture}
 \begin{axis}[%
 scatter/classes={%
@@ -953,7 +961,7 @@ x y label
 30 68.89 b
 30 52.94 b
 30 42.34 a
-30 41.13 a 
+30 41.13 a
 30 83.89 b
 31 54.71 b
 32 36.44 a
@@ -967,13 +975,15 @@ x y label
 33 33.83 b
 34 31.93 a
 35 38.2 a
-35 37.42 a 
-	};
+35 37.42 a
+    };
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden mit Gespräch nach Intelligenz}
-\label{Zeit40sekGesprInt}
 \end{figure}
+
+Viele der durchschnittlich intelligenten Probanden schätzen die tatsächlich verstrichene Zeit als kürzer ein, wohingegen die Teilnehmer mit niedrigerer und höherer Intelligenz näher am Idealwert liegen. Hierbei sei wieder angemerkt, dass die meisten Probanden im Mittelwert liegen und nur eine Minderheit die Extreme auf beiden Seiten darstellen.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -988,8 +998,8 @@ scatter/classes={%
     xlabel={Temperatur},
     ylabel={Zeiteinschätzung}]
     % Orientierungslinie
-	\addplot[domain=36:40]{30};
-	% Scatter
+    \addplot[domain=36:40]{30};
+    % Scatter
     \addplot[scatter,only marks,%
     scatter src=explicit symbolic]%
 table[meta=label] {
@@ -1039,15 +1049,16 @@ x y label
 37.2 29.7 b
 37.2 40.3 a
 37.3 38.79 a
-37.4 33.63 a 
+37.4 33.63 a
 37.5 34.67 a
-39.9 28.4 a 
-	};
+39.9 28.4 a
+    };
 \end{axis}
 \end{tikzpicture}
 \caption{Zeiteinschätzung von 40 Sekunden mit Gespräch nach Temperatur}
-\label{Zeit40sekGesprTemp}
 \end{figure}
+Ähnlich wie bei den Einschätzungen ohne Gespräch befinden sich hier die stärksten Abweichungen bei den Probanden mit einer Temperatur knapp um 37°C. Bei Probanden mit niedrigerer Temperatur gibt es ebenfalls, wenn auch nicht so starke, Abweichungen. Die Person mit der hohen Körpertemperatur liegt nah am Idealwert.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -1062,8 +1073,8 @@ scatter/classes={%
     xlabel={Müdigkeit},
     ylabel={Zeiteinschätzung}]
     % Orientierungslinie
-	\addplot[domain=0:8]{40};
-	% Scatter
+    \addplot[domain=0:8]{40};
+    % Scatter
     \addplot[scatter,only marks,%
     scatter src=explicit symbolic]%
 table[meta=label] {
@@ -1116,16 +1127,17 @@ x y label
 7 48.6 b
 7 43.63 a
 7 31.93 b
-	};
+    };
 \end{axis}
-\end{tikzpicture}	
+\end{tikzpicture}    
 \caption{Zeiteinschätzung von 40 Sekunden mit Gespräch nach Müdigkeit}
-\label{Zeit40sekGesprMued}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Auffällig ist hier, dass die stärksten Abweichungen gerade bei den Personen liegen, die am wenigsten müde sind.
 
 \begin{figure}
+
 \begin{tikzpicture}
 \begin{axis}[
      width  = 8cm,
@@ -1146,12 +1158,12 @@ x y label
           
      };
 \end{axis}
+\label{time}
 \end{tikzpicture}
-\caption{Zeitschätzung mit und ohne Gespräch}
-\label{ZeitGespr}
+\caption{Durchschnittswerte der Zeiteinschätzungen}
 \end{figure}
 \par
-Unsere Probanden schätzten mehrfach vierzig und dreißig Sekunden zeitlich ein. Bezüglich der vierzig Sekunden gab es zusätzlich den Fall, in dem sich unsere Test-Betreuer mit dem Probanden unterhalten haben, sodass eine Ablenkung gegeben war. Es gibt also drei Fälle, von welchen die berechneten Durchschnittswerte in der Abbildung 13 dargestellt sind. Von links nach rechts sind es die Einschätzungen von vierzig, dann dreißig und zuletzt wieder die vierzig Sekunden mit dem Gespräch als mögliche Beeinflussung. Auffallend ist, dass die dreißig Sekunden ziemlich genau getroffen wurden. Die Differenz zum Zielwert beträgt nicht einmal eine ganze Sekunde. Die vierzig Sekunden ohne das Gespräch, wurden durchschnittlich von den Probanden mit 36,41 um ca. vier Sekunden kürzer wahrgenommen. Die Variante mit dem Gespräch weist mit ca. 5 Sekunden Überschätzung der Zeit wie erwartet die größte Abweichung zum Zielwert auf, auch wenn sich dieser Differenzwert nicht sonderlich stark von dem des ersten Balken unterscheidet.
+Von links nach rechts sind dargestellt: die Einschätzungen von 40 Sekunden, dann 30 Sekunden und 40 Sekunden mit Gespräch als mögliche Beeinflussung. Auffällig ist, dass die dreißig Sekunden ziemlich genau getroffen wurden. Die Differenz zum Zielwert beträgt nicht einmal eine ganze Sekunde. Die vierzig Sekunden ohne das Gespräch, wurden durchschnittlich von den Probanden mit 36,41 um ca. vier Sekunden kürzer wahrgenommen. Die Variante mit dem Gespräch weist mit ca. 5 Sekunden Überschätzung der Zeit wie erwartet die größte Abweichung zum Zielwert auf, auch wenn sich dieser Differenzwert nicht sonderlich stark von dem des ersten Balken unterscheidet.
 
 	
 \newpage
