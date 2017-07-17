@@ -1011,13 +1011,13 @@ x y label
 29 45.31 a
 29 48.9 a
 30 50.36 a
-30 50.36 b
 30 68.89 b
 30 52.94 b
 30 42.34 a
 30 41.13 a 
 30 83.89 b
 31 54.71 b
+31 50.23 b
 32 36.44 a
 32 36.89 a
 32 50.3 b
@@ -1248,7 +1248,6 @@ ytick=data,
   
 \addplot[xbar, fill=black] coordinates {
 (1,a-b-c-d)
-(1,a-d-c-b)
 (1,b-c-d-a)
 (1,c-a-b-d)
 (1,c-b-a-d)
@@ -1257,12 +1256,13 @@ ytick=data,
 (1,d-a-c-b)
 (1,d-b-c-a)
 (1,d-c-b-a)
+(1,b-d-a-c)
+(2,a-d-c-b)
 (2,a-c-b-d)
 (2,a-d-b-c)
 (2,b-a-c-d)
-(2,b-d-a-c)
-(2,d-b-a-c)
 (2,d-c-a-b)
+(3,d-b-a-c)
 (3,b-c-a-d)
 (4,c-a-d-b)
 (4,a-b-d-c)
