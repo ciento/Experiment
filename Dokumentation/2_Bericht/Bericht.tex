@@ -138,7 +138,7 @@ Schlussendlich haben wir uns noch einmal mit unserem Dozenten zusammengesetzt un
 		\end{figure}
 
 \newpage
-		Die Welt war zuerst als recht große Welt geplant, in der man sich frei bewegen kann. Hier sollte man sich viele verschiedene interessante Dinge angucken können und frei durch die Gegend laufen. Hierbei stießen wir jedoch auf das Problem, dass verschiedene Versuchspersonen verschiedene Wege gehen würden und somit unterschiedliche Dinge erleben und manche Szenarien vielleicht sogar komplett auslassen würden. Um dies zu verhindern, kam uns die Idee eier Art Schnitzeljakt. Damit wäre gewährleistet gewesen, dass jeder Versuchsperson ungefähr die gleiche Strecke läuft und das gleiche erlebt wie alle anderen. Jedoch stellte sich auch das als nicht sehr praktikabel heraus. Wir benötigten ein Mapdesign, in dem jede Versuchsperson die gleiche Strecke läuft und das gleiche erlebt.
+		Die Welt war zuerst als recht große Welt geplant, in der man sich frei bewegen kann. Hier sollte man sich viele verschiedene interessante Dinge angucken können und frei durch die Gegend laufen. Hierbei stießen wir jedoch auf das Problem, dass verschiedene Versuchspersonen verschiedene Wege gehen würden und somit unterschiedliche Dinge erleben und manche Szenarien vielleicht sogar komplett auslassen würden. Um dies zu verhindern, kam uns die Idee einer Art Schnitzeljagd. Damit wäre gewährleistet gewesen, dass jeder Versuchsperson ungefähr die gleiche Strecke läuft und das gleiche erlebt wie alle anderen. Jedoch stellte sich auch das als nicht sehr praktikabel heraus. Wir benötigten ein Mapdesign, in dem jede Versuchsperson die gleiche Strecke läuft und das gleiche erlebt.
 
 		So kamen wir darauf, die Versuchspersonen auf einem Gehweg entlanglaufen zu lassen, auf dem es keine betretbaren Abzweigungen gibt und jeder an mehreren Ampeln für eine vordefinierte Zeit warten muss. 
 		
@@ -155,18 +155,33 @@ Schlussendlich haben wir uns noch einmal mit unserem Dozenten zusammengesetzt un
 			Ein zentrales Problem war, dass jegliche von uns erstellten Objekte nach eine Build des Lightnings komplett schwarz waren. Nach einiger Recherche stellte sich heraus, dass alle in der Unreal Engine verwendeten Objekte zwei UV-Maps benötigen. Die zweite ist notwendig für das korrekte Darstellen des Lightning und ist, zumindest bei statischen Objekten, zwingend notwendig. Sich bewegende Objekte wie beispielsweise die Autos werden anders gerendert und benötigen diese zweite UV-Map nicht. 
 		
 		\subsubsection{Unreal Engine}
+			Gestartet haben wir unser Projekt mit der VR-Vorlage von Unreal. Mit der Fertigstellung der ersten Objekte fingen wir an die Welt zu bauen. Eine anfängliche Herausforderung war die Skalierung, da man sich in einer fast leeren Welt kaum an etwas orientieren kann. Nach einiger Recherche haben wir eine Skalierung festgelegt und ein großes Schachbrett mit $1m^{2}$ großen Feldern als Orientierung unter die Map gesetzt. Mit dessen Hilfe haben wir die Straßen und Gehwege platziert. Weiter ging es mit Häusern und Gärten, bis wir schließlich die letzten Details wie Mülleimer, Laternen und Bäume gesetzt hatten. 
+			
+			Eine Herausforderung stellte unter anderem auch die Logik in unserer Welt da. Die Teleporter und die Ampelschaltung waren die aufwendigsten Sachen, die wir in Blueprints umgesetzt haben. Es hat einige Zeit der Fehlersuche und Fehlerbehebung gegeben, bevor alles funktionierte. Das Fahren der Autos wurde ebenfalls in der Unreal Engine programmiert, die Bewegung der Schaukel hingegen in Blender.
+			
+			Nach einiger Zeit stellten wir auch fest, dass es für die Spiellogik einen erheblichen Unterschied macht, ob man die Welt mit der Oculus Rift durchläuft, oder \"auf dem Bildschirm\". Beispielsweise wird eine Triggerbox, die man betritt oder verlässt, normalerweise nur einmal getriggert. Beim Betreten/Verlassen mit VR-Ansicht hingegen um die zwanzig mal.
 		
-		\subsubsection{Hardware}
+		\subsubsection{Hardware \& Software}
+			Allerlei Hardware hat, gerade am Anfang, aus uns unbekannten Gründen oftmals nicht so funktioniert wie erwartet. Das hat uns letzten Endes dazu bewegt auf einem neuen Computer eine frische Installation von Windows 10 mit allen aktuellen Updates aufzuspielen. Nachdem alle Treiber und Programme installiert waren und auch alles funktionierte deaktivierten wir jegliche Updates, um eventuelle negative Änderungen am System zu verhindern. 
+			
+			Außerdem haben wir zeitlich etwa mittig im Designprozesses die anfänglich gewählte VR-Vorlage in Unreal gegen eine 3rd-Person-Vorlage ausgetauscht. Dies vereinfachte das anschließen eines Controllers enorm. Die Einbindung der Virtusphere zur Steuerung stellte sich als zu komplex und zeitaufwendig heraus. 
 		
-%		Probleme
-%			Controler
-%			Kugel
-%			Oculus
-%			PC-Wechsel
-%			Fahrrad
-%			Teleport
-
+		\subsubsection{Fragebögen und Versuchspersonen}
+			Zeitgleich wurden auch die Fragebögen entwickelt und ausformuliert. Es gab drei Stück (A, B und C), einen für vor dem Betreten der VR-Welt, einen für danach und einen nur für uns.
+			
+			Außerdem gab es einen Intelligenztest. Von anfänglich einem recht umfangreichen sind wir am Ende zu einem sehr kurzen gewechselt, da wir kein exaktes Ergebnis benötigen und den Zeitaufwand für die Versuchspersonen möglichst gering halten wollten.
+			
+			Zuletzt haben wir eine Einverständniserklärung aufgesetzt, die uns rechtlich absichert und jede Versuchsperson unterschreiben musste.
+			
+			Zeitgleich mit allen Aufgaben des Designprozesses haben wir nach Versuchspersonen gesucht. Hierzu formulierten wir einen Anzeigentext und veröffentlichten ihn teilweise mehrfach auf dem schwarzen Brett bei bremen.de, eBay Kleinanzeigen und dem schwarzen Brett in Stud.IP. Zusätzlich fragten wir in unserem Bekanntenkreis herum. 
+			
+			Auf Grund von technischen Schwierigkeiten mussten wir den Start der Versuchsdurchführung einige Male verschieben und mit betroffenen Versuchspersonen einen alternativen Termin absprechen. 
+		
 	\subsection{Versuchsdurchführung} % Daniel
+		Für die Versuchsdurchführung benutzten wir meistens zwei Räume. Ein Raum war für den VR-Teil des Experiments und einer für die Fragebögen und Messungen davor und danach. Im Flur vor den Räumen war ein Wartebereich mit Sofas, Knabbersachen und Getränken. 
+		
+		In der Zeit der Versuchsdurchführung waren wir nicht alle gleichzeitig anwesend, sondern immer nur ein im Voraus festgelegtes Team. Es gab eine feste Routine, wie wir mit den Probanden umgehen und was wir ihnen sagen oder auch nicht sagen. 
+		
 	\subsection{Auswertung} % Marvin
 	
 		%Auswertung
