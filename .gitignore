@@ -83,6 +83,7 @@ Thumbs.db
 
 # LaTex
 Dokumentation/*/*-blx.bib
+Dokumentation/*/*-mpgraph.mp
 Dokumentation/*/*.aux
 Dokumentation/*/*.bbl
 Dokumentation/*/*.bcf
@@ -90,9 +91,9 @@ Dokumentation/*/*.blg
 Dokumentation/*/*.gz
 Dokumentation/*/*.log
 Dokumentation/*/*.out
+Dokumentation/*/*.pdf
 Dokumentation/*/*.run.xml
+Dokumentation/*/*.synctex.gz(busy)
 Dokumentation/*/*.toc
 Dokumentation/*/*.top
 Dokumentation/*/*.tui
-Dokumentation/*/*-mpgraph.mp
-Dokumentation/*/*.pdf
