@@ -1291,9 +1291,24 @@ ytick=data,
   \end{figure}
 
 Oben zu sehen: die Anzahl der Probanden, die die Szenarien entsprechend von kurz nach lang sortiert haben. D.h. konkret, dass insgesamt sieben Probanden   \textbf{b} für das kürzeste Szenario hielten und dann aufsteigend über \textbf{a} und \textbf{d} nach  \textbf{c} sortiert haben. \\
-Sechs Probanden waren der Ansicht, \textbf{a} sei das kürzeste Szenario gewesen, gefolgt von \textbf{c}, \textbf{d} und schließlich \textbf{b}. 
+Sechs Probanden waren der Ansicht, \textbf{a} sei das kürzeste Szenario gewesen, gefolgt von \textbf{c}, \textbf{d} und schließlich \textbf{b}.\\
+Die geschätzte Länge der Szenarien kann man nach visuellen und akustischen Zeitgebern trennen:
 
-\textit{die diagramme sind noch auf der falschen seite}
+	
+\begin{figure}[H]
+\begin{tikzpicture}
+\tikzset{lines/.style={draw=white},}
+\pie[color={greenOfApproval!60, redOfDisapproval!40},radius = 2 ,sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{26/a kürzer als b,21/b kürzer als a}
+\tikzset{lines/.style={draw=white},}
+\pie[pos={8,0},radius = 2, color={greenOfApproval!60, redOfDisapproval!40},sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{25/d kürzer als c,22/c kürzer als d}
+\end{tikzpicture}
+\caption{Links: Länge der akustischen Szenarien. Rechts: Länge der visuellen Szenarien}
+\label{SzenarienKurzLang}
+\end{figure} %[H]
+	
+	Die Tortendiagramme aus Abbildung 15 zeigen die beiden akustischen Szenarien \textbf{a} und \textbf{b} (links) und die visuellen Szenarien \textbf{c} und \textbf{d} jeweils in Relation zueinander. Hier sei nochmal erwähnt, dass jeweils die Szenarien \textbf{a} und \textbf{c} die kürzeren waren.\\
+Durch die akustischen Zeitgeber haben 26 Probanden das Szenario \textbf{a} kürzer eingeschätzt als Szenario \textbf{b}. 21 Probanden waren gegenteiliger Meinung. Bei den visuellen Zeitgebern gibt es eine weniger eindeutige Meinung und das tatsächlich kürzere Szenario \textbf{c} haben 22 Personen erkannt, 25 schätzten \textbf{d} als kürzer ein.
+	
 	
 Aus diesen Daten kann man herleiten, wie viele Personen ein Szenario als das kürzeste (Diagramm in gelb) bzw. längste (Diagramm in lila) empfunden haben. 
 
