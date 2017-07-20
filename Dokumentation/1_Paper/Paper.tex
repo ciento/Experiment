@@ -1370,10 +1370,10 @@ Die geschätzte Länge der Szenarien kann man nach visuellen und akustischen Zei
 \tikzset{lines/.style={draw=white},}
 \pie[color={greenOfApproval!60, redOfDisapproval!40},radius = 2 ,sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{26/a kürzer als b,21/b kürzer als a}
 \tikzset{lines/.style={draw=white},}
-\pie[pos={8,0},radius = 2, color={redOfDisapproval!40, greenOfApproval!60},sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{25/d kürzer als c,22/c kürzer als d}
+\pie[pos={8,0},radius = 2, color={greenOfApproval!60, redOfDisapproval!40},sum=auto, after number=,text=legend,every only number node/.style={text=black},style={lines}]{22/c kürzer als d,25/d kürzer als c}
 \end{tikzpicture}
 \caption{Links: Länge der akustischen Szenarien. Rechts: Länge der visuellen Szenarien}
-\label{SzenarienKurzLang}
+\label{SzenarienVisuellAkustisch}
 \end{figure} %[H]
 	
 	Die Tortendiagramme aus Abbildung 15 zeigen die beiden akustischen Szenarien \textbf{a} und \textbf{b} (links) und die visuellen Szenarien \textbf{c} und \textbf{d} jeweils in Relation zueinander. Hier sei nochmal erwähnt, dass jeweils die Szenarien \textbf{a} und \textbf{c} die kürzeren waren.\\
@@ -1466,21 +1466,21 @@ Da die Intervalle zur Zeiteinschätzung des Aufenthalts in der VR von uns ungün
 	\begin{figure}[H]
 	\begin{tikzpicture} 
 \begin{axis}[ xbar, xmin=0, width=12cm, height=8cm, enlarge y limits=0.04, 
-xlabel={Tatsächliche Zeit in Sekunden}, 
-symbolic y coords={330,252,197,190,185,168,165}, 
+xlabel={Tatsächliche Zeit in Sekunden},ylabel={Probanden}, 
+symbolic y coords={1,2,3,4,5,6,7}, 
 ytick=data,
 % nodes near coords,
  % nodes near coords align={horizontal}, 
  ] 
  
 \addplot[xbar, fill=black] coordinates {
-(165,165)
-(168,168)
-(185,185)
-(190,190)
-(197,197)
-(252,252)
-(330,330)
+(165,1)
+(168,2)
+(185,3)
+(190,4)
+(197,5)
+(252,6)
+(330,7)
 };
  \end{axis}
   \end{tikzpicture}
@@ -1494,55 +1494,56 @@ In diesem Balkendiagramm wird die von uns aufgenommene tatsächliche Dauer des V
 		\begin{figure}[H]
 	\begin{tikzpicture} 
 \begin{axis}[ xbar, xmin=0, width=12cm, height=22cm, enlarge y limits=0.04, 
-xlabel={Tatsächliche Zeit in Sekunden}, 
-symbolic y coords={152,156,165,167,174,177,180,185,187,190,193,194,199,204,205,210,212,216,217,220,221,231,232,235,239,242,243,249,251,273,278,301,309,310,316,326,335,336,354,380,399}, 
+xlabel={Tatsächliche Zeit in Sekunden},
+ylabel={Probanden}, 
+symbolic y coords={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41},
 ytick=data,
 % nodes near coords,
  % nodes near coords align={horizontal}, 
  ] 
  
 \addplot[xbar, fill=black] coordinates {
-(152,152)
-(156,156)
-(165,165)
-(167,167)
-(174,174)
-(177,177)
-(180,180)
-(185,185)
-(187,187)
-(190,190)
-(193,193)
-(194,194)
-(199,199)
-(204,204)
-(205,205)
-(210,210)
-(212,212)
-(216,216)
-(217,217)
-(220,220)
-(221,221)
-(231,231)
-(232,232)
-(235,235)
-(239,239)
-(242,242)
-(243,243)
-(249,249)
-(251,251)
-(273,273)
-(278,278)
-(301,301)
-(309,309)
-(310,310)
-(316,316)
-(326,326)
-(335,335)
-(336,336)
-(354,354)
-(380,380)
-(399,399)
+(152,1)
+(156,2)
+(165,3)
+(167,4)
+(174,5)
+(177,6)
+(180,7)
+(185,8)
+(187,9)
+(190,10)
+(193,11)
+(194,12)
+(199,13)
+(204,14)
+(205,15)
+(210,16)
+(212,17)
+(216,18)
+(217,19)
+(220,20)
+(221,21)
+(231,22)
+(232,23)
+(235,24)
+(239,25)
+(242,26)
+(243,27)
+(249,28)
+(251,29)
+(273,30)
+(278,31)
+(301,32)
+(309,33)
+(310,34)
+(316,35)
+(326,36)
+(335,37)
+(336,38)
+(354,39)
+(380,40)
+(399,41)
 };
  \end{axis}
   \end{tikzpicture}
@@ -1555,7 +1556,7 @@ Die Wertespanne beginnt unten mit einem Minimum von 152 Sekunden, umgerechnet si
 	
 \newpage
 
-
+\subsection{Bewertung der Szenarien}
 	\begin{figure}[ht]
 \begin{tikzpicture}
 \tikzset{lines/.style={draw=white},}
@@ -1583,7 +1584,6 @@ Bei der Sortierung von \textit{gut} nach \textit{schlecht} fällt auf, dass gera
 
 
 \section{Diskussion}
-\textbf{VON ABB 21, 22 BEZUG ZU ABB 14(zentraler Punkt) HERSTELLEN. Entsprechend der Annahme, dass die Zeit schneller vergeht wenn man Spaß empfindet, müssten also in der Abbildung 14 die meisten Personen \textbf{b c d a} als Reihenfolge mit Aufsteigender Dauer gewählt haben. Gemäß der Abbildung 13 hat die Mehrzahl die Reihenfolge \textbf{b a d c} gewählt. \textbf{b} und \textbf{d} stimmen in beiden Möglichkeiten überein, \textbf{a} und \textbf{c} sind vertauscht. In diesem Fall lässt sich die Annahme nicht zu hundert Prozent belegen. Auch in den weiteren Reihenfolgen der Abbildung 14 lässt sich das gesuchte Muster, dass der Spaß einen Faktor darstellt, nicht eindeutig erkennen.}
 
 \subsection{Scatterplots: Einflüsse auf die Zeitwahrnehmung}
 Zu Beginn der Auswertung wurde versucht, Variablenpaare unserer gesammelten Werte in Beziehung zueinander zu setzen und dafür Scatterplots zu erstellen. Zuvor erfolgte bereits eine Auseinandersetzung damit, welche Faktoren die Zeitwahrnehmung beeinflussen können: so kann sie z.B. mit jungem/höherem Alter, mit einer tiefen/hohen Körpertemperatur, einer niedrigen/ hohen Intelligenz, bei Müdigkeit sowie unter den Geschlechtern variieren. Herausgestellt wurden diese Beeinflusser von Pascal Wallisch in seinem Paper "'Zeiterleben in der Tempogesellschaft"' \cite{Wallisch2003}. Ob diese Faktoren auch unsere Probanden beeinflusst haben, soll herausgestellt werden.
@@ -1606,10 +1606,10 @@ Eindeutige Ergebnisse lassen sich somit aus den einzelnen Scatterplots nicht abl
 Ein Proband hielt sich meist 3-4 Minuten in der VR-Welt auf, diese Zeit sollte er nach dem Experiment selbst abschätzen. Hier wäre es interessant zu erfahren, ob das Zeitempfinden sich, wie vermutet, wirklich beschleunigt hat, jedoch verhindern zu groß gewählte Zeitspannen (die kleinste betrug 0-7 Minuten) ein eindeutiges Ergebnis. Auf das betreffende Diagramm\ref{Spass} wird später noch Bezug genommen. Auch gibt es keine Auffälligkeiten zwischen den Zeitschätzungen vor und nach dem Experiment - es scheint die Probanden nicht in dem Ausmaß beeinflusst zu haben, dass sich ihre Einschätzungsfähigkeit verändert hat.
 
 \subsection{Einschätzung der vier Szenarien}
-\paragraph{Zu Abb. \ref{SzenarienKurzLang}-\ref{LaengeSzenarien}:} \textbf{Werte der Diagramme 14, 15, 16 stimmen nicht mit dem 17. Diagramm überein $\rightarrow$ beschreiben, dass vorherige Werte deswegen unbrauchbar, Diagramm 17 am besten zu interpretieren.}\\
+\paragraph{Zu Abb. \ref{SzenarienKurzLang}-\ref{LaengeSzenarien}:} Abbildung \ref{SzenarienKurzLang} stellt die Anzahl dar, wie oft welche Szenarioreihenfolge gewählt wurde, allerdings lassen sich keine Rückschlüsse auf die zuvor festgelegten Hypothesen oder die am Anfang des Experiments vom Probanden erfragten Variablen schließen. Aufgrund dessen werden die Szenarien wie in Abbildung \ref{SzenarienVisuellAkustisch}
+nach den Faktoren visuell und akustisch getrennt. Nahezu die Hälfte aller Probanden haben die schnellen Szenarien wirklich als schneller wahrgenommen. Dabei ist auffällig, dass bei den akustischen Szenarien 55,3\% der Personen \textbf{a} tatsächlich als schneller eingestuft haben. Bei den visuellen Szenarien wurde das schnelle Szenario \textbf{c} allerdings nur zu 46,8\% erkannt. Daraus kann geschlussfolgert werden, dass es sich bei den akustischen Zeitgebern um die effektiveren handelt, die den Probanden im Vergleich zu den visuellen Szenarios erfolgreicher beeinflusst haben.
 
-Um einen Überblick über die Szenarien Reihenfolgen zu bekommen wurde vier verschiedene Darstellungsformen gewählt, von denen die ersten drei Diagramme aufgrund von Uneindeutigkeit nicht für die Interpretation geeignet sind. Abbildung \ref{SzenarienKurzLang} stellt die Anzahl dar, wie oft welche Szenarioreihenfolge gewählt wurde, allerdings lassen sich keine Rückschlüsse auf die zuvor festgelegten Hypothesen oder die am Anfang des Experiments vom Probanden erfragten Variablen schließen.\\ \textbf{hier weiter machen}\\
-Bei den ermittelten Durchschnittswerten der
+In den Kreisdiagrammen \ref{SzenarienKurz} und \ref{SzenarienLang} werden die Szenarien nach ihrer Länge sortiert: Ersteres stellt die Anzahl dar, wie oft die Szenarien jeweils als kürzestes wahrgenommen worden sind und das Zweite wie oft die Szenarien jeweils als längstes eingeschätzt worden sind. Allerdings besteht ein Zweifel der Richtigkeit der Daten. Wo Szenario \textbf{b} in der ersten Abbildung als zweit kürzestes dargestellt wird, ist es auch gleichzeitig das zweit längste Szenario in der zweiten Darstellungsform. Grund dafür sind möglicherweise die nicht korrekt ausgefüllten Fragebögen der Probanden. Einige trugen zwar die ihrer Meinung richtigen Reihenfolge ein, allerdings erhielten einige Szenarien, die sich vor dem längsten befunden hatten, eine zum Teil längere Dauer, als das längste Szenario.\\ Aufgrund dessen lässt sich die Darstellungs \ref{SzenarienKurzLang} besser interpretieren, denn bei den ermittelten Durchschnittswerten der
 geschätzten Längen der Szenarien lässt sich eine Besonderheit feststellen:
 Es gibt ähnliche Schätzwerte bei Szenario \textbf{a} und \textbf{c}, sowie bei
 \textbf{b} und \textbf{d}. In Szenario
