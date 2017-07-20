@@ -1232,9 +1232,9 @@ Auffällig ist hier, dass die stärksten Abweichungen gerade bei den Personen li
      ]
      
      \addplot[ybar, fill=black] coordinates {
-          (40s ohne,36.41)
-          (30s ohne,30.67)
-          (40s mit,45.13)
+          (40s ohne,38.30)
+          (30s ohne,31.16)
+          (40s mit,46.81)
           
      };
 \end{axis}
@@ -1244,6 +1244,61 @@ Auffällig ist hier, dass die stärksten Abweichungen gerade bei den Personen li
 \end{figure}
 \par
 Von links nach rechts sind dargestellt: die Einschätzungen von 40 Sekunden, dann 30 Sekunden und 40 Sekunden mit Gespräch als mögliche Beeinflussung. Auffällig ist, dass die dreißig Sekunden ziemlich genau getroffen wurden. Die Differenz zum Zielwert beträgt nicht einmal eine ganze Sekunde. Die vierzig Sekunden ohne das Gespräch, wurden durchschnittlich von den Probanden mit 36,41 um ca. vier Sekunden kürzer wahrgenommen. Die Variante mit dem Gespräch weist mit ca. 5 Sekunden Überschätzung der Zeit wie erwartet die größte Abweichung zum Zielwert auf, auch wenn sich dieser Differenzwert nicht sonderlich stark von dem des ersten Balken unterscheidet.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% vor der VR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+     width  = 8cm,
+     %hide y axis,
+     axis x line*=bottom,
+     height = 8cm,
+     bar width=20pt,
+     symbolic x coords={40s ohne,30s ohne,40s mit},
+     nodes near coords,
+     ymin=0,
+     xtick=data
+     ]
+     
+     \addplot[ybar, fill=black] coordinates {
+          (40s ohne,36.56)
+          (30s ohne,30.72)
+          (40s mit,45.13)
+          
+     };
+\end{axis}
+\end{tikzpicture}
+\caption{Zeitschätzung mit und ohne Gespräch vor der VR}
+\label{ZeitGespr}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% nach der VR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+     width  = 8cm,
+     %hide y axis,
+     axis x line*=bottom,
+     height = 8cm,
+     bar width=20pt,
+     symbolic x coords={40s ohne,30s ohne,40s mit},
+     nodes near coords,
+     ymin=0,
+     xtick=data
+     ]
+     
+     \addplot[ybar, fill=black] coordinates {
+          (40s ohne,40.04)
+          (30s ohne,31.60)
+          (40s mit,48.50)
+          
+     };
+\end{axis}
+\end{tikzpicture}
+\caption{Zeitschätzung mit und ohne Gespräch nach der VR}
+\label{ZeitGespr}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Einschätzung der vier Szenarien}
 \newpage
@@ -1525,34 +1580,6 @@ Die Mehrheit der Probanden stimmt mit 19 Stimmen für Szenario \textbf{b} als da
 
 Bei der Frage nach dem schlechtesten Szenario sind sich ca. 67\% Prozent der Probanden einig, dass ihnen \textbf{a} am wenigsten gefallen hat. Deutlich abgeschlagen mit nur 6, 5 und 4 Stimmen die Szenarien \textbf{d}, \textbf{b} und \textbf{c}. 
 Bei der Sortierung von \textit{gut} nach \textit{schlecht} fällt auf, dass gerade Szenario \textbf{a} wieder eine klare Tendenz hat und es als allgemein schlechter wahrgenommen wurde als alle anderen.
-
-
-\begin{figure}[H]
-\begin{tikzpicture}
-\begin{axis}[
-     width  = 8cm,
-     %hide y axis,
-     axis x line*=bottom,
-     height = 8cm,
-     bar width=20pt,
-     symbolic x coords={40s ohne,30s ohne,40s mit},
-     nodes near coords,
-     ymin=0,
-     xtick=data
-     ]
-     
-     \addplot[ybar, fill=black] coordinates {
-          (40s ohne,39.82)
-          (30s ohne,47.43)
-          (40s mit,31.44)
-          
-     };
-\end{axis}
-\end{tikzpicture}
-\label{time}
-\caption{Zeitschätzung mit und ohne Gespräch}
-\label{ZeitGeschaetzt}
-\end{figure}
 
 
 \section{Diskussion}
