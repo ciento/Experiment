@@ -45,7 +45,7 @@
 \newcommand{\LRA}{\Leftrightarrow}
 
 \usepackage[colorlinks=true, 
-            linkcolor=blue,
+            linkcolor=black, % blue
             citecolor=blue, 
             urlcolor=blue, 
             hyperfigures=true
@@ -71,7 +71,7 @@
 \newcommand{\authorshort}{Averbuh, Becker, Brüning, Dörnbach, Escher, Kaurin, Kettenburg, Schmidt, Sen, Wahls}
 \newcommand{\thissemester}{SoSe 2017}
 \newcommand{\thistopic}{Bachelorprojekt}
-\newcommand{\thistitle}{¡Experiment!}
+\newcommand{\thistitle}{¡Experiment! - Paper}
 \newcommand{\shorttitle}{}
 \newcommand{\subtitle}{\thissemester \\Dozenten: \dozent}
 \newcommand{\dozent}{Thorsten Kluß, Jaime Maldonado, Kerstin Bub}
