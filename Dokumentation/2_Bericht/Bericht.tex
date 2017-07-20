@@ -119,15 +119,7 @@ Dieser Bericht führt über die Ideenfindung unserer Forschungsschwerpunktes zu 
 			\item Wolken
 			\item Zimmerpflanze (Kaktus)
 		\end{itemize}
-		
-		\begin{figure}[!htbp] % here - top - bottom - page, das ! erzwingt die Position falls möglich
-			\centering
-			\includegraphics[height=\linewidth, width=\textheight, keepaspectratio, angle=270]{../Bilder/20170606_145921.jpg}
-			\caption{Problemlösung in Unreal}
-			\label{img:porblemloesung}
-		\end{figure}
 
-\newpage
 		Die Welt war zuerst als recht große Welt geplant, in der man sich frei bewegen kann. Hier sollte man sich viele verschiedene interessante Dinge angucken können und frei durch die Gegend laufen. Hierbei stießen wir jedoch auf das Problem, dass verschiedene Versuchspersonen verschiedene Wege gehen würden und somit unterschiedliche Dinge erleben und manche Szenarien vielleicht sogar komplett auslassen würden. Um dies zu verhindern, kam uns die Idee einer Art Schnitzeljagd. Damit wäre gewährleistet gewesen, dass jeder Versuchsperson ungefähr die gleiche Strecke läuft und das gleiche erlebt wie alle anderen. Jedoch stellte sich auch das als nicht sehr praktikabel heraus. Wir benötigten ein Mapdesign, in dem jede Versuchsperson die gleiche Strecke läuft und das gleiche erlebt.
 
 		So kamen wir darauf, die Versuchspersonen auf einem Gehweg entlanglaufen zu lassen, auf dem es keine betretbaren Abzweigungen gibt und jeder an mehreren Ampeln für eine vordefinierte Zeit warten muss. 
@@ -137,7 +129,7 @@ Dieser Bericht führt über die Ideenfindung unserer Forschungsschwerpunktes zu 
 		\subsubsection{Blender}
 			Blender ist ein sehr komplexes und umfangreiches Programm, dementsprechend hatte jeder von uns eine längere Einarbeitungsphase. Bei kleineren Problemen haben wir uns gegenseitig viel helfen können und unser angesammeltes Wissen ausgetauscht. Die größten Probleme entstanden hauptsächlich nach dem Import in die Unreal Engine. 
 
-			Ein Problem war, dass bei einigen Objekten die Textur nicht korrekt dargestellt wurde oder Objekte teilweise durchsichtig waren. Bewegt man die Kamera in der Unreal Engine in ein Objekt hinein, so sollte man von innen nach außen durch die Objektoberflächen hindurch gucken können. Die Teile, die von außen durchsichtig waren, waren von innen jedoch sichtbar. Somit war das Problem, dass die Objekte teilweise \"auf links gekrempelt\" waren. Mit Hilfe des Anzeigens der Normalen in Blender ließen sich diese Flächen aber leicht aufspüren und umdrehen bzw. die Normale(n) invertieren.
+			Ein Problem war, dass bei einigen Objekten die Textur nicht korrekt dargestellt wurde oder Objekte teilweise durchsichtig waren. Bewegt man die Kamera in der Unreal Engine in ein Objekt hinein, so sollte man von innen nach außen durch die Objektoberflächen hindurch gucken können. Die Teile, die von außen durchsichtig waren, waren von innen jedoch sichtbar. Somit war das Problem, dass die Objekte teilweise "`auf links gekrempelt"' waren. Mit Hilfe des Anzeigens der Normalen in Blender ließen sich diese Flächen aber leicht aufspüren und umdrehen bzw. die Normale(n) invertieren.
 			
 			Größere Probleme hatten wir auch bei den Texturen. Die Bearbeitungs-Ansicht (Texture) in Blender entsprach nicht immer der in Blender gerenderten Ansicht (Rendered) und auch nicht der in der Unreal Engine angezeigten Ansicht. Somit hatten wir für ein Objekt teilweise drei verschiedene Ansichten der Textur. Am meisten Probleme machten die Häuser, wohingegen andere Objekte wie der American Store völlig problemlos funktionierten. Gerade bei den Häusern haben wir die Materials, in denen die Texturen enthalten sind, in der Unreal Engine noch stark nachträglich bearbeitet.
 			Generell wurden nahezu alle Materials in der Unreal Engine nochmal editiert, da Einstellungen wie Specular Lightning oder Spiegelungen nicht von der Engine übernommen wurden.
@@ -149,7 +141,14 @@ Dieser Bericht führt über die Ideenfindung unserer Forschungsschwerpunktes zu 
 			
 			Eine Herausforderung stellte unter anderem auch die Logik in unserer Welt da. Die Teleporter und die Ampelschaltung waren die aufwendigsten Sachen, die wir in Blueprints umgesetzt haben. Es hat einige Zeit der Fehlersuche und Fehlerbehebung gegeben, bevor alles funktionierte. Das Fahren der Autos wurde ebenfalls in der Unreal Engine programmiert, die Bewegung der Schaukel hingegen in Blender.
 			
-			Nach einiger Zeit stellten wir auch fest, dass es für die Spiellogik einen erheblichen Unterschied macht, ob man die Welt mit der Oculus Rift durchläuft, oder \"auf dem Bildschirm\". Beispielsweise wird eine Triggerbox, die man betritt oder verlässt, normalerweise nur einmal getriggert. Beim Betreten/Verlassen mit VR-Ansicht hingegen um die zwanzig mal.
+			Nach einiger Zeit stellten wir auch fest, dass es für die Spiellogik einen erheblichen Unterschied macht, ob man die Welt mit der Oculus Rift durchläuft, oder "`auf dem Bildschirm"'. Beispielsweise wird eine Triggerbox, die man betritt oder verlässt, normalerweise nur einmal getriggert. Beim Betreten/Verlassen mit VR-Ansicht hingegen um die zwanzig mal.
+			
+		\begin{figure}[!htbp] % here - top - bottom - page, das ! erzwingt die Position falls möglich
+			\centering
+			\includegraphics[trim = 200mm 0mm 600mm 0mm, clip, height=\linewidth, width=\textheight, keepaspectratio, angle=270]{../Bilder/20170619_102101.jpg} % trim - l u r o
+			\caption{Problemlösung in Unreal}
+			\label{img:porblemloesung}
+		\end{figure}
 		
 		\subsubsection{Hardware \& Software}
 			Allerlei Hardware hat, gerade am Anfang, aus uns unbekannten Gründen oftmals nicht so funktioniert wie erwartet. Das hat uns letzten Endes dazu bewegt auf einem neuen Computer eine frische Installation von Windows 10 mit allen aktuellen Updates aufzuspielen. Nachdem alle Treiber und Programme installiert waren und auch alles funktionierte deaktivierten wir jegliche Updates, um eventuelle negative Änderungen am System zu verhindern. 
