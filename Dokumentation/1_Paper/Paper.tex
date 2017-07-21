@@ -17,6 +17,7 @@
 \usepackage{pgfplots}
 \usepackage{float}
 \usepackage{textcomp}
+\usepackage{subfigure}
 
 % define custom colours
 \definecolor{greenOfApproval}{HTML}{009933}
@@ -222,20 +223,42 @@ gesamte Strecke der vier Szenarien benötigt. Erfasst wurde die Zeit vom Zeitpun
 Die insgesamt vier Szenarien bildeten die
 virtuelle Welt und bestanden aus vier Ampelphasen. Diese waren visuell und auditiv einer
 realen Welt nachgebaut mit Wegen, Straßenverkehr, Autolärm, Menschen, Häuser und
-Bäumen. An jeder Ampelphase gab es einen manipulierten Faktor, der die
+Bäumen. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{map.png}
+\caption{Ansicht der virtuellen Welt von oben, wo an jeder Ampel eins der Szenarien stattfindet.}
+%\label{}
+\end{figure}
+
+An jeder Ampelphase gab es einen manipulierten Faktor, der die
 Zeitwahrnehmung beeinflussen soll. Immer zwei der Szenarien gleichen sich optisch, haben aber gegenteilige Zeitgeber. (a) Ampelphase an einem LKW - schnelles Ticken, (b) Ampel mit Vogel und
 Menschen - langsames Ticken, (c) Ampel neben einem schaukelndem Kind mit rosa Shirt -
 schnelles Schaukeln, (d) Ampel mit Heißluftballon-Plakat bei einem schaukelndem Kind mit
 grünem Shirt - langsames Schaukeln.
-+++ Bilder von den vier Szenarien+++
-\par
+
+\begin{figure}[H]
+    \subfigure[Ampelphase an einem LKW]{\includegraphics[width=0.5\textwidth]{a.png}}
+    \subfigure[Ampelphase mit Vogel und
+Menschen]{\includegraphics[width=0.5\textwidth]{b.png}}
+%\caption{Titel unterm gesamten Bild}
+\end{figure}
+
+\begin{figure}[H]
+    \subfigure[Ampel neben einem schaukelndem Kind mit rosa Shirt]{\includegraphics[width=0.5\textwidth]{c.png}}
+    \subfigure[Ampel neben einem schaukelndem Kind mit
+grünem Shirt]{\includegraphics[width=0.5\textwidth]{d.png}}
+%\caption{Titel unterm gesamten Bild}
+\end{figure}
+
 Die Wartezeit an den Ampeln war vorgegeben und konnte nicht frühzeitig übersprungen werden. Der Proband durchlief ohne Pausen die virtuelle Welt einmal. Die Geschwindigkeit in der die Welt durchlaufen wurde, konnte die
 Versuchsperson selbst anhand des Controllers regulieren. Die Versuchsleiter konnten das
 Geschehen in der VR über die Bildschirme beobachten. Es wurden
 keine weder weitere Anweisungen noch eine zeitliche Begrenzung vorgegeben. 
 
 
-\subsubsection{Theroretische Teil nach der VR}
+\subsubsection{Theoretische Teil nach der VR}
 Nach der VR wird der Proband im ersten Raum auf verschiedene Dinge getestet.
 40 Sekunden ohne
 Unterhaltung wurden abgeschätzt und vom Versuchsleiter erfasst. Der Proband erhielt
