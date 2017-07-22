@@ -19,6 +19,8 @@
 \usepackage{textcomp}
 \usepackage{subfigure}
 \usepackage{filecontents}
+\usepackage{pgfplots, pgfplotstable}
+\usepgfplotslibrary{statistics}
 % define custom colours
 \definecolor{greenOfApproval}{HTML}{009933}
 \definecolor{redOfDisapproval}{HTML}{cc0000}
@@ -459,59 +461,154 @@ x y label
 Die obigen Streudiagramme zeigen die ersten Zeiteinschätzungen ohne Gespräch in Relation zum Alter der Probanden. Der Großteil der Probanden ist unter 30 Jahre alt, dementsprechend sind für diese Alterskategorie die meisten Daten verfügbar.\\
 In der Zeitspanne $+/-$ 10 Sekunden der angestrebten Zeit befinden sich die meisten der Probanden mit ihren Einschätzungen. Ebenfalls gibt es sowohl bei der 40- als auch bei der 30 Sekundeneinschätzung in nahezu jeder Alterskategorie Ausreißer, die sich stärker verschätzt haben. Aus diesen Diagrammen kann man schließen, dass es keine altersspezifischen Vor- oder Nachteile in einer Zeiteinschätzung gibt.
 
-\begin{comment}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HISTO ALTER %%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
+\begin{filecontents}{data.csv}
+dist
+
+21.23 
+40.07 
+40.00 
+40.3 
+29.89
+21.35 
+25.47
+ 46.33 
+  40.53 
+ 35.71 
+ 46.43 
+32.20 
+ 30.3 
+ 46.62 
+ 63.00 
+ 26.74 
+ 28.4 
+ 36.30 
+ 33.63 
+ 26.48 
+ 39.72 
+37.51 
+ 44.19 
+ 49.04 
+38.79 
+ 67.23 
+ 50.57 
+47.62 
+52.78 
+ 29.70 
+ 47.10 
+ 34.67 
+33.85 
+36.75 
+ 41.12 
+ 33.43 
+ 35.49 
+ 32.78 
+ 32.49
+ 9.48 
+ 30.52 
+ 22 
+  27.2 
+ 38.93 
+ 21.42 
+ 31.49 
+46.73 
+ 31.3 
+\end{filecontents}
 \begin{minipage}[t]{0.49\linewidth}
 \begin{tikzpicture}
 \begin{axis}[
-    ymin=0, ymax=55,
-    minor y tick num = 3,
-    area style,
-    ]
-\addplot+[ybar interval,mark=no] plot coordinates { 
-(17, 21.23) (18, 40.07 ) (19, 40.00) (19, 40.3) (19, 29.89) (20, 21.35)
-(20, 25.47) (21, 46.33) (21, 40.53) (21, 46.43) (21, 32.20) (21, 30.3)
-(21, 46.62) (22, 63.00) (22, 26.74) (22, 30.27) (22, 28.4) (23, 36.30) 
-(23, 33.63) (23, 26.48) (23, 39.72) (23, 37.51) (23, 44.19) (23, 49.04)
-(23, 38.79) (24, 67.23) (25, 50.57) (25, 47.62) (26, 52.78) (26, 29.70)
-(26, 47.10) (27, 34.67) (28, 33.85) (29, 36.75) (30, 41.12) (33, 33.43)
-(40, 35.49) (46, 32.78) (47, 32.49) (53, 9.48) (54, 30.52) (54, 22)
-(55, 27.2) (56, 38.93) (59, 21.42) (60, 31.49) (62, 46.73) (80, 31.3
-)};
+    ybar,
+    ymin=0
+]
+\addplot +[
+    hist={
+        bins=10,
+        data min=0.5,
+        data max=50
+    }   
+] table [y index=0] {data.csv};
 \end{axis}
 \end{tikzpicture}
-\caption{Zeiteinschätzung von 40 Sekunden ohne Gespräch nach Alter}
+\caption{Anzahl der Personen(y), welche die jeweilige Zeiteinschätzung(x) angaben - 40 Sekunden ohne Gespräch nach Alter.}
 \label{Zeit40sek}
 \end{minipage}
 \hfill
+\begin{filecontents}{data.csv}
+dist
+ 18.44 
+ 27.72 
+ 26.59 
+ 31.4 
+ 32.13 
+ 15.40 
+ 36.04 
+ 34.77 
+ 35.53 
+ 24.83 
+ 30.71 
+ 24.70 
+ 15.1 
+ 33.88 
+ 41.49 
+ 30.27 
+ 34.9 
+ 28.69 
+ 34.49 
+ 24.07 
+ 31.79 
+ 27.73 
+ 28.53 
+ 33.57 
+ 38.56
+ 67.30 
+ 33.67 
+ 37.76 
+ 47.09 
+25.42 
+44.73 
+ 27.15 
+ 24.87 
+ 27.60 
+ 43.42 
+ 31.93 
+ 24.95 
+ 25.46 
+ 28.41 
+ 8.33 
+ 24.32 
+ 28.16 
+ 33.2 
+ 34.33 
+ 15.61 
+ 24.17 
+38.94 
+ 36.2 
+\end{filecontents}
 \begin{minipage}[t]{0.49\linewidth}
 \begin{tikzpicture}
 \begin{axis}[
-    ymin=0, ymax=55,
-    minor y tick num = 3,
-    area style,
-    ]
-\addplot+[ybar interval,mark=no] plot coordinates { (17, 18.44) (18, 27.72 ) (19, 26.59) (19, 31.4) (19, 32.13) (20, 15.40)
-(20, 36.04) (21, 34.77) (21, 35.53) (21, 24.83) (21, 30.71) (21, 24.70)
-(21, 15.1) (22, 33.88) (22, 41.49) (22, 30.27) (22, 34.9) (23, 28.69) 
-(23, 34.49) (23, 24.07) (23, 31.79) (23, 27.73) (23, 28.53) (23, 33.57)
-(23, 38.56) (24, 67.30) (25, 33.67) (25, 37.76) (26, 47.09) (26, 25.42)
-(26, 44.73) (27, 27.15) (28, 24.87) (29, 27.60) (30, 43.42) (33, 31.93)
-(40, 24.95) (46, 25.46) (47, 28.41) (53, 8.33) (54, 24.32) (54, 28.16)
-(55, 33.2) (56, 34.336) (59, 15.61) (60, 24.17) (62, 38.94) (80, 36.2
-)};
+    ybar,
+    ymin=0
+]
+\addplot +[
+    hist={
+        bins=10,
+        data min=0.5,
+        data max=50
+    }   
+] table [y index=0] {data.csv};
 \end{axis}
 \end{tikzpicture}
-\caption{Zeiteinschätzung von 30 Sekunden ohne Gespräch nach Alter}
+\caption{Anzahl der Personen(y), welche die jeweilige Zeiteinschätzung(x) angaben - 30 Sekunden ohne Gespräch nach Alter.}
 \label{Zeit30sek}
 \end{minipage}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HISTO ALTER%%%%%%
 
-\end{comment}
 
 %%%%%%%%%%%%%% SCATTERPLOT INTELLIGENZ
 \begin{figure}[H]
