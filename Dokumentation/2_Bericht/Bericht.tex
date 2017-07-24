@@ -76,7 +76,6 @@ Gibt es beispielsweise Unterschiede im Bewegungsablauf oder in der Reaktionsfäh
 		%Raum
 		Leider war es unseren Dozenten nicht möglich, einen dedizierten Raum für unsere Arbeitsprozesse zu erhalten, weshalb die Treffen je nach Situation im Konferenzraum 4.43 des vierten Stockwerks oder den Räumen 4.12 und 4.16 (ebenfalls vierter Stock) im Cartesium abgehalten worden sind. Um Zugang zu der Etage und diesen Räumen zu gewährleisten, erhielten wir mit einiger Verzögerung jedoch Türchips für das spezielle Schließsystem des Cartesiums.\\
 \\
-\newpage
 		% Tech
 		Auch wurden alle technischen Lösungen zur Arbeitsweise in dieser Zeit implementiert. Als zentrale Sammelstelle für sämtliche Dokumente wurde ein Board beim Service "`Trello'' genutzt. Dort ließen sich bequem und zugänglich für das gesamte Team sämtliche wöchentlichen Sprints sowie der Backlog des Scrum, die Protokolle, der Stundenplan, etc. ablegen. Für schnelle Kommunikation untereinander wurde der Nachrichtendienst "`WhatsApp'' genutzt, da diese Applikation bereits auf sämtlichen Endgeräten der Teilnehmer installiert war. Leider wurde dieser Dienst nicht von den Dozenten genutzt und wir verließen uns auf die Kommunikation per E-Mail, sowie Telefonaten in dringenden Fällen.\\
 		\begin{figure}[H] % here - top - bottom - page, das ! erzwingt die Position falls möglich
@@ -149,18 +148,27 @@ Gibt es beispielsweise Unterschiede im Bewegungsablauf oder in der Reaktionsfäh
 		Die Straße wurde durch eine Map-große Platte mit Straßentextur ersetzt, da es sich so als einfacher erwies. 
 		Von unseren Straßenschildern haben wir nicht alle benutzt, weshalb sie in beiden Listen wiederzufinden sind. 
 		Zuletzt der Kaktus, für den wir letzten Endes keinen passenden Platz gefunden haben.
-
+\\ \\
 		Die Welt war zuerst als recht große Welt geplant, in der man sich frei bewegen kann. Hier sollte man sich viele verschiedene interessante Dinge angucken können und frei durch die Gegend laufen. Hierbei stießen wir jedoch auf das Problem, dass verschiedene Versuchspersonen verschiedene Wege gehen würden und somit unterschiedliche Dinge erleben und manche Szenarien vielleicht sogar komplett auslassen würden. Um dies zu verhindern, kam uns die Idee einer Art Schnitzeljagd. Damit wäre gewährleistet gewesen, dass jeder Versuchsperson ungefähr die gleiche Strecke läuft und das gleiche erlebt wie alle anderen. Jedoch stellte sich auch das als nicht sehr praktikabel heraus. Wir benötigten ein Mapdesign, in dem jede Versuchsperson die gleiche Strecke läuft und das gleiche erlebt.
 
 		So kamen wir darauf, die Versuchspersonen auf einem Gehweg entlanglaufen zu lassen, auf dem es keine betretbaren Abzweigungen gibt und jeder an mehreren Ampeln für eine vordefinierte Zeit warten muss. 
-		
-		Während des gesamten Designprozesses kam es immer wieder zu Schwierigkeiten und Problemen.
 		
 		\subsubsection{Blender}
 			Blender ist ein sehr komplexes und umfangreiches Programm, dementsprechend hatte jeder von uns eine längere Einarbeitungsphase. Bei kleineren Problemen haben wir uns gegenseitig viel helfen können und unser angesammeltes Wissen ausgetauscht. Die größten Probleme entstanden hauptsächlich nach dem Import in die Unreal Engine. 
 
 			Ein Problem war, dass bei einigen Objekten die Textur nicht korrekt dargestellt wurde oder Objekte teilweise durchsichtig waren. Bewegt man die Kamera in der Unreal Engine in ein Objekt hinein, so sollte man von innen nach außen durch die Objektoberflächen hindurch gucken können. Die Teile, die von außen durchsichtig waren, waren von innen jedoch sichtbar. Somit war das Problem, dass die Objekte teilweise "`auf links gekrempelt"' waren. Mit Hilfe des Anzeigens der Normalen in Blender ließen sich diese Flächen aber leicht aufspüren und umdrehen bzw. die Normale(n) invertieren.
+			\todo{Bild von fehlerhaftem Objekt in Unreal mit Kamera im Objekt}
 			
+			Der in Abbildung \ref{img:heron-error} zu sehende Reiher war eines von vielen Objekten, an denen nachgebessert werden musste. Hier waren zwei Punkte vom Hals bis in den Kopf verschoben und es gab seitlich ein kleines Loch, das rechts im Bild umrandet zu sehen ist. Diese kleinen Fehler konnten leicht behoben werden. 
+
+			
+		\begin{figure}[!htbp] % here - top - bottom - page, das ! erzwingt die Position falls möglich
+			\centering
+			\includegraphics[height=\textheight, width=\linewidth, keepaspectratio, angle=0]{../Bilder/Heron_Problem.png} % trim - l u r o
+			\caption{Nachträglich behobene Fehler in Blender}
+			\label{img:heron-error}
+		\end{figure}
+					
 			Größere Probleme hatten wir auch bei den Texturen. Die Bearbeitungs-Ansicht (Texture) in Blender entsprach nicht immer der in Blender gerenderten Ansicht (Rendered) und auch nicht der in der Unreal Engine angezeigten Ansicht. Somit hatten wir für ein Objekt teilweise drei verschiedene Ansichten der Textur. Am meisten Probleme machten die Häuser, wohingegen andere Objekte wie der American Store völlig problemlos funktionierten. Gerade bei den Häusern haben wir die Materials, in denen die Texturen enthalten sind, in der Unreal Engine noch stark nachträglich bearbeitet.
 			Generell wurden nahezu alle Materials in der Unreal Engine nochmal editiert, da Einstellungen wie Specular Lightning oder Spiegelungen nicht von der Engine übernommen wurden.
 			
