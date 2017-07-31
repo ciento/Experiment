@@ -37,71 +37,79 @@
 \clearpage
 	
 \section{Abstract}
-	\todo{Autor: Berna}
+	\todo{Autor: Berna, überarbeitet: Jana}
 
-Jeder Mensch nimmt die Zeit subjektiv unterschiedlich wahr. Dies merkt man doch insbesondere daran, dass die Zeit manchmal wie im Flug vergeht. Andererseits, hat man Momente, da kommen einem fünf Minuten wie eine Ewigkeit vor. Lässt sich dieses, ohnehin subjektiv unterschiedliche Zeitempfinden in der virtuellen Welt durch bestimmte Zeitgeber manipulieren? Kann unser Zeitempfinden also bewusst beeinflusst werden?  Dieser Frage ist eine Gruppe von Studierenden des Studienganges Digitale Medien der Universität Bremen nachgegangen und hat sie anhand eines Experiments beantwortet. Hierzu wurde eine Virtual Reality Welt erstellt, in der 48 Versuchspersonen eine Virtual Reality Brille (Oculus Rift) aufsetzten und sich bewegen mussten. Einige Versuchspersonen wurden durch randomisieren der Welt in verschiedene Bereiche teleportiert. Die Welt wurde in der Unreal Engine erstellt und beinhaltet 3D Objekte, die zuvor in dem Programm Blender erstellt wurden.  Die aufschlussreichen Ergebnisse wurden anhand von Tests, die vor und nach dem Experiment durchgeführt wurden, festgehalten. Bei den Tests ging es darum, das Zeitempfinden des Versuchspersonen genauer zu untersuchen. Dazu sollten die Probanden jeweils 3 Zeitintervalle abschätzen: 30 Sekunden, 40 Sekunden mit Unterhaltung sowie 40 Sekunden ohne Unterhaltung. Des Weiteren wurde ein IQ Test durchgeführt sowie die Temperatur jeder Versuchsperson gemessen, um die Ergebnisse optimal auswerten zu können. Die Ergebnisse wurden anschaulich anhand von Graphen dargestellt sowie interpretiert.
+Das Ziel dieses Projekts ist festzustellen, wie sich menschliche Zeitwahrnehmung in der Virtual Reality durch visuelle und akustische Zeitgeber manipulieren lässt.  Dazu wurden 48 Versuchspersonen in einer virtuellen Umgebung sowohl schnellen als auch langsamen Zeitgebern ausgesetzt, um danach Wahrnehmungen, Einschätzungen und generelle Eindrücke in Fragebögen und Zeiteinschätzungstest abfragen zu können. Die meisten Ergebnisse sind nicht aussagekräftig. Auffälligkeiten sind \textbf{hier Ergebnisse einfügen, sofern welche vorhanden}
 
 \section{Einleitung}
 \todo{Autor: Kim}
 \subsection{Einstieg}
 
 In den letzten Jahrhunderten unverkennbar zu beobachten ist ein enormer Wandel unserer Gesellschaft auf technischer sowie sozialer Ebene.
-Eine Zunahme der Relevanz des Begriffes "`Zeit'' ist durch die öffentlichen Diskussionen über Stress, Burn-out oder dergleichen zu beobachten.
-Immer mehr Menschen der arbeitenden Gesellschaft leiden unter diesen Phänomenen, die auf "`zu wenig Zeit'' zurückzuführen sind. Das zunehmende Interesse der Themen Effizienz, Schnelligkeit und Leistung ist außerdem unübersehbar. Die Gesellschaft versucht immer schneller und immer mehr Arbeiten in einer kürzeren Zeit zu erledigen. Dies ist ganz offensichtlich auch auf die Industrialisierung und auf das zunehmende Tempo der Gesellschaft zurückzuführen. Wo früher noch Tage auf die Antwort eines Briefes gewartet wurde, ist es heute möglich innerhalb weniger Minuten ganze Arbeitsschritte oder Anweisungen via Email zu kommunizieren und anschließend die erwarteten Leistungen zu erbringen.
-Des Weiteren lässt sich beobachten, dass die Arbeits- und Schlafzeiten der arbeitenden Bevölkerung massiv gesenkt wurden.
+Eine Zunahme der Relevanz des Begriffes „Zeit“ ist durch die öffentlichen Diskussionen über Stress, Burn-Out oder dergleichen zu beobachten.
+Immer mehr Menschen der arbeitenden Gesellschaft leiden unter diesen Krankheiten, die auf „zu wenig Zeit“ zurückzuführen sind. Das zunehmende Interesse der Themen Effizienz, Schnelligkeit und Leistung ist außerdem unübersehbar. Die Gesellschaft versucht immer schneller und immer mehr Arbeiten in einer kürzeren Zeit zu erledigen. Dies ist ganz offensichtlich auch auf die Industrialisierung und auf das zunehmende Tempo der Gesellschaft zurückzuführen. \cite{Wallish2003} Wo früher noch Tage auf die Antwort eines Briefes gewartet wurde, ist es heute möglich innerhalb weniger Minuten ganze Arbeitsschritte oder Anweisungen via Email zu kommunizieren und anschließend die erwarteten Leistungen zu erbringen.
+Des Weiteren lässt sich beobachten, dass die Arbeits-und Schlafzeiten der arbeitenden Bevölkerung massiv gesenkt wurden. \cite{DeutscheSozialgeschichte}
 \\
-Daraus ergibt sich nun die Bildung der Freizeit und somit die Notwendigkeit des Zeitmanagements. Jeder versucht seine Tage optimal zu nutzen und einzuteilen, um noch genug Zeit für die Freizeit und Familie zu haben. Des Weiteren schaffen auch die neuen Entwicklungen der Industrialisierung wie Handy, Mikrowelle, Computer und weitere technische Erfindungen mehr Zeit für jeden Einzelnen. Dennoch sind Versuche, die Zeit durch immer effizientere und "`zeitsparendere'' Abläufe zu bändigen nur Scheinerfolge: Die Zeit vergeht trotzdem gleichförmig und schleichend unaufhaltsam und unwiderruflich weiter. Es besteht also ein hohes Interesse in der Erforschung dieses Gebietes, um die Zeit, die jedem Einzelnen zur Verfügung steht, optimal zu nutzen.
+Aufgrund von weniger Schlafzeiten ergibt sich nun die Bildung der Freizeit und somit die Notwendigkeit des Zeitmanagements. Jeder versucht seine Tage optimal zu nutzen und einzuteilen, um noch genug Zeit für die Freizeit und Familie zu haben. Des Weiteren schaffen auch die neuen Entwicklungen der Industrialisierung wie Handy, Mikrowelle, Computer und weitere technische Erfindungen mehr Zeit für jeden Einzelnen. Dennoch sind Versuche, die Zeit durch immer effizientere und „zeitsparendere“ Abläufe zu bändigen nur Scheinerfolge: Die Zeit vergeht trotzdem gleichförmig und schleichend unaufhaltsam und unwiderruflich weiter. \cite{Wallish2003} Es besteht also ein hohes Interesse in der Erforschung dieses Gebietes, um die Zeit, die jedem Einzelnen zur Verfügung steht, optimal zu nutzen.
 
-Dennoch steht uns immer noch derselbe biologische Apparat zur Verfügung. Zeit vergeht immer gleich schnell. Doch die Frage ist: Ist das wirklich so? Vergeht die Zeit immer gleich schnell oder gibt es bestimmte Indikatoren, die uns die Zeit als schneller oder langsamer vergehend vorkommen lassen? Kann man das Zeitempfinden also beeinflussen?
+Dennoch steht uns immer noch derselbe biologische Apparat zur Verfügung. Zeit vergeht also trotzdem gleichförmig und einheitlich. Doch die Frage ist: Ist das wirklich so? Vergeht die Zeit immer gleich schnell oder gibt es bestimmte Indikatoren, die uns die Zeit als schneller oder langsamer vergehend vorkommen lassen? Kann man das Zeitempfinden also beeinflussen?
 
-\subsection{Fragestellung }
-Dies führt uns zu unserer Forschungsfrage: \textbf{Kann man das Zeitempfinden in der virtuellen Welt durch bestimmte Zeitgeber manipulieren?}\\
-Als Zeitgeber definieren wir Alltagsumgebungen, Phänomene der allgemeinen Lebenswelt und physische Kräfte, die uns unter Ausschluss der Uhrzeit, die Zeit vorgeben.
-Wir konzentrierten uns auf die Zeitgeber einer verschnellerten und verlangsamten Gravitation, so wie einem verschnellerten und verlangsamten auditiven Zeitgeber in Form eines Tickens an der Ampel. Wir erschufen eine visuell an Alltagssituationen angelehnte virtuelle Welt, die Szenarien aufzeigt, die jeder Mensch tagtäglich erlebt.
+\subsection{Fragestellung}
+Dies führt zu der Forschungsfrage: \textbf{Kann man das Zeitempfinden in der Virtuellen Welt durch bestimmte Zeitgeber manipulieren?}\\
+Zeitgeber sind Phänomene der allgemeinen Lebenswelt und physische Kräfte, die uns unter Ausschluss der Uhrzeit die Zeit vorgeben.
+In diesem Projekt wurde eine beschleunigte und verlangsamte Gravitation als visueller und das Ticken einer Ampel als auditiver Zeitgeber verwendet. Die verwendete virtuelle Welt ist an Alltagssituationen angelehnt.
+%Nach Ablauf der unsere Versuchsstrecke wurde die Versuchsperson mithilfe eines Fragebogens zu seinen Eindrücken in der virtuellen Welt befragt und durch die „Four Alternative Forced Choice“ - Methode „gezwungen“, die einzelnen erlebten Szenarien nach ihrer Dauer zu sortieren. So erhofften wir uns herauszufinden, ob eine der erlebten Manipulationen die Zeitwahrnehmung der Versuchsperson rafft oder streckt. Mithilfe von Statistik (siehe \ref{Methodik}) ließ sich nun herausfinden, ob eines der Manipulations-Szenarien überproportional auffällig von allen Versuchspersonen als kürzer bzw. länger eingestuft wurde als andere Szenarien und wir somit eine Manipulation der Zeit erzeugen konnten. 
 
-Nach Ablauf der Strecke wurde die Versuchsperson mit Hilfe eines Fragebogens zu seinen Eindrücken in der virtuellen Welt befragt und durch die "`Four Alternative Forced Choice'' - Methode "`gezwungen'', die einzelnen erlebten Szenarien nach ihrer Dauer zu sortieren. So erhofften wir uns herauszufinden, ob eine der erlebten Manipulationen die Zeitwahrnehmung der Versuchsperson rafft oder streckt. Mit Hilfe von Statistik (siehe Kapitel 2 "`Methodik'') ließ sich nun herausfinden, ob eines der Manipulations-Szenarien überproportional auffällig von allen Versuchspersonen als kürzer bzw. länger eingestuft wurde als andere Szenarien und wir somit eine Manipulation der Zeit erzeugen konnten. 
 
-Ein weiterer Fokus unserer Arbeit bezieht sich auf die Zeiteinschätzung vor und nach dem Befinden in der virtuellen Welt:
-\textbf{Unterscheidet sich die Zeiteinschätzung der einzelnen Versuchspersonen vor und nach dem Befinden in der virtuellen Welt?} Verändert also das Erlebnis, sich in einer nicht reellen Welt zu befinden das Zeitempfinden?
-Unter Betrachtung des Spaßfaktors, der auch einen erheblichen Einfluss auf die Zeitwahrnehmung nimmt, wurden alle Versuchspersonen zusätzlich gebeten, die Dauer bestimmter Zeitintervalle jeweils vor und nach dem Befinden in der virtuellen Welt einzuschätzen. Wenn die Versuchspersonen der Meinung waren, das die Zeitintervalle vorbei waren (40 Sekunden, 40 Sekunden mit Unterhaltung, 30 Sekunden) sollten sie es durch ein Zeichen kenntlich machen. Zusätzlich wurde sich bei einem der Einschätzungsintervalle mit den Versuchspersonen unterhalten, um ebenfalls herauszufinden, ob Ablenkung einen Einfluss auf die Zeitwahrnehmung nehmen konnte.
+Ein weiterer Fokus dieser Arbeit liegt auf dem Einfluss der VR auf das menschliche Zeitempfinden und der Frage, ob sich menschliche Zeiteinschätzung nach dem Aufenthalt in der VR verändert.  
+%\textbf{Unterscheidet sich die Zeiteinschätzung der einzelnen Versuchspersonen vor und nach dem Aufenthalt in der Virtuellen Welt?} Verändert also das Erlebnis, sich in einer nicht reellen Welt zu befinden das Zeitempfinden?
+
+
+%Unter Betrachtung des Spaßfaktors, der auch einen erheblichen Einfluss auf die Zeitwahrnehmung nimmt, wurden alle Versuchspersonen zusätzlich gebeten, die Dauer bestimmter Zeitintervalle jeweils vor und nach dem Befinden in der virtuellen Welt einzuschätzen.
+
+
+ %Wenn die Versuchspersonen der Meinung waren, dass die Zeitintervalle vorbei waren (40 Sekunden, 40 Sekunden mit Unterhaltung, 30 Sekunden ) sollten sie es durch ein Zeichen kenntlich machen. Zusätzlich wurde sich bei einem der Einschätzungsintervalle mit den Versuchspersonen unterhalten, um ebenfalls herauszufinden, ob Ablenkung einen Einfluss auf die Zeitwahrnehmung nehmen konnte.
+
 
 \subsection{Hypothesen}
+
 Bezüglich unserer zwei Forschungsschwerpunkte haben wir folgende Hypothesen erstellt:
 \begin{enumerate}
-\item "`Visuelle und auditive Zeitgeber verändern das Zeitempfinden der Versuchsperson in der virtuellen Welt''
+\item ,,Visuelle und auditive Zeitgeber verändern das Zeitempfinden der Versuchsperson in der virtuellen Welt''
+%Wir vermuten, dass die Manipulation der Zeitgeber in einer virtuellen Welt die Zeitwahrnehmung verändert und die Zeit somit schneller oder langsamer vergeht.
 
-Wir vermuten, dass die Manipulation der Zeitgeber in einer virtuellen Welt die Zeitwahrnehmung verändert und die Zeit somit schneller oder langsamer vergeht.
+\item ,,Der Spaßfaktor in der virtuellen Welt hat einen Einfluss auf die Zeitwahrnehmung der Versuchsperson.''
 
-\item "`Der Spaßfaktor in der virtuellen Welt hat einen Einfluss auf die Zeitwahrnehmung der Versuchsperson.“
-
-Der Spaßanteil, den man während einer Aktion erlebt, hat großen Einfluss auf die Zeitwahrnehmung und kann die vergangene Zeit raffen oder im Falle von geringem Spaßfaktor strecken.
+%Der Spaßanteil, den jeder während einer Aktion erlebt, hat großen Einfluss auf die Zeitwahrnehmung und kann die vergangene Zeit raffen oder im Falle von geringem Spaßfaktor strecken.
 
 
-\item "`Das Befinden in der virtuellen Welt verändert das Zeitempfinden nach Rückkehr in die reale Welt“
+\item ,,Das Befinden in der virtuellen Welt verändert das Zeitempfinden nach Rückkehr in die reale Welt''
 
-Wir vermuten, dass das Befinden in der virtuellen Welt die allgemeine Wahrnehmung und somit auch das Zeitempfinden kurzzeitig beeinflussen und verändern kann.
+%Wir vermuten, dass das Befinden in der virtuellen Welt das Zeitempfinden kurzzeitig beeinflussen und verändern kann.
 \end{enumerate}
 
-\subsection{Ziel der Arbeit}
-Das Ziel der Arbeit ist es, die zuvor genannten Hypothesen zu belegen bzw. zu widerlegen und somit, unter anderem, herauszufinden, ob man die Zeitwahrnehmung einzelner Menschen mithilfe der Manipulation von Zeitgebern verändern kann. Mithilfe der virtuellen Welt war dieses Experiment für uns umsetzbar und die Frage bleibt offen, ob man eine solche Zeitmanipulation auch in der realen Welt durchführen könnte. Das Belegen der Hypothesen wäre ein wichtiger Wegweiser für weitere Forschungen in diese Richtung.\\
-Das Ziel dieser Arbeit ist es nicht, dieses Forschungsfeld abzuschließen, sondern versucht nur, es anzustoßen und Freiraum für weitere Experimente zu schaffen.
 
-\subsection{Datenbasis/Forschungsstand}
+Das Ziel der Arbeit ist es, die Hypothesen zu be- oder widerlegen. Das Belegen der Hypothesen wäre ein wichtiger Wegweiser für weitere Forschungen in diese Richtung.\\
+Das Ziel dieser Arbeit ist es dieses Forschungsfeld anzustoßen und Freiraum für weitere Experimente zu schaffen.
+
+\subsection{Datenbasis und Forschungsstand}
 Diese Arbeit bezieht sich auf und orientiert sich an verschiedenen Studien zur Zeitwahrnehmung und Zeitmanipulation in der virtuellen Welt. \\
-Eine davon untersucht, ob die Veränderung der Sonnenzirkulation in der virtuellen Welt einen Einfluss auf die Zeitwahrnehmung nehmen kann. Auch diese Forschungsgruppe benutzte verschiedene Zeitgeber, um eine Manipulation des Zeitempfindens hervorzurufen. Diese Zeitgeber waren: Die Sonne ohne Bewegung, die Sonne im normalen 24 Stunden-Zyklus und eine Sonne, die sich doppelt so schnell bewegte, wie der normale 24 Stunden Zyklus der Sonne. Die Versuchspersonen wurden in drei Gruppen aufgeteilt, die jeweils andere Aufgaben zu erledigen hatten. Eine Gruppe sollte nichts machen und nur auf einem Stuhl sitzen. Eine weitere Gruppe hatte eine sprachliche, kognitive Aufgabe und eine weitere Gruppe sollte eine "`räumliche'' Aufgabe erfüllen.
-Diese Forschungsgruppe kam zu folgendem Ergebnis: Wenn die Versuchspersonen nichts zu tun hatten und nur auf einem Stuhl saßen, überschätzten sie die Zeit und die Sonnenbewegungen hatten einen großen Einfluss auf ihre Zeitwahrnehmung. Wenn sie aber währenddessen mit einer Aufgabe beschäftigt waren, unterschätzten sie die Zeit, die in der VR vergangen war und es gab keine Unterschiede in der Zeitwahrnehmung zwischen den verschiedenen Sonnenzyklen.
-
-Eine weitere Studie, die uns wichtige, zu beachtende Faktoren zur Zeitmessung vorgab, ist Pascal Wallisch' wissenschaftlicher Bericht "`Zeiterleben in der Tempogesellschaft''. \\
-Wallisch beschreibt, \glqq dass das menschliche Zeitempfinden, insbesondere die Empfindung von Dauer von allen möglichen Faktoren abhängig ist\grqq. (S. 27) \\
+Die Studie ,,Could Virtual Reality Help Manipulate Time Perception?'' untersucht, ob die Veränderung der Sonnenzirkulation in der VR einen Einfluss auf die Zeitwahrnehmung nehmen kann. Auch diese Forschungsgruppe benutzte verschiedene Zeitgeber, um eine Manipulation des Zeitempfindens hervorzurufen: die Sonne ohne Bewegung, die Sonne im normalen 24-Stunden-Zyklus und 
+ein Tages- bzw. Sonnenzyklus doppelter Geschwindigkeit (gemessen an der Realität).
+ Die Versuchspersonen wurden in drei Gruppen aufgeteilt. Die erste Gruppe sollte passiv auf einem Stuhl sitzen, die zweite sollte eine sprachliche, kognitive Aufgabe lösen und die dritte eine ,,räumliche''.\\
+Diese Forschungsgruppe kam zu folgendem Ergebnis: Wenn die Versuchspersonen passiv blieben, überschätzten sie die Zeit und die Sonnenbewegungen hatten einen großen Einfluss auf ihre Zeitwahrnehmung. Wenn sie aber währenddessen mit einer Aufgabe beschäftigt waren, unterschätzten sie die Zeit, die in der VR vergangen war und die Sonnenzyklen hatten keinen Einfluss. \cite{Device&Systems} Daraus wird deutlich, dass kognitive und räumliche Aufgaben die Versuchspersonen zu sehr ablenken. Daher sind in diesem Projekt keine kognitiven oder räumlichen Aufgaben integriert und verwendete Zeitgeber können ihre Wirkung entfalten.\\
+Pascal Wallisch' wissenschaftlicher Bericht ,,Zeiterleben in der Tempogesellschaft'' enthält weitere Einflussfaktoren, welche zu beachten sind.  \\
+Wallisch beschreibt, \glqq dass das menschliche Zeitempfinden, insbesondere die Empfindung von Dauer von allen möglichen Faktoren abhängig ist\grqq . \cite{Wallish2003} S. 27 \\
 Für unser Experiment ist es von bedeutender Wichtigkeit, dass keiner der Versuchspersonen in seiner Zeitempfindung durch Faktoren beeinflusst wird, um sicherzustellen, dass korrekte Ergebnisse resultieren.
-Für uns galt es also mit Hilfe eines Fragebogens, die von Wallisch’s beschriebenen Einflüsse und Faktoren vor dem Experiment für jede Versuchsperson abzufragen, auszuschließen bzw. in unserer Ergebnisse einzubeziehen und separat zu betrachten, falls die einzelnen Messwerte oder Angaben außerhalb des Rahmens liegen und zu veränderten Zeitschätzungen führen könnten. Nur so können wir abweichende Ergebnisse begründen und auf veränderte Einflussfaktoren beziehen.\\
-Zu diesen Einflüssen gehören unter anderem die Intelligenz, das Alter, Geschlecht, Drogen-und Medikamenteneinflüsse, Müdigkeit (nur bedingt, da Müdigkeit nur die Ereignis-Fusions Schwelle senkt und nicht direkt die Zeitwahrnehmung verändert (siehe S. 28 bzw. Kapitel 3.3)),
-\todo{Referenz auf Kapitel, statt Seite und Kapitelnummer hard zu coden!}
-Körpertemperatur, Gehirnschäden und psychische Erkrankungen.
-\\Außerdem betrachteten wir den Artikel "`Warum Jahre rasen und Sekunden schleichen'' , dieser veranschaulicht, dass auch das Spaßempfinden einen Einfluss auf die Zeitwahrnehmung nimmt. So integrierten wir den Spaßfaktor als weiteres zu beachtendes Kriterium in unseren Fragebogen A.
+Mithilfe eines Fragebogens werden Faktoren und Einflüsse ausgeschlossen bzw. in die Auswertungsergebnisse miteinbezogen und gesondert betrachtet, die von Wallisch’s beschrieben wurden. 
+So können abweichende Ergebnisse begründet und auf veränderte Einflussfaktoren Rücksicht genommen werden.\\
+Zu diesen Einflüssen gehören unter anderem Intelligenz, Alter, Geschlecht, Drogen-und Medikamenteneinflüsse, Müdigkeit (bedingt, da Müdigkeit nur die Ereignis-Fusions Schwelle senkt und nicht direkt die Zeitwahrnehmung verändert ( \ref {Kapitel 3.3})), Körpertemperatur, Gehirnschäden und psychische Erkrankungen.\\
+Weiterhin wurden die Ergebnisse des Artikels ,,Warum Jahre rasen und Sekunden schleichen'' berücksichtigt. Dieser veranschaulicht, dass auch das Spaßempfinden einen Einfluss auf die Zeitwahrnehmung nimmt.\cite{Welt24}
+
 
 \subsection{Aufbau der Arbeit}
-Diese vorliegende Forschungsarbeit stellt einen Versuch dar, sich der Möglichkeit der Zeitmanipulation zu nähern, indem zunächst - nach einem kleinen historischen Überblick über die Entwicklung von Zeit - das Ziel der Arbeit, sowie die Vorgehensweise des Experiments erläutert wird. Des Weiteren wird auf den Forschungsstand in diesem Gebiet eingegangen und Foschungshypothesen werden erstellt. Aus diesen wird eine sinnvolle Methodik abgeleitet, vorgeschlagen und durchgeführt, insofern dies mit den gegebenen Mitteln machbar erschien. Deren Resultate werden in einem abschließenden Teil im Sinne der Fragestellung und der Hypothesen aufgeführt, interpretiert, diskutiert und zukunftsorientiert betrachtet. Zum Schluss rundet ein Fazit die Forschungsarbeit ab.
+Dieses Paper stellt einen Versuch dar, sich der Möglichkeit der Zeitmanipulation zu nähern, indem zunächst - nach einem kleinen historischen Überblick über die Entwicklung von Zeit - das Ziel der Arbeit, sowie die Vorgehensweise des Experiments erläutert wird. Des Weiteren wird auf den Forschungsstand in diesem Gebiet der Zeitforschung eingegangen und Foschungshypothesen werden aufgeführt. Aus diesen wird eine sinnvolle Methodik abgeleitet, vorgeschlagen und durchgeführt, insofern dies mit den gegebenen Mitteln machbar erschien. Deren Resultate werden in einem abschließenden Teil im Sinne der Fragestellung und der Hypothesen aufgeführt, interpretiert, diskutiert und zukunftsorientiert betrachtet.
+
 
 \section{Methode}
 	\todo{Autor: Nizan \& Alina}
@@ -165,6 +173,7 @@ Das Experiment fand in einer Laborsituation unter kontrollierten Bedingungen sta
 Ergebnisse des Experiments sind unabhängig vom Versuchsleiter zustande gekommen. Dank
 eines strengen Ablaufplans und Briefings waren alle Projektmitglieder im Stande jeden Schritt im Experiment betreuen zu können. Die interne Validität der Messungen waren daher sehr genau und
 objektiv. Der Zeitraum der Experimentdurchführung lag bei sechs Tagen, in denen jeweils im
+
 Durchschnitt 8.3 Versuchspersonen an der Untersuchung teilnahmen. Jeder Durchlauf hat je
 nach Proband zwischen 25 Minuten bis 40 Minuten gedauert.
 
@@ -284,12 +293,10 @@ Der Unterschied zwischen den auditiven und visuellen Manipulationen ist vor alle
 18 Sekunden ist eine angemessene Dauer für unser Experiment, da es die Probanden einerseits ungeduldig machtm wann und wie es nun weiter geht und andererseits die Möglichkeit bietet, sich drauf einzustellen jetzt erst einmal warten zu müssen und somit den Effekt erzielt, dass sich die Testpersonen in der Versuchswelt umsehen und die oben genannten Szenarien (\textbf{a}, \textbf{b}, \textbf{c}, \textbf{d}) entdecken, die die Empfindung der Wartezeit beeinflussen sollen.
 
 \section{Ergebnisse}
-Wir hatten 48 Probanden, davon waren 13 Frauen und 35 Männer mit einer Altersspanne von siebzehn bis achtzig Jahren. Außer vier Testpersonen waren alle deutsche Muttersprachler und eine Mehrheit von 32 Personen hat unserem IQ-Test zufolge eine durchschnittliche Intelligenz.
-
-\subsection{Scatterplots}
-Folgende Streudiagramme zeigen die ersten Daten, die von den Probanden erhoben wurden. Erste Zeiteinschätzungen werden in Relation zu Alter, Intelligenz, Körpertemperatur und Müdigkeit der Probanden gestellt.
-Die Streudiagramme sind gruppiert nach den Einschätzungen, die Probanden entweder \textit{ohne} oder \textit{mit} Gespräch absolviert haben: die ersten acht Diagramm zeigen je die 40 bzw. 30 Sekunden-Einschätzungen in Relation zu oben genannten Parametern. Die darauffolgenden acht Diagramme zeigen 40 Sekunden Zeiteinschätzung während der Proband sich unterhält.\\
-Zu unterscheiden sind hier die Helligkeiten der Kreise, welche das Geschlecht des Probanden indizieren. Rote Kreise stellen hier die weiblichen Probanden dar und blaue Kreise die männlichen.
+\subsection{Streudiagramme}
+Erste Zeiteinschätzungen werden in Relation zu Alter, Intelligenz, Körpertemperatur und Müdigkeit der Versuchspersonen gestellt.
+Die Streudiagramme sind gruppiert nach den Einschätzungen, die Versuchspersonen entweder \textit{ohne Gespräch} (Diagramme \textbf{X} bis \textbf{X}) oder \textit{mit Gespräch} (Diagramme \textbf{X} bis \textbf{X}) absolviert haben.
+Rote Kreise stellen die weiblichen Versuchspersonen dar, blaue Kreise die männlichen.
 %%%%%%%%%%%%%%%%%%%%%%%%% SCATTERPLOT ALTER
 \begin{figure}[H]
 \begin{minipage}[t]{0.49\linewidth}
@@ -442,11 +449,6 @@ x y label
 \end{minipage}
 \end{figure}
 
-Die obigen Streudiagramme zeigen die ersten Zeiteinschätzungen ohne Gespräch in Relation zum Alter der Probanden. Der Großteil der Probanden ist unter 30 Jahre alt, dementsprechend sind für diese Alterskategorie die meisten Daten verfügbar.\\
-In der Zeitspanne $+/-$ 10 Sekunden der angestrebten Zeit befinden sich die meisten der Probanden mit ihren Einschätzungen. Ebenfalls gibt es sowohl bei der 40- als auch bei der 30 Sekundeneinschätzung in nahezu jeder Alterskategorie Ausreißer, die sich stärker verschätzt haben. Aus diesen Diagrammen kann man schließen, dass es keine altersspezifischen Vor- oder Nachteile in einer Zeiteinschätzung gibt.
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HISTO ALTER %%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \begin{filecontents}{data.csv}
@@ -592,6 +594,10 @@ dist
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HISTO ALTER%%%%%%
+
+In der Zeitspanne $+/-$ 10 Sekunden der angestrebten Zeit befinden sich die meisten der Versuchspersonen mit ihren Einschätzungen, allerdings gibt es sowohl bei der 40- als auch bei der 30-Sekundenschätzung in nahezu jeder Alterskategorie Ausreißer. Aus diesen Diagrammen kann man schließen, dass es keine altersspezifischen Vor- oder Nachteile in einer Zeiteinschätzung gibt.
+\todo{prozentsatz}
+
 
 
 %%%%%%%%%%%%%% SCATTERPLOT INTELLIGENZ
@@ -742,8 +748,6 @@ x y label
 \end{minipage}
 \end{figure}
 
-Der benutzte Intelligenztest hat eine Höchstpunktzahl von 37 Punkten und sieht folgende Verteilung vor: 0-5 Punkte (sehr niedrige Intelligenz), 6-20 Punkte (niedrige Intelligenz), 21-30 Punkte (durchschnittliche Intelligenz), 31-33 Punkte (hohe Intelligenz), 34-37 Punkte (sehr hohe Intelligenz).
-Sortiert man die Daten nach Intelligenz, fällt bei der normalen Zeiteinschätzung auf, dass die gemessenen Werte auch hier relativ gleichmäßig verteilt sind. Es gibt zwei besonders starke Ausreißer in der durchschnittlichen und höheren Intelligenz, aber ähnlich wie in der Altersverteilung befinden sich die meisten Werte $+/-$10 Sekunden vom erwünschten Wert.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HISTO intelligenz %%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -888,6 +892,16 @@ dist
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HISTO Intelligenz %%%%%%
+
+
+
+Der benutzte Intelligenztest hat eine Höchstpunktzahl von 37 Punkten und sieht folgende Verteilung vor: 0-5 Punkte (sehr niedrige Intelligenz), 6-20 Punkte (niedrige Intelligenz), 21-30 Punkte (durchschnittliche Intelligenz), 31-33 Punkte (hohe Intelligenz), 34-37 Punkte (sehr hohe Intelligenz).
+Die gemessenen Werte sind relativ gleichmäßig verteilt. Es gibt zwei besonders starke Ausreißer in der durchschnittlichen und höheren Intelligenz, aber ähnlich wie in der Altersverteilung befinden sich die meisten Werte $+/-$10 Sekunden vom zu schätzenden Wert.
+
+
+
+
+
 %%%%%%%%%%%%%% SCATTERPLOTS NACH TEMPERATUR
 \begin{figure}[H]
 \begin{minipage}[t]{0.49\linewidth}
@@ -1037,7 +1051,6 @@ x y label
 \end{minipage}
 \end{figure}
 
-Die meisten der Probanden hatten eine durchschnittliche Körpertemperatur, lediglich einer lag mit 39,9°C über dem Durchschnitt. Auffällig ist, dass es die meisten Abweichungen im direkten Umfeld von 37°C gab, bei niedrigerer Temperatur nähern sich die Zeiteinschätzungen dem gewünschten Ergebnis etwas mehr an. Auch der Proband mit der sehr hohen Temperatur lag in einer Schätzung recht nah am gewünschten Ergebnis und in der anderen Schätzung immernoch in der normalen Abweichung.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HISTO TEMP %%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \begin{filecontents}{data.csv}
@@ -1182,6 +1195,13 @@ dist
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HISTO TEMP %%%%%%
+
+Lediglich eine Versuchsperson lag mit 39,9° C über der Durchschnittstemperatur(\textbf{durchschnittstemperatur x grad c}). Auffällig ist, dass es die meisten Abweichungen im direkten Umfeld von 37°C gab, bei niedrigerer Temperatur nähern sich die Zeiteinschätzungen dem Ergebnis etwas mehr an. Auch die Versuchsperson mit der sehr hohen Temperatur liegt in einer Schätzung nah am erwarteten Ergebnis.
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%% 
 \begin{figure}[H]
 \begin{minipage}[t]{0.49\linewidth}
@@ -1331,11 +1351,7 @@ x y label
 \end{minipage}
 \end{figure}
 
-Die Müdigkeitsskala erstreckt sich von 1 (nicht müde) bis 10 (sehr müde).\\
-Die meisten Versuchspersonen waren wenig bis durchschnittlich müde, haben aber nicht besser geschätzt als jene, die angaben, überdurchschnittlich müde zu sein. Allerdings muss man hier beachten, dass wir nur wenige Versuchspersonen, die sehr müde waren und entsprechend weniger aussagekräftige Daten.
-Auch hier sind die gemessenen Werte wieder recht weit gestreut.
-\linebreak
-\linebreak
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HISTO MÜDE %%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \begin{filecontents}{data.csv}
@@ -1484,7 +1500,8 @@ dist
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+Die Müdigkeitsskala erstreckt sich von 1 (nicht müde) bis 10 (sehr müde).\\
+Die meisten Versuchspersonen gaben einen Wert $<=$ 5 an, haben aber nicht besser geschätzt als jene, die angaben, überdurchschnittlich müde zu sein. Auffällig ist hier, dass müdere Versuchspersonen in beiden Schätzungen insgesamt näher am erwarteten Wert liegen.
 
 %%%% SCATTERPLOTS MIT GESRPÄCH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1619,7 +1636,7 @@ dist
 \end{minipage}
 \end{figure}
 
-Es ist auffällig, dass viele der jüngeren Versuchspersonen die Zeit im Gespräch unterschätzten. Nichtsdestoweniger lagen aber auch viele der Versuchspersonen immernoch recht nah am gefragten Wert und das aus allen Altersklassen.
+Es ist auffällig, dass viele der jüngeren Versuchspersonen die Zeit im Gespräch unterschätzten. Nichtsdestoweniger lagen aber auch viele der Versuchspersonen aus allen Altersklassen immernoch recht nah am erwarteten Wert.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \begin{minipage}[t]{0.49\linewidth}
@@ -1763,7 +1780,7 @@ dist
 \end{minipage}
 \end{figure}
 
-Viele der durchschnittlich intelligenten Versuchspersonen schätzen die tatsächlich verstrichene Zeit als kürzer ein, wohingegen die Teilnehmer mit niedrigerer und höherer Intelligenz näher am Idealwert liegen. Hierbei sei wieder angemerkt, dass die meisten Versuchspersonen im Mittelwert liegen und nur eine Minderheit die Extreme auf beiden Seiten darstellen.
+Viele der durchschnittlich intelligenten Versuchspersonen schätzen die tatsächlich verstrichene Zeit als kürzer ein, wohingegen jene mit niedrigerer und höherer Intelligenz näher am Idealwert liegen. Hierbei sei wieder angemerkt, dass die meisten Versuchspersonen im Mittelwert \textbf{genau angeben} liegen und nur eine Minderheit die Extreme auf beiden Seiten darstellen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -1909,7 +1926,7 @@ dist
 \label{HistZeit40sekGesprTemp}
 \end{minipage}
 \end{figure}
-Ähnlich wie bei den Einschätzungen ohne Gespräch befinden sich hier die stärksten Abweichungen bei den Versuchspersonen mit einer Temperatur knapp um 37°C. Bei Versuchspersonen mit niedrigerer Temperatur gibt es ebenfalls, wenn auch nicht so starke, Abweichungen. Die Person mit der hohen Körpertemperatur liegt nah am Idealwert.
+Ähnlich wie bei den Einschätzungen ohne Gespräch befinden sich hier die stärksten Abweichungen bei den Versuchspersonen mit einer Temperatur knapp um 37°C. Bei Versuchspersonen mit niedrigerer Temperatur gibt es ebenfalls, wenn auch nicht so starke, Abweichungen. 
 
 
 
@@ -1926,9 +1943,9 @@ scatter/classes={%
     axis line style={->},
     x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
     y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
-    xlabel={Intelligenz},
+    xlabel={Müdigkeit},
     ylabel={Zeiteinschätzung (in Sek.)}]
-  \addplot[domain=18:37]{40};
+  \addplot[domain=0:10]{40};
     \addplot[scatter,only marks,%
     scatter src=explicit symbolic]%
 table[meta=label] {
@@ -2091,7 +2108,9 @@ Auffällig ist hier, dass die stärksten Abweichungen gerade bei den Personen li
 \label{ZeitGespr}
 \end{figure}
 
-Von links nach rechts sind dargestellt: die Einschätzungen von 40 Sekunden, dann 30 Sekunden und 40 Sekunden mit Gespräch als mögliche Beeinflussung. Auffällig ist, dass die dreißig Sekunden ziemlich genau getroffen wurden. Die Differenz zum Zielwert beträgt nicht einmal eine ganze Sekunde. Die vierzig Sekunden ohne das Gespräch, wurden durchschnittlich von den Versuchspersonen mit 36,41 um ca. vier Sekunden kürzer wahrgenommen. Die Variante mit dem Gespräch weist mit ca. 5 Sekunden Überschätzung der Zeit wie erwartet die größte Abweichung zum Zielwert auf, auch wenn sich dieser Differenzwert nicht sonderlich stark von dem des ersten Balken unterscheidet. Im Folgenden werden diese Werte separiert und als Versionen der Schätzungen vor und nach der VR dargelegt, um gegebenenfalls Einflüsse der VR ausfindig zu machen.
+
+
+%Von links nach rechts sind dargestellt: die Einschätzungen von 40 Sekunden, dann 30 Sekunden und 40 Sekunden mit Gespräch als mögliche Beeinflussung. Auffällig ist, dass die dreißig Sekunden ziemlich genau getroffen wurden. Die Differenz zum Zielwert beträgt nicht einmal eine ganze Sekunde. Die vierzig Sekunden ohne das Gespräch, wurden durchschnittlich von den Versuchspersonen mit 36,41 um ca. vier Sekunden kürzer wahrgenommen. Die Variante mit dem Gespräch weist mit ca. 5 Sekunden Überschätzung der Zeit wie erwartet die größte Abweichung zum Zielwert auf, auch wenn sich dieser Differenzwert nicht sonderlich stark von dem des ersten Balken unterscheidet. Im Folgenden werden diese Werte separiert und als Versionen der Schätzungen vor und nach der VR dargelegt, um gegebenenfalls Einflüsse der VR ausfindig zu machen.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% vor der VR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -2121,8 +2140,8 @@ Von links nach rechts sind dargestellt: die Einschätzungen von 40 Sekunden, dan
 \label{ZeitVorVR}
 \end{figure}
 
-Hier sind die Zeit-Einschätzungen vor der VR dargestellt.
-Die Schätzung der 30 Sekunden wird mit 30,72 Sekunden am präzisesten getroffen und die Zeitspanne der 40 Sekunden ohne Gespräch wird um ca. 3 Sekunden unterschätzt. Wieder schneidet die Schätzung mit dem Gespräch am schlechtesten ab. Die 40 Sekunden wurden um ca. 5 Sekunden länger geschätzt. 
+%Hier sind die Zeit-Einschätzungen vor der VR dargestellt.
+%Die Schätzung der 30 Sekunden wird mit 30,72 Sekunden am präzisesten getroffen und die Zeitspanne der 40 Sekunden ohne Gespräch wird um ca. 3 Sekunden unterschätzt. Wieder schneidet die Schätzung mit dem Gespräch am schlechtesten ab. Die 40 Sekunden wurden um ca. 5 Sekunden länger geschätzt. 
  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% nach der VR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2154,15 +2173,16 @@ Die Schätzung der 30 Sekunden wird mit 30,72 Sekunden am präzisesten getroffen
 \label{ZeitNachVR}
 \end{figure}
 
-Hier abgebildet sind die jeweiligen Zeit-Einschätzungen nach der VR. 
-Die 40 Sekunden ohne das Gespräch werden mit durchschnittlichen 40,04 Sekunden am genauesten getroffen. Darauffolgend die 31,06 Sekunden, der 30 Sekunden Abschätzung und am schlechtesten schneidet wieder die 40 Sekunden Schätzung mit dem Gespräch ab. Hier wird die Zeit um 8,5 Sekunden überschätzt.
+%Hier abgebildet sind die jeweiligen Zeit-Einschätzungen nach der VR. 
+%Die 40 Sekunden ohne das Gespräch werden mit durchschnittlichen 40,04 Sekunden am genauesten getroffen. Darauffolgend die 31,06 Sekunden, der 30 Sekunden Abschätzung und am schlechtesten schneidet wieder die 40 Sekunden Schätzung mit dem Gespräch ab. Hier wird die Zeit um 8,5 Sekunden überschätzt.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Einschätzung der vier Szenarien}
-\newpage
-Die tatsächliche Dauer aller Szenarien betrug achtzehn Sekunden. Die sich hier unterhalb befindliche Tabelle veranschaulicht je Szenario knapp den darin dargestellten Inhalt, die Art des Zeitgebers und unsere Erwartungen, ob die Zeitwahrnehmung dadurch entsprechend gedehnt oder verkürzt wird.
+
+Die tatsächliche Dauer jedes Szenarios betrug achtzehn Sekunden.  \textbf{Tabelle 1} veranschaulicht je Szenario den dargestellten Inhalt, die Art des Zeitgebers und die Erwartung, ob die Zeitwahrnehmung dadurch entsprechend gedehnt oder verkürzt wird.
 \begin{table}[H]
+
 \centering
 \begin{tabular}{llll}
 	\hline
@@ -2175,10 +2195,13 @@ Die tatsächliche Dauer aller Szenarien betrug achtzehn Sekunden. Die sich hier 
 	\hline
 \end{tabular}
 \caption{a=akustisch, v=visuell}
+
 \label{AkVis}
+
+
 \end{table}
 
-Im Folgenden sind unsere tatsächlichen Ergebnisse des Experiments dargestellt: 
+
 
 \begin{figure}[H]
 \begin{tikzpicture} 
