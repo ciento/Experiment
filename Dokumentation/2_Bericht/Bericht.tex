@@ -15,6 +15,9 @@
 \usepackage{float}
 
 
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
 \begin{document}
 
 \maketitle
@@ -25,7 +28,7 @@
 \clearpage
 
 \section{Einleitung} % Autor: Kim
-	Das Thema Zeitempfinden spielt in unserer modernisierten Gesellschaft eine immer wichtiger werdende Rolle. Zwischen Arbeit, Freizeit und Familie ist es wichtig, seine Zeit ganz genau zu planen und jede freie Minute auszunutzen. Aufgrund des Wissens, dass die arbeitende Bevölkerung sich an bestimmte Zeitregeln hält und versucht den Alltag optimal zu managen und unter Betrachtung der zunehmenden Relevanz von Zeitmanagement und dem Zeitsparen, richteten wir unsere Forschung auf das Thema der Zeitmanipulation. Zunächst gilt zu definieren, was Zeit überhaupt ist: "`Zeit ist das Nacheinander von Zuständen und Ereignissen, die erlebbar und messbar sind. Sie ist eine physikalische Größe für die Vergänglichkeit und Veränderungen“. 
+	Das Thema Zeitempfinden spielt in unserer modernisierten Gesellschaft eine immer wichtiger werdende Rolle, da es zwischen Arbeit, Freizeit und Familie wichtig ist, seine Zeit ganz genau zu planen und jede freie Minute auszunutzen. Aufgrund des Wissens, dass die arbeitende Bevölkerung sich an bestimmte Zeitregeln hält und versucht den Alltag optimal zu managen und unter Betrachtung der zunehmenden Relevanz von Zeitmanagement und dem Zeitsparen, richteten wir unsere Forschung auf das Thema der Zeitmanipulation. Zunächst gilt zu definieren, was Zeit überhaupt ist: "`Zeit ist das Nacheinander von Zuständen und Ereignissen, die erlebbar und messbar sind. Sie ist eine physikalische Größe für die Vergänglichkeit und Veränderungen“. 
 
 	In unserer Lebenswelt gibt es bestimmte Zeitgeber, von der Uhrzeit selber einmal abgesehen, die uns Hinweise geben, wieviel Zeit vergangen ist. Für uns galt es nun herauszufinden, ob es möglich ist, anhand gängiger Zeitgeber, die jeden einzelnen Menschen seit der Geburt täglich begleiten, eine Manipulation des Zeitempfindens auszulösen. Anhand unserer Forschungsfrage: \textbf{"`Kann man das Zeitempfinden in der Virtuellen Welt durch bestimmte Zeitgeber manipulieren?''} erschufen wir eine Virtuelle Welt, durch die unsere späteren Versuchspersonen mit Hilfe einer VR-Brille manipulierte Zeitgeber erlebten. 
 
@@ -220,32 +223,49 @@ Gibt es beispielsweise Unterschiede im Bewegungsablauf oder in der Reaktionsfäh
 \clearpage
 \section{Versuchsaufbau und Durchführung} % Autor: Nizan	
 	\subsection{Versuchspersonen}
-Für die Durchführung des Experiments haben wir Versuchspersonen benötigt, die für die Untersuchung und Überprüfung unserer Forschungsfrage und zum Belegen oder Widerlegen unserer Hypothesen dienen. 
-Die Versuchspersonen waren bezüglich der experimentellen Hypothese unwissend und unterschrieben vor der Teilnahme eine schriftliche Einverständniserklärung mit allen Risiken und datenschutz-rechtlichen Informationen. Alle Versuchspersonen haben freiwillig am Experiment teilgenommen und wurden nicht entschädigt. 
+Für die Durchführung des Experiments warben wir Versuchspersonen an, die für die Überprüfung unserer Forschungsfrage und Hypothesen dienten. 
+Die Versuchspersonen waren bezüglich der experimentellen Hypothese unwissend und unterschrieben vor der Teilnahme eine Einverständniserklärung, die sie auf mögliche Risiken und datenschutzrechtliche Informationen aufmerksam machte. Alle Versuchspersonen haben freiwillig am Experiment teilgenommen und wurden nicht entschädigt. 
 
 \subsubsection{Demografische Angaben}
-Bei der Suche nach Versuchspersonen haben wir uns auf Personen im Alter von mindestens 18 und maximal 80 Jahren beschränkt, da die Zeitwahrnehmung von Jugendlichen langsamer ist als die von Erwachsenen. Der Grund: Je mehr Neues und Emotionales man erlebt, desto mehr prägt es sich im Gedächtnis ein; und desto länger wirkt ein Zeitraum im Nachhinein. Das ergab die Studie "`Age effects in perception of time'' von Marc Wittmann und Sandra Lehnhoff aus dem Jahr 2005 \cite{AgeEffects}. Aufgrund dessen wurden ausschließlich erwachsene Versuchspersonen gesucht, die über dem Zeitraum der "`erste Male erleben'' hinaus sind. Das Durchschnittsalter aller Versuchspersonen liegt bei 31 Jahren. Ob diese bereits vorher in einer VR waren, haben wir nicht berücksichtigt.
+Es wurden Versuchspersonen zwischen 18 und 80 Jahren gesucht, wobei eine 17-jährige Person mit der Einverständnis eines \textbf{erwachsenen?} ebenfalls am Experiment teilnahm. 
+da die Zeitwahrnehmung von Jugendlichen langsamer ist als die von Erwachsenen. Der Grund: Je mehr Neues und Emotionales man erlebt, desto mehr prägt es sich im Gedächtnis ein; und desto länger wirkt ein Zeitraum im Nachhinein. Das ergab die Studie "`Age effects in perception of time'' von Marc Wittmann und Sandra Lehnhoff aus dem Jahr 2005 \cite{AgeEffects}. Aufgrund dessen wurden ausschließlich erwachsene Versuchspersonen gesucht, die über dem Zeitraum der "`erste Male erleben'' hinaus sind. Das Durchschnittsalter aller Versuchspersonen liegt bei 31 Jahren. Vorerfahrunge im Bezug auf VR wurden bei der Suche nicht berücksichtigt.
 
-Insgesamt wurden 48 gültige Ergebnisse also auch achtundvierzig teilnehmende Personen für die Auswertung benötigt, da die vier Szenarien in vierundzwanzig verschiedenen Reihenfolgen dargestellt werden konnten. Diese sollten jeweils von zwei Personen durchgeführt werden. Deshalb haben wir 50 Versuchspersonen eingeladen, um am Experiment teilzunehmen. Falls es während des Expriments zu Ausfällen kommen sollte oder Ergebnisse unbrauchbar wären, hatten wir zwei Versuchspersonen zusätzlich. \\
+Insgesamt wurden 48 gültige Ergebnisse für die Auswertung benötigt, 
+
+da die vier Szenarien in vierundzwanzig verschiedenen Reihenfolgen dargestellt werden konnten. Diese sollten jeweils von zwei Personen durchgeführt werden. Deshalb haben wir 50 Versuchspersonen eingeladen, um am Experiment teilzunehmen. Falls es während des Expriments zu Ausfällen kommen sollte oder Ergebnisse unbrauchbar wären, hatten wir zwei Versuchspersonen zusätzlich. \\
 
 Die Verteilung der Geschlechter war nicht ausgeglichen, da sich überwiegend männliche Versuchspersonen beworben haben. Das gilt auch für den Bildungsstand und die Ethnie der Versuchspersonen, die wir nicht zusätzlich überprüft haben. Die Sprachkenntnisse waren uns dennoch wichtig, aufgrund des Mehrfach-Wortschatz Intelligenztests der auf guten Deutschkenntnissen basiert und wir die selben Voraussetzungen bei allen Versuchspersonen gewährleisten wollten. Weitere Voraussetzungen waren eine gute oder auf normal korrigierte Sehkraft durch eine Brille oder Kontaktlinsen und normales Farbsehen, die wir nach Eingang der Bewerbung erfragt haben. Außerdem haben wir Versuchspersonen mit Gehirnschäden oder psychischen Erkrankungen vom Experiment ausgeschlossen, um mögliche Störvariablen zu verhindern. 
 
 \subsubsection{Versuchspersonensuche}
-Um die Versuchspersonensuche hat sich das Organisationsteam gekümmert. Es wurde eine Projekt Email-Adresse erstellt, für die Kommunikation und Interaktion zwischen Versuchsleitern und Versuchspersonen. Die Suche verlief auf drei unterschiedlichen Wegen: (1) Bekannte anwerben, (2) Flyer verteilen, (3) Anzeigen auf Sozialen Netzwerken und öffentlichen Portalen schalten. In vorher eingeteilten sogenannten "`Terminslots'', im Zeitraum von sechs Tagen, wurden die Versuchspersonen eigetragen. Die effektivste Methode Versuchspersonen zu finden waren Anzeigen auf der Website "`Ebay-Kleinanzeigen'' zu schalten. Diese wurde mehrmals in der Woche aktualisiert, sodass eine Großzahl von Menschen die Anzeige lesen konnte, um sich dann bei uns per Email zu melden.
+Um die Versuchspersonensuche hat sich das Organisationsteam gekümmert.
+ Es wurde eine E-mail-Adresse erstellt, für die Kommunikation und Interaktion zwischen Experimentteam und Versuchspersonen. 
+ 
+Die Suche verlief auf drei unterschiedlichen Wegen: (1) Bekannte anwerben, (2) Flyer verteilen, (3) Anzeigen auf Sozialen Netzwerken und öffentlichen Portalen schalten. In vorher eingeteilten sogenannten "`Terminslots'', im Zeitraum von sechs Tagen, wurden die Versuchspersonen eigetragen. 
 
-Die zweit erfolgreichste Methode Versuchspersonen zu finden war es, im Bekanntenkreis passende Versuchspersonen anzuwerben. Dabei haben wir uns zuvor die Grenze gesetzt, keine nahen Verwandten, wie Eltern, Geschwister oder Partner zu nehmen, da sie eventuell Vorwissen haben, die das Ergebniss verfälschen könnten und sich im Gegensatz zu fremden Personen besonders viel Mühe geben würden, aufgrund der emotionalen Bindung zu einem der Experimentatoren. 
+Die effektivste Methode waren Anzeigen auf der Website "`Ebay-Kleinanzeigen'' zu veröffentlichen. Diese wurden mehrmals in der Woche aktualisiert, sodass eine Großzahl von Menschen die Anzeige sehen konnte.
+Versuchspersonen im Bekanntenkreis anzuwerben war die zweiterfolgreichste Methode. Es wurde sich darauf geeinigt, keine Personen des engeren Familien- oder Bekanntenkreis teilnehmen zu lassen, da diese möglicherweise über Vorwissen der Forschungshypothese verfügen könnten oder sich aufgrund der emotionalen Bindung zu einem der Versuchsleiter ,,viel Mühe'' geben.
 
-Die Methode der Flyer-Verteilung in der Universität Bremen hat am schlechtesten funktioniert, da wir die wenigsten Rückmeldung bekommen haben.
+%Dabei haben wir uns zuvor die Grenze gesetzt, keine nahen Verwandten, wie Eltern, Geschwister oder Partner zu nehmen, da sie eventuell Vorwissen haben, die das Ergebniss verfälschen könnten und sich im Gegensatz zu fremden Personen besonders viel Mühe geben würden, aufgrund der emotionalen Bindung zu einem der Experimentatoren.
 
-\textbf{Anzeigen Text für Ebay Kleinanzeigen und die Flyer:}
 
-Freiwillige Versuchspersonen für VR Experiment gesucht
+%Die zweiterfolgreichste Methode Versuchspersonen zu finden war es, im Bekanntenkreis passende Versuchspersonen anzuwerben. 
 
-Bist du im Alter zwischen 18 und 80, bist fit und hast Lust mal in eine virtuelle Welt einzutauchen? Dann bist du genau die richtige Person um an unserem Experiment teilzunehmen!
+
+ 
+
+Auf die in der Universität Bremen verteilten Flyer haben wir die wenigsten Rückmeldungen bekommen.
+
+\textbf{Anzeigentext:}
+
+\begin{changemargin}[25	pt]{0pt}
+
+Freiwillige Versuchspersonen für VR-Experiment gesucht
+
+Bist du im Alter zwischen 18 und 80, bist fit und hast Lust mal in eine virtuelle Welt einzutauchen? Dann bist du genau die richtige Person, um an unserem Experiment teilzunehmen!
 
 Wir sind eine Gruppe von Studierenden aus dem Bereich Digitale Medien an der Universität Bremen und führen im Rahmen unseres Bachelor-Projekts eine Untersuchung zur Wahrnehmung in der virtuellen Realität. Mit einer sogenannten "`virtual Reality Brille'' schicken wir dich in eine andere Welt in der du verschiedene Szenarien auf dich einwirken lässt.
 
-Wenn du Interesse hast uns bei unserem Experiment zu unterstützen, dann würden wir uns über eine Email von dir freuen. Nenne uns bitte in deiner Nachricht deinen Namen, Alter, Geschlecht sowie die Tage an denen du zur Verfügung stehst für das VR Experiment - an folgende Adresse: experiment.sose17@gmail.com \\
+Wenn du Interesse hast uns bei unserem Experiment zu unterstützen, dann würden wir uns über eine E-mail von dir freuen. Nenne uns bitte in deiner Nachricht deinen Namen, Alter, Geschlecht sowie die Tage an denen du zur Verfügung stehst für das VR Experiment - an folgende Adresse: experiment.sose17@gmail.com \\
 
 Unser Experiment werden wir an diesen 6 Terminen durchführen: \\
 
@@ -254,6 +274,8 @@ Mo 19., Mi 21., Do 22., Fr 23., Sa 24. und Mo 26. Juni 2017 immer jeweils zwisch
 Wir freuen uns auf hoffentlich zahlreiche Nachrichten!
 
 Das ¡Experiment! Projekt Team
+
+\end{changemargin}
 
 \subsubsection {Ethik}
 Die Untersuchung menschlichen Verhaltens mit dem Ziel an Forschungsergebnisse zu gelangen, kann manchmal etwas problematisch sein, vorallem, wenn die Manipulation im Rahmen eines Experiments die Persönlichkeit eines Menschen langfristig prägen oder beeinflussen könnte. Das zeigte sich uns schon zu Beginn des Projekts, bei der Frage zum Hauptthema des Experiments. Dabei haben wir Themen verworfen, auf Grund der Moral. Obwohl einige Vorschläge wirklich interessant waren, hat uns unser gesundes, sogenanntes moralisches Ich, gesagt, dass wir diese Ideen als Experiment keiner Versuchspersonen zumuten können. Diese hätten Grenzen überschritten, deren Folgen wir nicht verantworten wollten. Auch wenn es anfänglich unbewusst geschah und wir uns erst später mit der Frage der ethischen Vertretbarkeit beschäftigten, haben wir uns stets an unsere persönlichen moralischen Richtlinien gehalten. Die hohe Nachfrage der freiwilligen Versuchspersonen hat uns gezeigt, dass uns der Spagat zwischen Ethik und einem Experiment  das menschliches Verhalten testet, gut gelungen ist. Uns war wichtig, die Sicherheit der Versuchspersonen zu gewährleisten, weshalb sie weitestgehend über Zweck und Ablauf des Verfahrens, sowie über die vorhersehbaren Unannehmlichkeiten und Risiken vorab informiert wurden. Es wurde vor der Teilnahme eine schriftliche Einverständniserklärung unterschrieben, womit die Versuchspersonen die persönliche Verantwortung übernahmen und somit auch die Risiken in Kauf nahmen. Des Weiteren haben wir die Versuchspersonen immer ermutigt, Fragen zu stellen, wenn welche offen waren, um Zweifel oder Missverständnisse zu vermeiden. Zuletzt werden alle Ergebnisse vertraulich unter Verschluss der Öffentlichkeit behandelt und nach den allgemeinen Datenschutzrichtlinie anonymisiert.
@@ -357,36 +379,63 @@ Die Versuchsperson erhält den "`Fragebogen C'', den diese mit folgenden Informa
 Ein erneuter Zeit-Einschätzungs-Test wird durchgeführt, in dem die Versuchsperson 40 Sekunden abschätzen und sich gleichzeitig mit einem der Versuchsleiter unterhalten soll. Die Ergebnisse werden von den Versuchsleitern notiert. Danach findet ein 30 Sekunden Zeit-Einschätzungs-Test ohne reden statt. Das Experiment wird danach beendet. Die Versuchsperson darf anschließend seine / ihre Zeit-Einschätzungs-Ergebnisse erfahren, sowie das Ergebnis vom Intelligenztest. Zum Schluss wird die Versuchsperson verabschiedet und der oder die nächste Versuchsperson vom Treffpunkt abgeholt.
 
 \subsection{Dokumente}
-Wir haben uns, um unsere Evaluationsdaten zu sammeln, für das Verfahren des Fragebogens entschieden. Mit dieser Methode kann man sehr einfach zu vielen Informationen gelangen. Auf diese Informationen kann man auch zu späteren Zeitpunkten zurückgreifen, da Fragebögen reproduzierbar sind. Sie ermöglichen die Objektivität der Befragung und es wird sichergestellt, dass jede Versuchsperson die exakt selben Fragen beantworten muss. Diese Methode benötigt einen geringeren Bedarf an anwesenden Versuchsleitern, gegenüber der Methode "`Interview'' und bietet zudem noch einen Organisationsvorteil, da die Prozedur schneller und flächendeckender abläuft. Durch die Anonymität der Befragten sind diese beim Ausfüllen des Fragebogens weniger gehemmt und beantworten die Fragen ehrlicher. Zudem sind sie sorgfältiger, weil kein Zeitdruck besteht, schnell antworten zu müssen.
+
+Es wurden 
+
+
+Die Methode des Fragebogens wurde gewählt, um 
+
+Wir haben uns, um unsere Evaluationsdaten zu sammeln, für das Verfahren des Fragebogens entschieden, da man mit dieser Methode schnell vielen Informationen gelangt. Auf diese Informationen kann man auch zu späteren Zeitpunkten zurückgreifen, da Fragebögen reproduzierbar sind. Sie ermöglichen die Objektivität der Befragung und es wird sichergestellt, dass jede Versuchsperson die exakt selben Fragen beantworten muss. Diese Methode benötigt einen geringeren Bedarf an anwesenden Versuchsleitern, gegenüber der Methode "`Interview'' und bietet zudem noch einen Organisationsvorteil, da die Prozedur schneller und flächendeckender abläuft. Durch die Anonymität der Befragten sind diese beim Ausfüllen des Fragebogens weniger gehemmt und beantworten die Fragen ehrlicher. Zudem sind sie sorgfältiger, weil kein Zeitdruck besteht, schnell antworten zu müssen.\\
+Alle Ergebnisse einer Versuchsperson wurden auf Papier festgehalten, zusammengefasst gelagert und nach der \textbf{Ausführungsphase} des Projekts digitalisiert. Diese analoge Arbeitsweise wurde gewählt, um technische Probleme und Datenverlust zu vermeiden und da es für Versuchsleiter bei der hohen Anzahl an Versuchspersonen übersichtlicher und praktischer ist, alle zu einer Versuchsperson benötigten Dokumente physisch beieinander aufzubewahren.
 
 \subsubsection{Einverständniserklärung}
-\todo{Kommt hier noch Text hin?}
+
+Die Einverständniserklärung weist die Versuchsperson auf allgemeine Risiken hin etc etc 
+
+\subsubsection{Intelligenztest}
+Basierend auf Pascal Wallisch' Studie "`Zeiterleben in der Tempogesellschaft'' aus der Universität Chicago \textbf{asdfadfadf} (Zeit der Veröffentlichung nicht bekannt? \cite{Tempo} und deren \textbf{Ergebnis? annahme?}, dass die Intelligenz eines Menschen einen möglichen Einfluss auf sein persönliches Zeitempfinden hat, wurde ein Intelligenztest in den Versuchsaufbau integriert.
+%in der beschrieben wird, dass die Intelligenz eines Menschen sein Zeiterleben beeinflusst, haben wir beschlossen einen Intelligenztest in unser Experiment zu integrieren. 
+Dafür haben wir uns mit dem Master Psychologie Studenten Till Rackwitz aus Hamburg getroffen, der sich auf Intelligenztests spezialisiert hat.
+
+Till Rackwitz, Masterstudent der Psychologie aus Hamburg und spezialisiert auf Intelligenztests, 
+
+
+ Bei ihm haben wir verschiedene Methoden kennengelernt, wie man die Intelligenz unserer Versuchspersonen testen kann, ohne einen mehrstündigen Test durchführen zu müssen. Dabei sind wir auf den psychologisch anerkannten "`Mehrfach-Wortschatz-Intelligenztest (MWT-B)'' in der fünften unveränderten Auflage gestoßen, entwickelt von Siegfried Lehre, veröffentlicht im Jahre 2015. Der Test war sehr gut für unser Vorhaben geeignet. Dieser bereits langjährig, erstmals im Jahr 1977 angewandte Test, dient zur Messung des allgemeinen Intelligenzniveaus nach einem einfachen und zuverlässigen Schema.
+
+Der MWT-B besteht aus 37 Wortreihen, welche jeweils aus vier erfundenen und einem deutschen Wort bestehen, das richtige Wort herauszusuchen und durchzustreichen. Der Schwierigkeitsgrad steigt im Verlauf des Tests.
+
+Den MWT-B haben wir in der Testothek der psychologischen Abteilung der Universität Bremen ausleihen dürfen. Die aktuell verfügbare Leistungsfähigkeit wird anhand dieses Tests mit einem geringen Materialaufwand gemessen. Die einfache Wiederholbarkeit und die schnelle und einfache Durchführung innerhalb von circa 5 Minuten sind zwei der weiteren Vorteile dieses Tests für die Anwendung in unserer Studie. Zwar spielt die Intelligenz der Versuchspersonen in unserem Experiment eine Rolle, jedoch nur eine nebenläufige, sodass wir nicht viel Zeit dafür einplanen wollten wie bei einem Standard-Intelligenztest. Ein weiterer Vorteil des MWT-B ist, dass dieser von Personen durchgeführt werden kann, die keine spezielle Ausbildung zur Abnahme von IQ-Tests haben. Des Weiteren ist der Test objektiv, robust und ist weitgehend unabhängig von seelisch-geistigen Störungen.
 
 \subsubsection{Fragebögen}
 \label{subsec:fragebogen}
 \textbf{Bezug auf "`Fragebogen A'':}
 
-In "`Fragebogen A'' wurde der körperliche und psychische Zustand der Versuchspersonen abgefragt, um mögliche Störfaktoren zu kennen.
+In Fragebogen A wird die Versuchsperson auf mögliche Einflussfaktoren (vgl. Kapitel 1.3 Forschungsstand im Paper) abgefragt, welche die Ergebnisse potenziell verfälschen könnten und berücksichtigt werden müssen. 
+% der körperliche und psychische Zustand der Versuchspersonen abgefragt, um mögliche Störfaktoren zu kennen.
 
 \begin{itemize}
 	\setlength{\itemsep}{0em}
-	\item Stehen Sie unter irgendwelchen Drogeneinflüssen oder Medikamenten?
-Da Drogen jeglicher Art und manche Medikamente die Wahrnehmung beeinflussen und bei Einfluss dieser Substanzen die Ergebnisse nicht verwendbar wären, haben wir die Versuchspersonen nach dieser Information befragt.
-	\item Auf einer Skala von 1 bis 10, wie müde sind Sie? (1 = nicht müde - 10 = sehr müde)
-Eine sehr hohe Müdigkeit mindert die Konzentrationsfähigkeit. Bei einem hohen Müdigkeitswert beeinflussen die Messungen möglicherweise die Ergebnisse und sind deshalb auch relevant für unsere Endergebnisauswertung.
-	\item Haben Sie Ihnen bekannte Gehirnschäden oder psychische Erkrankungen?
-Versuchspersonen und mit Gehirnschäden und psychischen Erkrankungen könnten möglicherweise zu einem verfälschtem Ergebnis führen, weshalb die Versuchspersonen nach Erkrankungen gefragt wurden.
-	\item Ist Deutsch Ihre Muttersprache? Wenn Nein, welche Sprache ist Ihre Muttersprache?
-Die Deutschkenntnisse unserer Versuchspersonen waren uns aufgrund des Intelligenztests, der auf dem deutschen Wortschatz basiert, wichtig, um alle Versuchspersonen auf demselben Niveau testen zu können.
-	\item Möchten Sie das Experiment weiterhin durchführen?
+	\item ,,Stehen Sie unter irgendwelchen Drogeneinflüssen oder Medikamenten?''
+Da Drogen jeglicher Art und manche Medikamente die Wahrnehmung beeinflussen, haben wir die Versuchspersonen nach dieser Information befragt.
+	\item ,,Auf einer Skala von 1 bis 10, wie müde sind Sie? (1 = nicht müde, 10 = sehr müde)''
+Eine sehr hohe Müdigkeit mindert die Konzentrationsfähigkeit.
+	\item ,,Haben Sie Ihnen bekannte Gehirnschäden oder psychische Erkrankungen?''
+
+	\item ,,Ist Deutsch Ihre Muttersprache? Falls nein, welche Sprache ist Ihre Muttersprache?''
+Die Deutschkenntnisse der Versuchspersonen waren aufgrund des verwendeten Intelligenztests, der auf dem deutschen Wortschatz basiert, wichtig, um alle Versuchspersonen auf demselben Niveau testen zu können.
+	\item ,,Möchten Sie das Experiment weiterhin durchführen?''
 Der Versuchsperson wurde die Möglichkeit gegeben, das Experiment vorzeitig zu beenden.
 \end{itemize}
 
-\textbf{Bezug auf "`Fragebogen B'':}
+\textbf{Fragebogen B:}
 
-Dieser Fragebogen diente lediglich  zum Zweck, die Ergebnisse der Zeiteinschätzungen und Körpertemperatur auf Papier zu bringen, in einer reproduzierbaren und geordneten Form. Wir haben uns entschieden, die Ergebnisse erstmal auf Papier zu notieren, damit es wegen technischen Problemen zu keinem Datenschwund kommt und bei möglichem Wechsel der Versuchsleiter keine Missverständnisse entstehen. Außerdem wollten wir die Daten jeder Versuchspersonen beieinander aufbewahren und da die restlichen Dokumente in einer gedruckten Form waren, haben wir es einheitlich gehalten. Am Ende eines jeden Versuchstages wurden die schriftlichen Daten digital gesichert und an einem sicheren Ort aufbewahrt. \\
+Dieser Fragebogen wurde vom Versuchsleiter verwendet, um Ergebnisse der Zeiteinschätzungen und Körpertemperatur in einer \textbf{reproduzierbaren und geordneten Form} zu notieren. 
 
-\textbf{Bezug auf "`Fragebogen C'':}
+%damit es wegen technischen Problemen zu keinem Datenschwund kommt und bei möglichem Wechsel der Versuchsleiter keine Missverständnisse entstehen. Außerdem wollten wir die Daten jeder Versuchspersonen beieinander aufbewahren und da die restlichen Dokumente in einer gedruckten Form waren, haben wir es einheitlich gehalten. Am Ende eines jeden Versuchstages wurden die schriftlichen Daten digital gesichert und an einem sicheren Ort aufbewahrt. \\
+
+ 
+
+\textbf{Fragebogen C:}
 \begin{itemize}
 	\setlength{\itemsep}{0em}
 	\item Sortieren der Szenarien/Ampelphasen vom kürzesten zum längsten mit Sekundenangabe. \\
@@ -403,12 +452,7 @@ Auffälligkeiten, die eine Zeitwahrnehmung beeinflussen könnten und Platz für 
 Abfragung, ob das Experiment zu offensichtlich oder gut genug konzipiert war, so dass die Veruchspersonen nicht herausgefunden haben, was wir testen wollten. 
 \end{itemize}
 
-\subsubsection{Intelligenztest}
-Basierend auf der Studie "`Zeiterleben in der Tempogesellschaft'' vom Autor Pascal Wallisch aus der Uni Chicago (Zeit der Veröffentlichung nicht bekannt? \cite{Tempo}, in der beschrieben wird, dass die Intelligenz eines Menschen sein Zeiterleben beeinflusst, haben wir beschlossen einen Intelligenztest in unser Experiment zu integrieren. Dafür haben wir uns mit dem Master Psychologie Studenten Till Rackwitz aus Hamburg getroffen, der sich auf Intelligenztests spezialisiert hat. Bei ihm haben wir verschiedene Methoden kennengelernt, wie man die Intelligenz unserer Versuchspersonen testen kann, ohne einen mehrstündigen Test durchführen zu müssen. Dabei sind wir auf den psychologisch anerkannten "`Mehrfach-Wortschatz-Intelligenztest (MWT-B)'' in der fünften unveränderten Auflage gestoßen, entwickelt von Siegfried Lehre, veröffentlicht im Jahre 2015. Der Test war sehr gut für unser Vorhaben geeignet. Dieser bereits langjährig, erstmals im Jahr 1977 angewandte Test, dient zur Messung des allgemeinen Intelligenzniveaus nach einem einfachen und zuverlässigen Schema.
 
-Im MWT-B gilt es aus 37 Wortreihen, bestehend aus jeweils vier erfundenen und einem deutschen Wort, das richtige Wort herauszusuchen und durchzustreichen. Der Schwierigkeitsgrad steigt im Verlauf des Tests. Es beginnt mit Alltagswörtern wie "`Nase'' und endet mit weniger verbreiteten Worten aus dem deutschen Wortschatz wie "`Purin''.
-
-Den MWT-B haben wir in der Testothek der psychologischen Abteilung der Universität Bremen ausleihen dürfen. Die aktuell verfügbare Leistungsfähigkeit wird anhand dieses Tests mit einem geringen Materialaufwand gemessen. Die einfache Wiederholbarkeit und die schnelle und einfache Durchführung innerhalb von circa 5 Minuten sind zwei der weiteren Vorteile dieses Tests für die Anwendung in unserer Studie. Zwar spielt die Intelligenz der Versuchspersonen in unserem Experiment eine Rolle, jedoch nur eine nebenläufige, sodass wir nicht viel Zeit dafür einplanen wollten wie bei einem Standard-Intelligenztest. Ein weiterer Vorteil des MWT-B ist, dass dieser von Personen durchgeführt werden kann, die keine spezielle Ausbildung zur Abnahme von IQ-Tests haben. Des Weiteren ist der Test objektiv, robust und ist weitgehend unabhängig von seelisch-geistigen Störungen.
 
 \subsection{Probleme und Hindernisse}
 Das Hinderniss, welches uns fast das gesamte Experiment über benachteiligte war, dass alle Experimentatoren wenig Kenntnisse über die Durchführung uns Ausführung eines wissenschaftlichen Experiments hatten. Es fehlte uns jegliches Vorwissen zu den Methoden eines Experiments und welche Kriterien zu beachten sind. Dies kostete uns am Anfang viel Zeit, die wir in die online Recherche investierten, sowie für die Absprache mit den erfahrenen Tutoren. Zeit war ein wesentlicher Faktor des ganzen Projekts, denn das Ausmaß des nötigen Aufwands war uns am Anfang nicht ganz bewusst. Die Termine zur Fertigstellung der einzelnen Arbeitsschritte wurden daher teilweise nicht eingehalten und es mussten Kompromisse gemacht werden. Der Zeitplan geriet dementsprechend in Verzug, was dazu führte, dass Nachtschichten eingelegt werden mussten, um unser Endziel zu erreichen. Trotzdem kamen unvorhergesehene Probleme auf, die uns immer wieder auf die Probe stellten und auch unangenehme Folgen hatten. Aufgrund der nicht kompatiblen Virtusphere mit der VR Brille und mit unserer Unreal VR Welt, hat sich unsere Versuchsphase mit den eingeladenen Versuchspersonen immer weiter nach hinten schieben müssen. Versuchspersonen sollten ihre bereits vereinbarten Termine auf neue Termine verschieben. Einige der Versuchspersonen waren enttäuscht, das Experiment nicht in der Virtusphere durchführen zu dürfen, jedoch erklärten sich alle trotz dessen bereit, an unserem neuen Versuchskonzept teilzunehmen.
@@ -499,23 +543,131 @@ Außerdem gibt es da noch das auf unserem aufbauende Projekt von Mert Özenen. D
 
 \section{Abschließende Gedanken} % Autor: Jana
 	Wir sind in den verschiedenen Phasen des Projekts auf unterschiedliche Probleme gestoßen, von denen wir viele zeitnah lösen konnten. Allerdings gab es auch schwerwiegendere, deren Lösung für uns nicht gleich oder gar nicht offensichtlich war und die unseren ursprünglichen Zeitplan infolgedessen ungewollt stark beeinflusst haben.
-
-	Durch die Inkompatibilität der Oculus Rift und dem Computer der Virtusphere konnten wir unser Projekt nicht wie ursprünglich geplant in der Virtusphere stattfinden lassen und mussten auf herkömmliche Controller ausweichen. Diese Umstellung ist sehr ärgerlich, da viel Zeit in die Problemlösung investiert wurde und wir den Versuchspersonen letztendlich doch nicht das bieten konnten, mit dem wir sie ursprünglich geworben haben. 
- -	Weiterhin zu kritisieren wäre eine nicht ganz ideale Arbeitsteilung, wodurch es gerade am Ende zu erheblichem Zeitverzug kam. Insbesondere das sog. \textit{Technikteam}, welches primär für die Erstellung der Blenderobjekte, das Einsetzen und das Animieren der Welt verantwortlich war, hat gleich zu Beginn des Projekts anstehende Aufgaben nicht sinnvoll verteilt. Alle Mitglieder waren gleichermaßen nur mit \textit{aktuellen} Aufgaben beschäftigt. D.h., dass zunächst jeder für die Erstellung von Blenderobjekten verantwortlich waren und so Kapazitäten und Zeit verschwendet wurde, da sich bisher noch keiner besonders gut mit der Software auskannte und sich alle gleichermaßen neu einarbeiten mussten.
- 
- 	Diese Entscheidung mag daraus resultieren, dass wir im Bezug auf diese Art von selbstorganisierter Arbeit sehr unerfahren sind und es dadurch zu Fehleinschätzungen kam.
-	
-		Im Nachhinein stellen wir weiterhin fest, dass es für das Projekt besser gewesen wäre, hätten wir zu Beginn andere Prioritäten festgelegt. Da die Logik der Welt der Punkt ist, von dem die Ergebnisse abhängen, hätte man sich zuallererst auch mit dieser beschäftigen müssen bzw. rechtzeitig die Personen bestimmen müssen, die die Hauptverantwortung für diese übernehmen.
-		
-	Diese Entscheidung mag daraus resultieren, dass wir im Bezug auf diese Art von selbstorganisierter Arbeit und Projektplanung sehr unerfahren sind und dies zu Fehleinschätzungen führte.
-	Im Nachhinein stellen wir weiterhin fest, dass es für das Projekt besser gewesen wäre, hätten wir zu Beginn andere Prioritäten bei der Erstellung der Welt festgelegt. Da die Logik der Welt der Punkt ist, von dem die Ergebnisse abhängen, hätte man sich zuallererst auch mit dieser beschäftigen müssen bzw. rechtzeitig die Personen bestimmen müssen, die die Hauptverantwortung für diese übernehmen.
-	
-	Auch diese Fehleinschätzung zeigte sich im Nachhinein als kritisch und mag ebenfalls aus unserer Unerfahrenheit stammen.
-	Trotz aller Probleme können wir aus unserem Projekt auch Positives ziehen. So z.B. haben sich alle des Technikteams in Blender und zum Teil auch Unreal eingearbeitet und konnten Erfahungen mit diesen Softwares sammeln.
-		
-	Besonders freuen wir uns im Nachhinein aber darüber, dass wir trotz teils erheblicher Probleme und Aussichtslosigkeit das Projekt zu Ende bringen konnten und es auch bis zum Schluss mit Ernsthaftigkeit getan haben. Gerade weil wir in der kritischen Phase des Projekt starke Probleme hatten, war die Frustration hoch. Nichtsdestoweniger haben wir anfallenden Probleme kreativ zu lösen versucht (bspw. der Versuch das Experiment auf das Laufband zu verschieben) und gewissenhaft versucht, das Projekt noch irgendwie zu retten anstatt es gleich aufzugeben. Und im Nachhinein stellen wir fest, dass gerade die kritischen Fehler uns, so ärgerlich sie auch sind, geholfen haben zu verstehen, wie Gruppenarbeit besser organisiert wäre bzw. haben wir durch das Experiment gelernt, auf welche Punkte besonders zu achten sind. Diese negativen Erfahrungen sind für uns von Bedeutung, da wir gerade auch durch diese viel gelernt haben.
-	
+	Durch die Inkompatibilität der Oculus Rift und dem Computer der Virtusphere konnten wir unser Projekt nicht wie ursprünglich geplant in der Virtusphere stattfinden lassen und mussten auf herkömmliche Controller ausweichen. Diese Umstellung ist sehr ärgerlich, da viel Zeit in die Problemlösung investiert wurde und wir den Versuchspersonen letztendlich doch nicht das bieten konnten, mit dem wir sie ursprünglich geworben hatten. 
+Weiterhin zu kritisieren wäre eine nicht ganz ideale Arbeitsteilung, wodurch es gerade am Ende zu erheblichem Zeitverzug kam. Insbesondere das sog. \textit{Technikteam}, welches primär für die Erstellung der Blenderobjekte, das Einsetzen und das Animieren der Welt verantwortlich war, hat gleich zu Beginn des Projekts anstehende Aufgaben nicht sinnvoll verteilt. Alle Mitglieder waren gleichermaßen nur mit aktuellen Aufgaben beschäftigt, d.h., dass zunächst jeder für die Erstellung von Blenderobjekten verantwortlich war und so Kapazitäten und Zeit verschwendet wurde, da sich bisher noch keiner besonders gut mit der Software auskannte und sich alle gleichermaßen neu einarbeiten mussten. \\ 
+Im Nachhinein stellen wir weiterhin fest, dass es für das Projekt besser gewesen wäre, hätten wir zu Beginn andere Prioritäten festgelegt. Da von der Logik der Welt die Ergebnisse abhängen, hätte man sich zuallererst auch mit dieser beschäftigen müssen bzw. rechtzeitig die Personen bestimmen müssen, die die Hauptverantwortung für diese übernehmen.\\
+Diese Entscheidung mag daraus resultieren, dass wir im Bezug auf diese Art von selbstorganisierter Arbeit und Projektplanung sehr unerfahren sind und dies zu Fehleinschätzungen führte.
+Auch diese Fehleinschätzung zeigte sich im Nachhinein als kritisch und mag ebenfalls aus unserer Unerfahrenheit stammen.
+	Trotz aller Probleme können wir aus unserem Projekt allerdings auch Positives ziehen. So z.B. haben sich alle Mitglieder des Technikteams in Blender und zum Teil auch Unreal eingearbeitet und konnten Erfahungen mit diesen Softwares sammeln.\\
+Besonders freuen wir uns im Nachhinein aber darüber, dass wir trotz teils erheblicher Probleme und Aussichtslosigkeit das Projekt zu Ende bringen konnten und es auch bis zum Schluss mit Ernsthaftigkeit getan haben. Gerade weil wir in der kritischen Phase des Projekt starke Probleme hatten, war die Frustration hoch. Nichtsdestoweniger haben wir anfallenden Probleme kreativ zu lösen versucht (bspw. der Versuch das Experiment auf das Laufband zu verschieben) und gewissenhaft versucht, das Projekt noch irgendwie zu retten anstatt es gleich aufzugeben. Und im Nachhinein stellen wir fest, dass gerade die kritischen Fehler uns, so ärgerlich sie auch sind, geholfen haben zu verstehen, wie Gruppenarbeit besser organisiert wäre bzw. haben wir durch das Experiment gelernt, auf welche Punkte besonders zu achten sind. Diese negativen Erfahrungen sind für uns von Bedeutung, da wir gerade auch durch diese viel gelernt haben.
 Nicht unerwähnt sollen allerdings auch die positiven Erfahungen sein, die wir innherhalb der Gruppe und gerade zum Schluss des Projekts mit den Versuchspersonen erfahren konnten. Besonders das Zwischenmenschliche, die Kommunikation und Gruppendynamik bewerten wir als sehr gut und eine Stärke der gesamten Gruppe. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Virtuelle Testumgebung}
+
+\subsection{Hardware}
+\subsection{Software}
+\textbf{Blender}:\\
+%was dieses kapitel will: welche hsware genutzt wurde, wie, objekte besondere objekte\\
+
+
+Die Blender-Software wurde für das Erstellen der benötigten 3D-Objekte verwendet und darüber hinaus zum Animieren der visuellen Zeitgeber und Ampelphasen.\\
+Zu den in der virtuellen Testumgebung verwendeten Objekten gehören: die Ampeln, Autos, Bäume, Gärten, Gehsteige, Laternen, menschliche NPCs, Mülleimer, die Parkbank, das Plakat an der Ampel, der Fischreiher, die Schaukel, Straßenschilder, der Supermarkt und Wohnhäuser.\\
+Einige der erstellten Objekte wurden in der finalen Version nicht verwendet: die Blume, Büsche, der Heißluftballon, der Hund, der Kaktus, die Rasenfläche, die Sonne, Straßen und -schilder und Wolken.\\
+		Blumen, Büsche und die Rasenfläche wurden nachträglich entfernt, da vor allem die Rasenfläche mit den vielen kleinen Details zu viel GPU-Leistung forderte. Der Heißluftballon wurde indirekt in Form eines Fotos auf dem Plakat verwendet. 
+ 		Anstelle des Hundes wurde der Fischreiher gewählt, da beim Importieren des Hundes die Unreal Engine abstürzte. Da beide Tiere vorlagen, ersparten wir uns die Fehlersuche und nahmen den Reiher. 
+		Der Himmel, einschließlich Sonne und Wolken, waren in der Vorlage von Unreal enthalten und erfüllte unsere Anforderungen, weshalb sie nicht ersetzt wurden. 
+		Die Straße wurde durch eine Platte mit Straßentextur dargestellt, da es sich so als einfacher erwies und von den Straßenschildern wurden nicht alle benutzt, weshalb sie in beiden Listen wiederzufinden sind. 
+		Für den Kaktus wurde kein passender Platz gefunden. \\
+		___________________________
+		
+		Die Animation der Schaukel als Zeitgeber wurde mit den in Blender integrierten Keyframes realisiert. Die Schaukelseile und der -sitz sind als ein Objekt fest miteinander verbunden und wurden um das statische Gerüst bewegt. Ausgangssituation ist der höchste Punkt des Sitzes hinter Schaukel, welcher entsprechend weiterbewegt und als Keyframe in der Zeitleiste gespeichert wird, bis eine vollständige Schaukelbewegung animiert ist.  
+		Beim Import des animierten Kindes auf der Schaukel 
+		
+
+
+
+
+			Ein Problem war, dass bei einigen Objekten die Textur nicht korrekt dargestellt wurde oder Objekte teilweise durchsichtig waren. Bewegt man die Kamera in der Unreal Engine in ein Objekt hinein, so sollte man von innen nach außen durch die Objektoberflächen hindurch gucken können. Die Teile, die von außen durchsichtig waren, waren von innen jedoch sichtbar. Somit war das Problem, dass die Objekte teilweise "`auf links gekrempelt'' waren. Mit Hilfe des Anzeigens der Normalen in Blender ließen sich diese Flächen aber leicht aufspüren und umdrehen bzw. die Normale(n) invertieren.
+			\todo{Bild von fehlerhaftem Objekt in Unreal mit Kamera im Objekt}
+			
+			Der in Abbildung \ref{img:heron-error} zu sehende Reiher war eines von vielen Objekten, an denen nachgebessert werden musste. Hier waren zwei Punkte vom Hals bis in den Kopf verschoben und es gab seitlich ein kleines Loch, das rechts im Bild umrandet zu sehen ist. Diese kleinen Fehler konnten leicht behoben werden. 
+
+		\begin{figure}[!htbp] % here - top - bottom - page, das ! erzwingt die Position falls möglich
+			\centering
+			\includegraphics[height=\textheight, width=\linewidth, keepaspectratio, angle=0]{../Bilder/Heron_Problem.png} % trim - l u r o
+			\caption{Nachträglich behobene Fehler in Blender}
+			\label{img:heron-error}
+		\end{figure}
+			
+			Größere Probleme hatten wir auch bei den Texturen. Die Bearbeitungs-Ansicht (Texture) in Blender entsprach nicht immer der in Blender gerenderten Ansicht (Rendered) und auch nicht der in der Unreal Engine angezeigten Ansicht. Somit hatten wir für ein Objekt teilweise drei verschiedene Ansichten der Textur. Am meisten Probleme machten die Häuser, wohingegen andere Objekte wie der American Store völlig problemlos funktionierten. Insbesondere bei den Häusern haben wir die Materials, in denen die Texturen enthalten sind, in der Unreal Engine noch stark nachträglich bearbeitet.
+			Generell wurden nahezu alle Materials in der Unreal Engine nochmal editiert, da Einstellungen wie Specular Lightning oder Spiegelungen nicht von der Engine übernommen wurden.
+			
+			
+			
+Die größten Probleme entstanden hauptsächlich nach dem Import in die Unreal Engine. 
+
+			Ein zentrales Problem war, dass jegliche von uns erstellten Objekte nach eine Build des Lightnings komplett schwarz waren. Nach einiger Recherche stellte sich heraus, dass alle in der Unreal Engine verwendeten Objekte zwei UV-Maps benötigen. Die zweite ist notwendig für das korrekte Darstellen des Lightning und ist, zumindest bei statischen Objekten, zwingend notwendig. Sich bewegende Objekte wie beispielsweise die Autos werden anders gerendert und benötigen diese zweite UV-Map nicht. 
+		
+	\textbf{Unreal Engine}
+			Gestartet haben wir unser Projekt mit der VR-Vorlage von Unreal. Mit der Fertigstellung der ersten Objekte fingen wir an die Welt zu bauen. Eine anfängliche Herausforderung war die Skalierung, da man sich in einer fast leeren Welt kaum an etwas orientieren kann. Nach einiger Recherche haben wir eine Skalierung festgelegt und ein großes Schachbrett mit $1m^{2}$ großen Feldern als Orientierung unter die Map gesetzt. Mit dessen Hilfe haben wir die Straßen und Gehwege platziert. Weiter ging es mit Häusern und Gärten, bis wir schließlich die letzten Details wie Mülleimer, Laternen und Bäume gesetzt hatten. 
+			
+			Eine Herausforderung stellte unter anderem auch die Logik in unserer Welt da. Die Teleporter und die Ampelschaltung waren die aufwendigsten Sachen, die wir in Blueprints umgesetzt haben. Es hat einige Zeit der Fehlersuche und Fehlerbehebung gegeben, bevor alles funktionierte. Das Fahren der Autos wurde ebenfalls in der Unreal Engine programmiert, die Bewegung der Schaukel hingegen in Blender.
+			
+			Nach einiger Zeit stellten wir auch fest, dass es für die Spiellogik einen erheblichen Unterschied macht, ob man die Welt mit der Oculus Rift durchläuft, oder "`auf dem Bildschirm''. Beispielsweise wird eine Triggerbox, die man betritt oder verlässt, normalerweise nur einmal getriggert. Beim Betreten/Verlassen mit VR-Ansicht hingegen um die zwanzig mal.
+			
+		\begin{figure}[!htbp] % here - top - bottom - page, das ! erzwingt die Position falls möglich
+			\centering
+			\includegraphics[trim = 200mm 0mm 600mm 0mm, clip, height=\linewidth, width=\textheight, keepaspectratio, angle=270]{../Bilder/20170619_102101.jpg} % trim - l u r o
+			\caption{Problemlösung in Unreal}
+			\label{img:porblemloesung}
+		\end{figure}
+		
+		\subsubsection{Hardware \& Software}
+			Allerlei Hardware hat, insbesondere am Anfang, aus uns unbekannten Gründen oftmals nicht so funktioniert wie erwartet. Das hat uns letzten Endes dazu bewegt, auf einem neuen Computer eine frische Installation von Windows 10 mit allen aktuellen Updates aufzuspielen. Nachdem alle Treiber und Programme installiert waren und auch alles funktionierte, deaktivierten wir jegliche Updates, um eventuelle negative Änderungen am System zu verhindern. 
+			
+			Außerdem haben wir zeitlich etwa mittig im Designprozesses die anfänglich gewählte VR-Vorlage in Unreal durch eine 3rd-Person-Vorlage ersetzt. Dies vereinfachte das anschließen eines Controllers enorm. Die Einbindung der Virtusphere zur Steuerung stellte sich als zu komplex und zeitaufwendig heraus. 
+		
+
+\section{Durchführung}
+\subsection{Apparaturen}
+s. v.T. + räume 
+\subsection{Dokumente}
+\subsubsection{Einverständniserklärung}
+\subsubsection{Intelligenztest}
+\subsubsection{Fragebögen}
+\subsection{Ablauf}
+\textbf{Phase 1:}...\\
+\textbf{Phase 2:} ... etc\\
+
+\section{Versuchspersonen}
+\subsection{Demographie}
+\subsection{Suche}
+\subsection{Ethik}
+
+
 
 \newpage
 \section{Appendix} % = Anhang, Autor: Alina
