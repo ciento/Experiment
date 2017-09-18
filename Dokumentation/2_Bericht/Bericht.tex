@@ -81,19 +81,19 @@ Auch wurden alle technischen Lösungen zur Arbeitsweise innerhalb der ersten zwe
 \subsection{Experimentdesign}
 
 Das Experimentdesign besteht einerseits aus der Gestaltung der virtuellen Testumgebung, deren Steuerung durch die Versuchsperson und der Erstellung begleitender Dokumente und Tests, um die Effekte nachweisen zu können.\\
-Die Testumgebung wurde zunächst als Open-World-Konzept geplant, in welcher sich die Versuchsperson nach Belieben umsehen konnte. Dieses Konzept wurde verworfen, da Versuchspersonen auf diese Weise nicht das exakt gleiche erleben und Ergebnisse in dieser Hinsicht weniger aussagekräftig sind. Um die gleichen Eindrücke für jede Versuchspersonen zu gewährleisten, war das Implementieren einer vorgegebenen Route innerhalb der Testumgebung Voraussetzung (vgl. Kapitel \ref{subsec:aufbau}).
+Die Testumgebung wurde zunächst als Open-World-Konzept geplant, in welcher sich die Versuchsperson nach Belieben umsehen konnte. Dieses Konzept wurde verworfen, da Versuchspersonen auf diese Weise nicht das exakt gleiche erleben und Ergebnisse in dieser Hinsicht weniger aussagekräftig sind. Um die gleichen Eindrücke für jede Versuchspersonen zu gewährleisten, war das Implementieren einer vorgegebenen Route innerhalb der Testumgebung Voraussetzung (vgl. Kapitel \ref{subsec:aufbau}). Die Versuchsperson muss 18 Sekunden an einer roten Fußgängerampel warten, von welcher sie die Zeitmanipulationen hören bzw. sehen und sich beeinflussen lassen kann. Die Zeiten sind an reale Ampelzeiten angelehnt.
 	Obwohl das Experimentdesign vorsah, die Navigation innerhalb der Testumgebung in der Virtusphere stattfinden zu lassen um das Immersionserlebnis zu erhöhen, musste aufgrund von erheblichen technischen Problemen diesbezüglich auf herkömmliche Controller ausgewichen werden.\\
 	Die ermittelte Fragestellung und Hypothesen \textbf{noch nicht genannt} sollten empirisch überprüft werden, wobei genug Versuchspersonen am Experiment teilnehmen mussten.
 Auf Grundlage der Rechercheergebnissen zur  Zeitmanipulation wurden die verwendeten Dokumente gestaltet. Hierbei wurden neben mehreren Fragebögen, welche Einflussfaktoren und Effekte der VR abfragen		 (vgl. Kapitel \ref{subsec:dokumente}) auch insgesamt sechs Zeiteinschätzungstests in den Ablauf integriert, welche den allgemeinen Einfluss der VR auf das menschliche Zeitempfinden misst.\\
-Es wurde die empirische Methode
+Um auszuschließen, dass eine feste Reihenfolge der Szenarien einen Einfluss auf die Bewertung der vergangenen Zeit hat, wurden die Szenarien in allen 24 (= 4!) möglichen Reihenfolgen an ungefähr gleich vielen Versuchspersonen getestet. Der Experimentablauf lief für jede Versuchsperson gleich ab, daher sind die gesammelten Ergebnisse in der Hinsicht aussagekräftig, dass jede der Versuchspersonen den gleichen Ablauf mitgemacht hat. Die verschiedenen Szenarioreihenfolgen werden hier nicht beachtet, da diese speziell implementiert wurden, um Beeinflussung zu vermeiden.
 	
 
 \subsection{Aufbau der Testumgebung}
 \textit{Autor: Jana}\\
 	 
-  Die Versuchsperson muss 18 Sekunden an einer roten Fußgängerampel warten, von welcher sie die Zeitmanipulationen hören bzw. sehen kann.
+  
 Alle dieser vier sogenannten Szenarien sind auf derselben Karte zu finden und werden von jeder Versuchsperson durchlaufen.\\
-Um auszuschließen, dass eine feste Reihenfolge der Szenarien einen Einfluss auf die Bewertung der vergangenen Zeit hat, wurden die Szenarien in allen 24 (= 4!) möglichen Reihenfolgen an ungefähr gleich vielen Versuchspersonen getestet. Die verwendete Karte selbst ist statisch und verwendet Teleporter hinter jedem Szenario, um jede der Szenarioreihenfolgen zu realisieren.
+ Die verwendete Karte selbst ist statisch und verwendet Teleporter hinter jedem Szenario, um jede der Szenarioreihenfolgen zu realisieren.
 
  
 \begin{figure}[H]
@@ -163,8 +163,10 @@ Die Implementierung der Ampelschaltung, der fahrenden Autos und der Teleporter w
 				Im Laufe der Arbeit mit der Unreal Engine traten einige Fehler auf, deren Suche und Behebung teilweise sehr viel Zeit in Anspruch nahm.\\
 Die Bearbeitungs-Ansicht (Texture) in Blender entsprach teils weder der in Blender gerenderten Ansicht (Rendered) noch der in der Unreal Engine angezeigten Ansicht, sodass teilweise drei verschiedene Texturansichten existierten und die Materials dieser Objekte nach dem Import in der Unreal Engine nachträglich bearbeitet werden mussten. Nahezu alle Materials wurden in der Unreal Engine editiert, da einige der in Blender definierten  Materialeigenschaften wie Specular Lightning oder Spiegelungen nicht von übernommen wurden.\\
 Ebenfalls wurde bei einigen Objekten die Textur nicht korrekt dargestellt oder Objekte als teilweise durchsichtig. 
-Die Textur einiger Objekte wurde nur angezeigt, wenn sich der viewpoint innerhalb des Objekts befand. Dies stellte sich bei näherer Betrachtung als ein Fehler an der Objektoberfläche heraus, der durch Inventierung der Normalen behoben werden konnte.		
-Ein zentrales Problem war, dass jegliche von uns erstellten Objekte nach einem Build des Lightnings komplett schwarz waren. Nach einiger Recherche stellte sich heraus, dass alle in der Unreal Engine verwendeten Objekte zwei UV-Maps benötigen. Die zweite ist notwendig für das korrekte Darstellen des Lightning und ist, zumindest bei statischen Objekten, zwingend notwendig. Sich bewegende Objekte wie beispielsweise die Autos werden anders gerendert und benötigen diese zweite UV-Map nicht. 
+Die Textur einiger Objekte wurde nur angezeigt, wenn sich der viewpoint innerhalb des Objekts befand. Dies stellte sich bei näherer Betrachtung als ein Fehler an der Objektoberfläche heraus, der durch Inventierung der Normalen behoben werden konnte.		\\
+Ein weiteres Hindernis, das erst beim Import in die Unreal Engine sichtbar wurde, waren fehlende UV-Maps auf allen erstellten 3D-Objekten. Ohne diese konnten statische Objekte in der Engine nur komplett schwarz dargestellt werden und musste in Blender entsprechend nachgebessert werden. 
+
+% nach einem Build des Lightnings komplett schwarz waren. Nach einiger Recherche stellte sich heraus, dass alle in der Unreal Engine verwendeten Objekte zwei UV-Maps benötigen. Die zweite ist notwendig für das korrekte Darstellen des Lightning und ist, zumindest bei statischen Objekten, zwingend notwendig. Sich bewegende Objekte wie beispielsweise die Autos werden anders gerendert und benötigen diese zweite UV-Map nicht. 
 		
 		
 				%Nach einiger Zeit stellte sich ebenfalls heraus, dass es für die Spiellogik einen erheblichen Unterschied macht, ob man die Welt mit der Oculus Rift durchläuft, oder "`auf dem Bildschirm''. Beispielsweise wird eine Triggerbox, die man betritt oder verlässt, normalerweise nur einmal getriggert. Beim Betreten/Verlassen mit VR-Ansicht hingegen um die zwanzig mal.
@@ -196,9 +198,9 @@ Folgende Hardware wurde für das den Versuchsdurchlauf verwendet: Ein LG Compute
 \subsection{Probleme und Hindernisse}
 Die Probleme, die das Projekt behinderten sind primär entweder organisatorischer oder technischer Natur.\\
 Zeitliche Fehleinschätzungen zu Beginn des Experiments erwiesen sich als fatal, da die Termine zur Fertigstellung der einzelnen Arbeitsschritte im Verlauf des Projekts nicht mehr eingehalten werden konnten.
-Erschwerend hinzu kamen die Inkompabilitätsprobleme der Oculus Rift und dem Computer der Virtusphere, welche den Projektfortschritt lahm legten und darin resultierte, dass bereits vereinbarte Termine mit Versuchspersonen verlegt werden musste. Weiterhin wurde die Virtusphere durch einen gewöhnlichen Controller ersetzt, da in der gegebene Zeit keine Lösung gefunden werden konnte.\\
-	Während der Versuchsdurchführung schaltete sich teilweise die VR-Brille nach einer Weile ab. Dieses Problem trat allerdings nur sehr selten auf und konnte innerhalb von Sekunden behoben werden. Weiterhin war immer mindestens ein Mitglied des Technikteams während der VR-Phase anwesend und konnte bei Unstimmigkeiten eintreten, obwohl auch das Organisationsteam in die technische Bedienung eingewiesen wurde.\\
-	Alle im Verlaufe des Projekts aufgetretenen Probleme konnte schlussendlich gelöst werden.
+Erschwerend hinzu kamen die Inkompabilitätsprobleme der Oculus Rift und dem Computer der Virtusphere, welche den Projektfortschritt lahm legten und darin resultierten, dass bereits vereinbarte Termine mit Versuchspersonen verlegt werden mussten. Die Virtusphere musste durch einen gewöhnlichen Controller ersetzt werden, da in der gegebene Zeit keine Lösung gefunden werden konnte und auch die Idee, stattdessen ein Laufband zu nutzen aus Inkompabilitätsgründen nicht umgesetzt werden konnte.\\
+	Während der Versuchsdurchführung schaltete sich teilweise die VR-Brille ab. Dieses Problem trat allerdings nur sehr selten auf und konnte innerhalb von Sekunden behoben werden. Weiterhin war immer mindestens ein Mitglied des Technikteams während der VR-Phase anwesend und konnte bei Unstimmigkeiten eintreten, obwohl auch das Organisationsteam in die technische Bedienung eingewiesen wurde.\\
+	Alle im Verlaufe des Projekts aufgetretenen Probleme konnte schlussendlich gelöst oder zumindest umgangen werden.
 				
 
 \section{Durchführung}
@@ -251,14 +253,17 @@ Hier werden Einschätzungen der Versuchsperson nach dem VR-Aufenthalt festgehalt
 
 \begin{itemize}
 	\setlength{\itemsep}{0em}
-	\item Sortieren der Szenarien/Ampelphasen vom kürzesten zum längsten mit Sekundenangabe. 
+	\item Sortieren der Szenarien vom kürzesten zum längsten mit geschätzter Sekundenangabe
 	\item Sortieren der Szenarien vom besten zum schlechtesten
-	\item Wie lange hat der VR-Teil Ihrer Meinung nach gedauert?
+	\item Wie lange hat der VR-Teil Ihrer Meinung nach gedauert? (0-7 Minuten, 7-15 Minuten, 15-25 Minuten, 25-35 Minuten, länger als 35 Minuten)
 	\item Hatten Sie Spaß?
 	\item Ist Ihnen irgendetwas aufgefallen? Wenn ja, was?
 	\item Haben Sie bemerkt, um was es sich in dem Experiment handelt? Wenn ja, worum handelt es sich und wann haben Sie es bemerkt?
 \end{itemize}
 
+Einerseits wird festgestellt, welches Szenario als das längste wahrgenommen wurde und damit, welchen Effekt die einzelnen Zeitgeber auf die Zeitwahrnehmung hatten. 
+Es wurde die ,,Four alternative forced choice'' Methode verwendet, die Versuchspersonen dazu zwingt die Szenarien zu sortieren. So sollte herausgefunden werden, ob eines der erlebten Szenarien die Zeitwahrnehmung der Versuchspersonen rafft oder streckt.	
+Um den Spaßfaktor als Störfaktor berücksichtigen zu können, wird ebenfalls nach dem subjektiv besten und schlechtesten Szenario und danach direkt gefragt, ob die Versuchsperson Spaß hatte.
 \subsection{Ablauf}
 
 %Bei der Experimentdurchführung nahmen jeweils im Durchschnitt 8.3 Versuchspersonen pro Tag an der Untersuchung teil. Jeder Durchlauf dauerte je nach Versuchsperson zwischen 35 Minuten bis 50 Minuten.
@@ -300,37 +305,36 @@ Sollte etwas nicht korrekt ablaufen, können die Versuchsleiter dies über den M
 
 \textbf{Phase 3}
 
-Zurück in Raum 1 schätzt die Versuchsperson ein weiteres Mal die Zeit ab (40 Sekunden ohne Unterhaltung), wobei die Anweisungen diesbezüglich aus Phase 1 erhalten bleiben. Die Versuchsperson füllt Fragebogen C aus (genaueres im Kapitel \ref{subsec:fragebogen}) und schätzt noch zweimal unter gleichbleibenden Bedingungen aus Phase 1 die Zeit ab (40 Sekunden mit Gespräch und 30 Sekunden ohne Gespräch) bevor das Experiment beendet ist. Die Versuchsperson hat die Möglichkeit ihre Testergebnisse, sowie die Punktzahl des Intelligenztests zu erfahren.
+Zurück in Raum 1 schätzt die Versuchsperson ein weiteres Mal die Zeit ab (40 Sekunden ohne Unterhaltung), wobei die Anweisungen diesbezüglich aus Phase 1 erhalten bleiben. Die Versuchsperson füllt Fragebogen C aus und schätzt noch zweimal unter gleichbleibenden Bedingungen aus Phase 1 die Zeit ab (40 Sekunden mit Gespräch und 30 Sekunden ohne Gespräch) bevor das Experiment beendet ist. Die Versuchsperson hat die Möglichkeit ihre Testergebnisse, sowie die Punktzahl des Intelligenztests zu erfahren.
 
 
 	\section{Versuchspersonen}
-Für die Durchführung des Experiments warben wir Versuchspersonen an, um die Hypothesen empirisch zu überprüfen.
-\todo{versuchsdesing, empirik etc} 
-Diese waren bezüglich der Forschungsfrage unwissend und unterschrieben vor der Teilnahme eine Einverständniserklärung, die sie auf mögliche Risiken und datenschutzrechtliche Informationen (welche) aufmerksam machte. Alle Versuchspersonen nahmen freiwillig am Experiment teil und wurden nicht entschädigt. 
+Für die Durchführung des Experiments warben wir Versuchspersonen an, um die Hypothesen empirisch zu überprüfen. 
+Diese waren bezüglich der Forschungsfrage unwissend 
+%und unterschrieben vor der Teilnahme eine Einverständniserklärung, die sie auf mögliche Risiken und datenschutzrechtliche Informationen (welche) aufmerksam machte. Alle Versuchspersonen 
+, nahmen freiwillig am Experiment teil und wurden nicht entschädigt. 
 
 \subsection{Demografische Angaben}
-Es wurden Versuchspersonen zwischen 18 und 80 Jahren gesucht, wobei eine 17-jährige Person mit der Einverständnis eines \textbf{erwachsenen?} ebenfalls am Experiment teilnahm. Das Durchschnittsalter aller Versuchspersonen liegt bei 31 Jahren. Vorerfahrungen im Bezug auf VR wurden bei der Suche nicht berücksichtigt.
+Es wurden Versuchspersonen zwischen 18 und 80 Jahren gesucht, wobei eine 17-jährige Person mit der Einverständnis einer verantwortlichen Person ebenfalls am Experiment teilnahm. Voraussetzung für die Teilnahme waren eine normale bzw. korrigierte Sehkraft und Farbsehen. Vorerfahrungen im Bezug auf VR wurden bei der Suche nicht berücksichtigt.\\
+Das Durchschnittsalter aller Versuchspersonen liegt bei 31 Jahren.\\
+Die Verteilung der Geschlechter war nicht ausgeglichen, da sich überwiegend männliche Versuchspersonen (70,83\%) bewarben. Ebenfalls lagen laut dem verwendeten Intelligenztest rund 67\% der Versuchspersonen im Bereich der durchschnittlichen Intelligenz, bei 25\% ergab der Test eine hohe und bei 6\% eine sehr hohe Intelligenz. Lediglich 2\% schnitten unterdurchschnittlich mit einer niedrigen Intelligenz ab.\\
+Aus den in Fragebogen A abgefragten Störfaktoren wurden nicht-Muttersprachler wie auch psychische Erkrankungen individuell berücksichtigt. 
+Insgesamt wurden 48 gültige Ergebnisse für die Auswertung benötigt, von denen allerdings fünf aufgrund von unvollständigen Angaben auf Fragebogen C aus der Endauswertung ausgeschlossen werden mussten. Das hat zur Folge, dass nicht alle Szenarienreihenfolgen zweimal durchlaufen wurden, da aber nur ein relativ geringer Teil fehlt wurde dieser Faktor in der Auswertung nicht beachtet
 %da die Zeitwahrnehmung von Jugendlichen langsamer ist als die von Erwachsenen. Der Grund: Je mehr Neues und Emotionales man erlebt, desto mehr prägt es sich im Gedächtnis ein; und desto länger wirkt ein Zeitraum im Nachhinein. Das ergab die Studie "`Age effects in perception of time'' von Marc Wittmann und Sandra Lehnhoff aus dem Jahr 2005 \cite{AgeEffects}. Aufgrund dessen wurden ausschließlich erwachsene Versuchspersonen gesucht, die über dem Zeitraum der "`erste Male erleben'' hinaus sind. 
-
-Insgesamt wurden 48 gültige Ergebnisse für die Auswertung benötigt, 
+ 
 
 %da die vier Szenarien in vierundzwanzig verschiedenen Reihenfolgen dargestellt werden konnten. Diese sollten jeweils von zwei Personen durchgeführt werden. Deshalb haben wir 50 Versuchspersonen eingeladen, um am Experiment teilzunehmen. Falls es während des Expriments zu Ausfällen kommen sollte oder Ergebnisse unbrauchbar wären, hatten wir zwei Versuchspersonen zusätzlich. \\
 
-Die Verteilung der Geschlechter war nicht ausgeglichen, da sich überwiegend männliche Versuchspersonen bewarben. Ebenfalls lagen \textbf{xy} usw usf intelligenzverteilung \\
-
-
-- beachte krankheiten + muttersprachler
-- antal och uteslutna personer 
+.
 %Das gilt auch für den Bildungsstand der Versuchspersonen 
 
 %Die Sprachkenntnisse waren uns dennoch wichtig, aufgrund des Mehrfach-Wortschatz Intelligenztests der auf guten Deutschkenntnissen basiert und wir die selben Voraussetzungen bei allen Versuchspersonen gewährleisten wollten. 
 
-Weitere Voraussetzung, die nach Eingang der Bewerbung erfragt wurde, waren eine normale bzw. durch eine Brille oder Kontaktlinsen korrigierte Sehkraft und Farbsehen. 
+
 
 \subsection{Suche}
-\todo{überhaupt mal orga und technik definieren}
-Das Organisationsteam war für die Suche der Versuchspersonen verantwortlich. Die Kommunikation zwischen Versuchspersonen und Team verlief über eine speziell erstellte E-Mail-Adresse. Meldeten Personen Interesse am Projekt an, wurde für sie in vorher eingeteilten Terminslots, welche sich über einen Zeitraum von sechs Tagen erstreckten, ein passender Termin gefunden.
-\todo{und wieder umgetragen}
+
+Das Organisationsteam war für die Suche der Versuchspersonen verantwortlich. Die Kommunikation zwischen Versuchspersonen und Team verlief über eine speziell erstellte E-Mail-Adresse. Meldeten Personen Interesse am Projekt an, wurde für sie in vorher eingeteilten Terminslots, welche sich initial über einen Zeitraum von sechs Tagen erstreckten, ein passender Termin gefunden.
 Die meisten Versuchspersonen wurden über eine Anzeige auf der Website \textit{ebay-kleinanzeigen.de} auf dieses Projekt aufmerksam. Die Annonce wurden mehrmals in der Woche aktualisiert, sodass sie eine Großzahl von Menschen sehen konnte.\\
 Versuchspersonen im Bekanntenkreis anzuwerben war die zweiterfolgreichste Methode. Es wurde sich darauf geeinigt, keine Personen des engeren Familien- oder Freudeskreises teilnehmen zu lassen, da diese über Vorwissen der Forschungshypothese verfügen könnten oder sich aufgrund der emotionalen Bindung zu einem der Versuchsleiter ,,viel Mühe'' geben.\\
 Auf die in der Universität Bremen verteilten Flyer kamen die wenigsten Rückmeldungen. Es wurde der gleiche Text wie in der Internetannonce verwendet:\\
@@ -436,20 +440,20 @@ Besonders freuen wir uns im Nachhinein aber darüber, dass wir trotz teils erheb
 Nicht unerwähnt sollen allerdings auch die positiven Erfahungen sein, die wir innherhalb der Gruppe und gerade zum Schluss des Projekts mit den Versuchspersonen erfahren konnten. Besonders das Zwischenmenschliche, die Kommunikation und Gruppendynamik bewerten wir als sehr gut und eine Stärke der gesamten Gruppe. 
 
 
-\section{gute sätze}
- Die von uns verwendete Methode der Datensicherung und Versuchsdurchführung war aussagekräftig, da alle Durchläufe, sowie die dazugehörigen Erklärungen bei allen Versuchspersonen exakt gleich stattgefunden haben.
+%\section{gute sätze}
+ %Die von uns verwendete Methode der Datensicherung und Versuchsdurchführung war aussagekräftig, da alle Durchläufe, sowie die dazugehörigen Erklärungen bei allen Versuchspersonen exakt gleich stattgefunden haben.
 
 
 
-Die Messung der Wahrnehmung der einzelnen, von uns beeinflussten Szenarien, mittels Gravitationsfaktoren und auditiven Einflüssen. Durch die Anordnung der Szenarien nach der Zeit, zeigt sich, wie sehr wir die Wahrnehmung der Versuchspersonen beeinflussen konnten.  Wir haben die sogenannte "`Four alternative forced choice'' Methode verwendet und somit die Versuchspersonen "`gezwungen'', die Szenarien zu sortieren. Was diese nicht wussten ist, dass jedes Ampelszenario gleich lange gedauert hat. So erhoffen wir uns herauszufinden, ob eines der erlebten Szenarien die Zeitwahrnehmung der Versuchspersonen rafft oder streckt.	
+%Die Messung der Wahrnehmung der einzelnen, von uns beeinflussten Szenarien, mittels Gravitationsfaktoren und auditiven Einflüssen. Durch die Anordnung der Szenarien nach der Zeit, zeigt sich, wie sehr wir die Wahrnehmung der Versuchspersonen beeinflussen konnten.  
 
 
 
 
-Wir wollten herausfinden, ob das persönliche und optische Empfinden der Versuchspersonen gegenüber der Umgebung in den Szenarien, die Wahrnehmung der Versuchspersonen beeinflusst hat
+%Wir wollten herausfinden, ob das persönliche und optische Empfinden der Versuchspersonen gegenüber der Umgebung in den Szenarien, die Wahrnehmung der Versuchspersonen beeinflusst hat
 
 
-Das Hinderniss, welches uns fast das gesamte Experiment über benachteiligte war, dass alle Experimentatoren wenig Kenntnisse über die Durchführung uns Ausführung eines wissenschaftlichen Experiments hatten. Es fehlte uns jegliches Vorwissen zu den Methoden eines Experiments und welche Kriterien zu beachten sind. Dies kostete uns am Anfang viel Zeit, die wir in die online Recherche investierten, sowie für die Absprache mit den erfahrenen Tutoren.
+%Das Hinderniss, welches uns fast das gesamte Experiment über benachteiligte war, dass alle Experimentatoren wenig Kenntnisse über die Durchführung uns Ausführung eines wissenschaftlichen Experiments hatten. Es fehlte uns jegliches Vorwissen zu den Methoden eines Experiments und welche Kriterien zu beachten sind. Dies kostete uns am Anfang viel Zeit, die wir in die online Recherche investierten, sowie für die Absprache mit den erfahrenen Tutoren.
 
 %\section{Verlauf} % Autor: Marvin & Daniel
 	
@@ -491,7 +495,7 @@ Das Hinderniss, welches uns fast das gesamte Experiment über benachteiligte war
 
 
 \newpage
-\section{Appendix} % = Anhang, Autor: Jana
+\section{Appendix} % = Anhang, Autor:  Alina
 	Anhang.
 	\todo{Fehlt noch.}
 	
