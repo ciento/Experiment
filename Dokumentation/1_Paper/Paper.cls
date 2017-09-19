@@ -51,6 +51,17 @@
             hyperfigures=true
             ]
             {hyperref}
+\usepackage[backend=biber, 
+    sorting=anyt, %Alphabet. Label, Name, Year, Title
+    language=german,
+    abbreviate=true,
+    date=short
+    ]{biblatex}
+\usepackage[babel,german=guillemets]{csquotes}
+\addbibresource[datatype=bibtex]{quellen.bib}
+\DefineBibliographyStrings{german}{
+    urlseen = {Aufgerufen am:},
+}
 
 % -----------------------------------------------------------------------
 % Page layout
