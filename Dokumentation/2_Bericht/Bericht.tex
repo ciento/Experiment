@@ -14,6 +14,8 @@
 \usepackage{todonotes}
 \usepackage{float}
 
+\bibliography{quellen}
+
 \begin{document}
 
 \maketitle
@@ -53,9 +55,8 @@ Zeitempfinden durch in der VR eingesetzte visuelle und auditive Zeitgeber manipu
 wie nachhaltig ist der Einfluss eines Aufenthalts in der VR auf das menschliche Zeitempfinden
 im realen Leben?''} 
  
-\subsection{Planung}
-
- % Marvin
+\subsection{Planung} % Marvin
+\textit{Autor: Marvin}\\
 		%Erster Kontakt
 		Erster Berührungspunkt mit dem Bachelorprojekt ¡Experiment! war für die Gruppenmitglieder die Vorstellung durch Thorsten Kluß am 24.01.2017 an der Hochschule für Künste, bzw. dessen Wiederholung am 06.04.2017 an der Universität Bremen. Erweitert wurde der zweite Termin dabei durch eine Führung durch das Cartesiums Bremen, sowie einer Beschreibung der vorangegangen Bachelorprojekte. Hierdurch konnte ein erster Eindruck über die verschiedenen Versuchsaufbauten und ferner der Möglichkeiten unseres Projekts gewonnen werden.\\
 Die Gruppenmitglieder erstellten persönliche ,,Skill-Profile'', welche die eigenen Stärken und Schwächen darlegten und anhand derer sich die Gruppenmitglieder in zwei Teams einteilen ließen: das Technikteam (bestehend aus Marvin Becker, Nicole Dörnbach, Alina Escher, Jovana Kaurin, Svenja Kettenburg, Daniel Schmidt und Jana Wahls), welches primär für die Erstellung der virtuellen Testumgebung verantwortlich war und das Organisationsteam (bestehend aus Nizan Averbuh, Kim Brüning und Berna Sen), welche sich um das Anwerben von Versuchspersonen, die Beschaffung benötigter Dokumente und andere organisatorische Dinge kümmerte.
@@ -65,7 +66,6 @@ Treffen fanden je nach Situation im Konferenzraum 4.43 des vierten Stockwerks od
 Auch wurden alle technischen Lösungen zur Arbeitsweise innerhalb der ersten zwei Wochen implementiert. Als zentrale Sammelstelle für Dokumente und projektrelevante Informationen wurde ein Board beim Service "`Trello'' genutzt. Dort wurden wöchentlichen Sprints sowie der Scrum-Backlog, die Protokolle oder die Termine der Treffen abgelegt. Für schnelle Kommunikation untereinander wurde der Nachrichtendienst "`WhatsApp'' genutzt, die Kommunikation zu den Dozenten lief per Email und in dringenden Fällen Telefonaten.\\
 		Die genauen Spezifikationen an unser Experiment gemäß der Forschungsfrage wurden nach Rücksprache mit den Dozenten immer wieder verändert. Hierdurch entstand viel unbenutztes Material, da wir parallel bereits damit begonnen hatten, 3D-Objekte nach den ersten Anforderungen für unsere Versuchswelt zu erstellen. Dies geschah fälschlicherweise aus dem Versuch heraus, bereits verlorene Zeit aufzuholen, wodurch jedoch nur weiterer Verschnitt produziert worden ist, was uns umso mehr Zeit gekostet hat.\\
 		Wir approximierten, dass sich ab diesem Zeitpunkt unser Projekt in 3 Phasen (Programmierphase, Versuchsphase, Evaluation/Paper) unterteilen ließe und legten Fristen für die einzelnen fest. Im Laufe des Projektes sollten wir jedoch erkennen, wie weit diese Einschätzungen von der Realität abwichen.Zu Beginn eines jeden Arbeitstages wurde ein 10-minütiges "`Scrum-Treffen'' abgehalten, in dem anstehende Aufgaben aus dem Backlog und Probleme besprochen wurden. Diese Treffen wurden jedoch insbesondere in späteren, arbeitsintensiveren Phasen vernachlässigt.\\
-
 		
 		\begin{figure}[H] % here - top - bottom - page, das ! erzwingt die Position falls möglich
 			\centering
@@ -73,36 +73,30 @@ Auch wurden alle technischen Lösungen zur Arbeitsweise innerhalb der ersten zwe
 			\caption{Das ¡Experiment!-Team bei der Arbeit}
 			\label{img:experiment-team-bei-der-arbeit}
 		\end{figure}
-		
 
 
 \section{Virtuelle Testumgebung}
-
 \subsection{Experimentdesign}
-
+\textit{Autor: Daniel}\\
 Das Experimentdesign besteht einerseits aus der Gestaltung der virtuellen Testumgebung, deren Steuerung durch die Versuchsperson und der Erstellung begleitender Dokumente und Tests, um die Effekte nachweisen zu können.\\
 Die Testumgebung wurde zunächst als Open-World-Konzept geplant, in welcher sich die Versuchsperson nach Belieben umsehen konnte. Dieses Konzept wurde verworfen, da Versuchspersonen auf diese Weise nicht das exakt gleiche erleben und Ergebnisse in dieser Hinsicht weniger aussagekräftig sind. Um die gleichen Eindrücke für jede Versuchspersonen zu gewährleisten, war das Implementieren einer vorgegebenen Route innerhalb der Testumgebung Voraussetzung (vgl. Kapitel \ref{subsec:aufbau}). Die Versuchsperson muss 18 Sekunden an einer roten Fußgängerampel warten, von welcher sie die Zeitmanipulationen hören bzw. sehen und sich beeinflussen lassen kann. Die Zeiten sind an reale Ampelzeiten angelehnt.
 	Obwohl das Experimentdesign vorsah, die Navigation innerhalb der Testumgebung in der Virtusphere stattfinden zu lassen um das Immersionserlebnis zu erhöhen, musste aufgrund von erheblichen technischen Problemen diesbezüglich auf herkömmliche Controller ausgewichen werden.\\
 	Die ermittelte Fragestellung und Hypothesen \textbf{noch nicht genannt} sollten empirisch überprüft werden, wobei genug Versuchspersonen am Experiment teilnehmen mussten.
 Auf Grundlage der Rechercheergebnissen zur  Zeitmanipulation wurden die verwendeten Dokumente gestaltet. Hierbei wurden neben mehreren Fragebögen, welche Einflussfaktoren und Effekte der VR abfragen		 (vgl. Kapitel \ref{subsec:dokumente}) auch insgesamt sechs Zeiteinschätzungstests in den Ablauf integriert, welche den allgemeinen Einfluss der VR auf das menschliche Zeitempfinden misst.\\
-Um auszuschließen, dass eine feste Reihenfolge der Szenarien einen Einfluss auf die Bewertung der vergangenen Zeit hat, wurden die Szenarien in allen 24 (= 4!) möglichen Reihenfolgen an ungefähr gleich vielen Versuchspersonen getestet. Der Experimentablauf lief für jede Versuchsperson gleich ab, daher sind die gesammelten Ergebnisse in der Hinsicht aussagekräftig, dass jede der Versuchspersonen den gleichen Ablauf mitgemacht hat. Die verschiedenen Szenarioreihenfolgen werden hier nicht beachtet, da diese speziell implementiert wurden, um Beeinflussung zu vermeiden.
+Um auszuschließen, dass eine feste Reihenfolge der Szenarien einen Einfluss auf die Bewertung der vergangenen Zeit hat, wurden die Szenarien in allen 24 $(= 4!)$ möglichen Reihenfolgen an ungefähr gleich vielen Versuchspersonen getestet. Der Experimentablauf lief für jede Versuchsperson gleich ab, daher sind die gesammelten Ergebnisse in der Hinsicht aussagekräftig, dass jede der Versuchspersonen den gleichen Ablauf mitgemacht hat. Die verschiedenen Szenarioreihenfolgen werden hier nicht beachtet, da diese speziell implementiert wurden, um Beeinflussung zu vermeiden.
 	
 
 \subsection{Aufbau der Testumgebung}
 \textit{Autor: Jana}\\
-	 
-  
 Alle dieser vier sogenannten Szenarien sind auf derselben Karte zu finden und werden von jeder Versuchsperson durchlaufen.\\
  Die verwendete Karte selbst ist statisch und verwendet Teleporter hinter jedem Szenario, um jede der Szenarioreihenfolgen zu realisieren.
-
  
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{../Bilder/mapLegende.png}
+	\includegraphics[scale=0.8]{../Bilder/mapLegende.png}
 	\caption{Ansicht der Testumgebung von oben}
 	\label{img:map}
 \end{figure}
-
 
 Abbildung \ref{img:map} zeigt die erstellte Karte von oben. 
 Die Versuchsperson kann sich ausschließlich auf dem äußeren Fußgängerweg bewegen, sodass sie die vier Ampelkreuzungen überqueren muss. Die Laufrichtung ist gegen den Uhrzeigersinn vorgegeben.\\
@@ -110,37 +104,30 @@ Die gelben Kästen zeigen die Positionen der jeweiligen Szenarien an, die roten 
 Das blaue x zeigt die möglichen Einstiegspunkte, wobei es vom Startszenario abhängt, welcher tatsächlich aktiv ist. Die restlichen drei bleiben entsprechend passiv. Der zu erreichende Endpunkt liegt hinter dem letzten durchlaufenen Szenario. 
 
 \begin{figure}[H]
-
 	\subfigure[Ampelphase an einem LKW]{\includegraphics[width=0.5\textwidth]{../Bilder/a.png}}
 	\subfigure[Ampelphase mit Vogel und Menschen]{\includegraphics[width=0.5\textwidth]{../Bilder/b.png}}
-
 
 	\subfigure[Ampel neben einem schaukelndem Kind mit rosa Shirt]{\includegraphics[width=0.5\textwidth]{../Bilder/c.png}}
 	\subfigure[Ampel neben einem schaukelndem Kind mit grünem Shirt]{\includegraphics[width=0.5\textwidth]{../Bilder/d.png}}
 	\caption{Benutzeransicht der Kreuzungen}
-	
 \end{figure}
-
-
 
 Die auditive Manipulation wird durch ein gleichmäßig schnelles (Szenario \textbf{a}) oder langsames (Szenario \textbf{b}) Ticken der Fußgängerampel realisiert. Auffällige Objekte sollen der Versuchsperson helfen, sich an das jeweilige Szenario zu erinnern (ein LKW in Szenario \textbf{a} und ein Fischreiher auf dem Gehweg in Szenario \textbf{b}).\\
 Ein schaukelndes Kind stellt die visuelle Manipulation dar, da es durch seine Animation den Eindruck macht schneller (Szenario \textbf{c}) oder langsamer (Szenario \textbf{d}) zu schaukeln als es in der Realiät möglich ist. Die Versuchsperson ist durch die Weltlogik dazu gezwungen an der Ampel zu warten, sodass das jeweilige Szenario auf sie wirken kann.
 \label{subsec:aufbau}
 
 \subsection{Software}
+\textit{Autor: Daniel}\\
 \subsubsection{Blender}
 Blender wurde für das Erstellen der benötigten 3D-Objekte und zum Animieren der visuellen Zeitgeber verwendet.\\
 
 % 3d objekte
 \textbf{3D-Objekte}\\
-Zu den verwendeten Objekten zählen die Ampeln, Autos, Bäume, Gärten, Gehsteige, Laternen, menschliche NPCs, Mülleimer, die Parkbank, das Plakat an der Ampel, der Fischreiher, die Schaukel, Straßenschilder, der Supermarkt und Wohnhäuser.\\
- Erstellt, aber nicht in der Testumgebung verwendet wurden die Blumen, Büsche, der Heißluftballon, der Hund, der Kaktus, die Rasenfläche, die Sonne, Straßen und -schilder und Wolken.\\
-		Blumen, Büsche und die Rasenfläche wurden nachträglich entfernt, da diese Details zu viel GPU-Leistung forderten. Der Heißluftballon wurde indirekt in Form eines Fotos auf dem Plakat verwendet und für den Kaktus kein geeigneter Platz gefunden. Ebenfalls wurde aufgrund von Importproblemen des Hundes in die Unreal Engine stattdessen der bereits vorliegende Fischreiher verwendet und keine Zeit in die Fehlersuche investiert.
+Zu den verwendeten Objekten zählen die Ampeln, Autos, Bäume, Gartenzäune, Gehsteige, Laternen, menschliche NPCs, Mülleimer, die Parkbank, das Plakat an der Ampel, der Fischreiher, die Schaukel, Straßenschilder, der Supermarkt, der American Store und Wohnhäuser.\\
+Erstellt, aber nicht in der Testumgebung verwendet wurden die Blumen, Büsche, der Heißluftballon, der Hund, der Kaktus, die Rasenfläche, die Sonne, Straßen und -schilder und Wolken.\\
+		Blumen, Büsche und die Rasenfläche wurden nachträglich entfernt, da diese Details zu viel GPU-Leistung forderten. Der Heißluftballon wurde indirekt in Form eines Fotos auf dem Plakat verwendet und für den Kaktus kein geeigneter Platz gefunden. Ebenfalls wurde aufgrund von Importproblemen des Hundes in die Unreal Engine stattdessen der bereits vorliegende Fischreiher verwendet, um die Zeit der Fehlersuche zu vermeiden.
  		Sonne und Wolken waren in der Unreal-Vorlage bereits enthalten und mussten nicht durch die eigenen ersetzt werden. 
 		Die Straße wurde durch eine Platte mit Straßentextur dargestellt, da sich dies als einfacher erwies und von den Straßenschildern wurden nicht alle benutzt, daher sind sie in beiden Listen wiederzufinden.\\
-		
-		
-	
 
 		\begin{figure}[H] % here - top - bottom - page, das ! erzwingt die Position falls möglich
 			\centering
@@ -149,10 +136,10 @@ Zu den verwendeten Objekten zählen die Ampeln, Autos, Bäume, Gärten, Gehsteig
 			\label{img:heron-error}
 		\end{figure}
 
-An den erstellten Objekten traten gelegentlich kleinere Fehler auf, wie der in Abbildung \ref{img:heron-error} zu sehende Reiher, der nachgebessert werden musste. Zwei Punkte vom Hals waren fälschlicherweise bis in den Kopf verschoben, wodurch seitlich ein kleines Loch entstand. Diese Fehler konnten durch Verschiebungen der Punkte leicht behoben werden.\\
+An den erstellten Objekten traten häufig sowohl kleinere als auch größere Fehler auf, wie der in Abbildung \ref{img:heron-error} zu sehende Reiher, der nachgebessert werden musste. Zwei Punkte vom Hals waren fälschlicherweise bis in den Kopf verschoben, außerdem war seitlich ein kleines Loch im Kopf bzw. Hals. Diese Fehler konnten durch Verschiebungen der Punkte und füllen des Loches leicht behoben werden.\\
 			 
 \textbf{Keyframe-Animationen}\\
-Die Animation der Schaukel als Zeitgeber wurde mit den in Blender integrierten Keyframes realisiert. Die Schaukelseile und der -sitz sind als ein Objekt fest miteinander verbunden und wurden um das statische Gerüst bewegt. Ausgangspunkt ist der höchste Punkt des Sitzes hinter Schaukel, welcher entsprechend weiterbewegt und als Keyframe in der Zeitleiste gespeichert wird, bis eine vollständige Schaukelbewegung animiert ist. Die Bewegung wurde einmal in Keyframes gespeichert und konnte für die schnelle und langsame Animation entsprechend gedehnt oder gestaucht und seperat gespeichert werden.\\
+Die Animation der Schaukel als Zeitgeber wurde mit den in Blender integrierten Keyframes realisiert. Die Schaukelseile und der -sitz sind als ein Objekt fest miteinander verbunden und wurden um das statische Gerüst bewegt. Ausgangspunkt ist der höchste Punkt des Sitzes hinter Schaukel, welcher entsprechend weiterbewegt und als Keyframe in der Zeitleiste gespeichert wird, bis eine vollständige Schaukelbewegung animiert ist. Die Bewegung wurde einmal in Keyframes gespeichert und konnte für die schnelle und langsame Animation entsprechend gedehnt oder gestaucht und separat gespeichert werden.\\
 Die zur Schaukelbewegung passenden Bewegungen des Kindes wurden an der Figur mithilfe von Skelettanimationen und Keyframes realisiert und in die Schaukel-Datei importiert. Das Kind wurde im 3D-Raum entsprechend positioniert und die Keyframe-Zeitleisten aufeinander abgestimmt. \\
 Da beim Unreal-Import Fehler in der Animation des Kindes auftraten, die nicht zeitnah behoben werden konnten, wurde in der finalen Version allerdings ein statisch auf der Schaukel sitzendes Kind verwendet. 
 		
@@ -160,28 +147,18 @@ Da beim Unreal-Import Fehler in der Animation des Kindes auftraten, die nicht ze
 Ausgangspunkt der virtuellen Testumgebung war zunächst die VR-Vorlage, in welche die fertigen 3D-Objekte eingefügt wurden. Die passende Skalierung zu finden stellte sich zu Beginn als Herausforderung dar, da es in einer nahezu leeren Welt keine Orientierungspunkte gab. Nach einiger Recherche wurde ein Schachbrett mit je $1m^{2}$-großen Feldern unter die Map gelegt, an welcher sich die Platzierung der Straßen und Gehwege orientierte. Danach wurden Häuser, Gärten und die kleineren Objekte in die Welt eingefügt.
 Die Implementierung der Ampelschaltung, der fahrenden Autos und der Teleporter waren die aufwendigsten Komponenten der Weltlogik, sodass auch viel Zeit in Fehlersuche und -behebung investiert werden musste. Sie wurden duch Blueprints implementiert.\\
 		Durch die Umstellung der Steuerung auf herkömmliche Controller wurde etwa mittig im Designprozesses die anfänglich gewählte VR-Vorlage durch eine 3rd-Person-Vorlage ersetzt, da dies das Anschließen eines Controllers enorm vereinfachte.
-				Im Laufe der Arbeit mit der Unreal Engine traten einige Fehler auf, deren Suche und Behebung teilweise sehr viel Zeit in Anspruch nahm.\\
-Die Bearbeitungs-Ansicht (Texture) in Blender entsprach teils weder der in Blender gerenderten Ansicht (Rendered) noch der in der Unreal Engine angezeigten Ansicht, sodass teilweise drei verschiedene Texturansichten existierten und die Materials dieser Objekte nach dem Import in der Unreal Engine nachträglich bearbeitet werden mussten. Nahezu alle Materials wurden in der Unreal Engine editiert, da einige der in Blender definierten  Materialeigenschaften wie Specular Lightning oder Spiegelungen nicht von übernommen wurden.\\
+		Im Laufe der Arbeit mit der Unreal Engine traten einige Fehler auf, deren Suche und Behebung teilweise sehr viel Zeit in Anspruch nahm.\\
+Die Bearbeitungs-Ansicht (Texture) in Blender entsprach teils weder der in Blender gerenderten Ansicht (Rendered) noch der in der Unreal Engine angezeigten Ansicht, sodass teilweise drei verschiedene Texturansichten existierten und die Materials dieser Objekte nach dem Import in der Unreal Engine nachträglich bearbeitet werden mussten. Nahezu alle Materials wurden in der Unreal Engine editiert, da einige der in Blender definierten Materialeigenschaften wie Specular Lightning oder Spiegelungen nicht von übernommen wurden.\\
 Ebenfalls wurde bei einigen Objekten die Textur nicht korrekt dargestellt oder Objekte als teilweise durchsichtig. 
-Die Textur einiger Objekte wurde nur angezeigt, wenn sich der viewpoint innerhalb des Objekts befand. Dies stellte sich bei näherer Betrachtung als ein Fehler an der Objektoberfläche heraus, der durch Inventierung der Normalen behoben werden konnte.		\\
+Die Textur einiger Objekte wurde nur angezeigt, wenn sich der Viewpoint innerhalb des Objekts befand. Dies stellte sich bei näherer Betrachtung als ein Fehler an der Objektoberflächen heraus, der durch Invertierung der Normalen behoben werden konnte.\\
 Ein weiteres Hindernis, das erst beim Import in die Unreal Engine sichtbar wurde, waren fehlende UV-Maps auf allen erstellten 3D-Objekten. Ohne diese konnten statische Objekte in der Engine nur komplett schwarz dargestellt werden und musste in Blender entsprechend nachgebessert werden. 
 
 % nach einem Build des Lightnings komplett schwarz waren. Nach einiger Recherche stellte sich heraus, dass alle in der Unreal Engine verwendeten Objekte zwei UV-Maps benötigen. Die zweite ist notwendig für das korrekte Darstellen des Lightning und ist, zumindest bei statischen Objekten, zwingend notwendig. Sich bewegende Objekte wie beispielsweise die Autos werden anders gerendert und benötigen diese zweite UV-Map nicht. 
 		
-		
 				%Nach einiger Zeit stellte sich ebenfalls heraus, dass es für die Spiellogik einen erheblichen Unterschied macht, ob man die Welt mit der Oculus Rift durchläuft, oder "`auf dem Bildschirm''. Beispielsweise wird eine Triggerbox, die man betritt oder verlässt, normalerweise nur einmal getriggert. Beim Betreten/Verlassen mit VR-Ansicht hingegen um die zwanzig mal.
 	%%%%%%%%%%%%%%% achtung relevant ?
-	%_________________________________________________________________-				
-				
-				
-				
-				
-				
-	
+	%_________________________________________________________________-		
 
-			
-
-			
 		\begin{figure}[!htbp] % here - top - bottom - page, das ! erzwingt die Position falls möglich
 			\centering
 			\includegraphics[trim = 200mm 0mm 600mm 0mm, clip, height=\linewidth, width=\textheight, keepaspectratio, angle=270]{../Bilder/20170619_102101.jpg} % trim - l u r o
@@ -189,25 +166,20 @@ Ein weiteres Hindernis, das erst beim Import in die Unreal Engine sichtbar wurde
 			\label{img:porblemloesung}
 		\end{figure}
 		
-		
-
 \subsection{Hardware}
 \label{subsec:hardware}
 Folgende Hardware wurde für das den Versuchsdurchlauf verwendet: Ein LG Computer unter Windows 10, zwei Monitore (Fujitsu Siemens P19-1A \& 2. Benq FP222WH) auf denen die Versuchsleiter die Testumgebung beobachten konnten. Außerdem war der Raum mit Kopfhörern ausgestattet, um äußere Geräusche zu minimieren, sowie die Audio und Hintergrundgeräusche in der VR zu demonstrieren, die Oculus DK2 VR-Brille zur Orientierung in der VR und ein XBox-Controller für die Steuerung in der Welt.
 
 \subsection{Probleme und Hindernisse}
-Die Probleme, die das Projekt behinderten sind primär entweder organisatorischer oder technischer Natur.\\
+\textit{Autor: Daniel}\\
+Die Probleme, die das Projekt behinderten, sind primär entweder organisatorischer oder technischer Natur.\\
 Zeitliche Fehleinschätzungen zu Beginn des Experiments erwiesen sich als fatal, da die Termine zur Fertigstellung der einzelnen Arbeitsschritte im Verlauf des Projekts nicht mehr eingehalten werden konnten.
-Erschwerend hinzu kamen die Inkompabilitätsprobleme der Oculus Rift und dem Computer der Virtusphere, welche den Projektfortschritt lahm legten und darin resultierten, dass bereits vereinbarte Termine mit Versuchspersonen verlegt werden mussten. Die Virtusphere musste durch einen gewöhnlichen Controller ersetzt werden, da in der gegebene Zeit keine Lösung gefunden werden konnte und auch die Idee, stattdessen ein Laufband zu nutzen aus Inkompabilitätsgründen nicht umgesetzt werden konnte.\\
+Erschwerend hinzu kamen die Inkompatibilitätsprobleme der Oculus Rift und des Computers der Virtusphere, welche den Projektfortschritt lahm legten und darin resultierten, dass bereits vereinbarte Termine mit Versuchspersonen verlegt werden mussten. Die Virtusphere musste durch einen gewöhnlichen Controller ersetzt werden, da in der gegebene Zeit keine Lösung gefunden werden konnte und auch die Idee, stattdessen ein Laufband zu nutzen aus Inkompatibilitätsgründen nicht umgesetzt werden konnte.\\
 	Während der Versuchsdurchführung schaltete sich teilweise die VR-Brille ab. Dieses Problem trat allerdings nur sehr selten auf und konnte innerhalb von Sekunden behoben werden. Weiterhin war immer mindestens ein Mitglied des Technikteams während der VR-Phase anwesend und konnte bei Unstimmigkeiten eintreten, obwohl auch das Organisationsteam in die technische Bedienung eingewiesen wurde.\\
 	Alle im Verlaufe des Projekts aufgetretenen Probleme konnte schlussendlich gelöst oder zumindest umgangen werden.
-				
 
 \section{Durchführung}
 \subsection{Apparaturen}
-
-
-
 Zwei Räume wurden für die Durchführung des Experiments genutzt. In  \textit{Raum 1} fanden alle Formalitäten, Fragebögen und Zeiteinschätzungstest sowohl vor als auch nach der VR statt. Zu den Materialen dieses Raumes gehören die Dokumente (siehe Kapitel \ref{subsec:dokumente}), ein Gerät zum Stoppen der Zeit, das Infrarot-Thermometer (Braun ThermoScan 7 Infrarot Ohrthermometer IRT6520) und die dazugehörigen Schutzkappen. Neben den in Kapitel \ref{subsec:hardware} genannten Apparaturen, wurde zusätzlich eine Stoppuhr genutzt. 
 
 
@@ -216,17 +188,17 @@ Zwei Räume wurden für die Durchführung des Experiments genutzt. In  \textit{R
 Alle Ergebnisse einer Versuchsperson wurden auf Papier festgehalten, zusammengefasst gelagert und nach der des Projekts digitalisiert. Diese analoge Arbeitsweise wurde gewählt, um technische Probleme und Datenverlust zu vermeiden und da es für Versuchsleiter bei der hohen Anzahl an Versuchspersonen übersichtlicher und praktischer ist, alle zu einer Versuchsperson benötigten Dokumente physisch beieinander aufzubewahren.
 
 \subsubsection{Einverständniserklärung}
-
 Die Einverständniserklärung weist die Versuchsperson auf die allgemeinen Informationen, den Ablauf des Experiments und die Vertraulichkeit der Daten hin, nennt mögliche Risiken und Reaktionen des Körpers auf die VR und erinnert, dass das Experiment jederzeit abgebrochen werden kann. Jede Person, die am Experiment teilnehmen will, muss diese Einverständniserklärung unterzeichnen.
 
 \subsubsection{Intelligenztest}
-	
 Um Intelligenz als Einflussfaktor auf Zeitwahrnehmung (vgl. Kapitel 1.3 im Paper) in den Ergebnissen berücksichtigen zu können, wurde ein Intelligenztest in den Experimentablauf integriert.
 Mithilfe von Till Rackwitz, Masterstudent der Psychologie aus Hamburg und spezialisiert auf Intelligenztests, wurde der psychologisch anerkannte "`Mehrfach-Wortschatz-Intelligenztest (MWT-B)'', von Siegfried Lehre entwickelt und 1977 erstmals angewandt, in der fünften unveränderten Auflage für dieses Experiment ausgewählt. Er wurde aus der Testothek der psychologischen Abteilung der Universität Bremen ausgeliehen.\\
 Aus 37 Wortreihen, welche jeweils aus vier erfundenen und einem deutschen Wort bestehen, gilt es das existierende Wort durchzustreichen, wobei der Schwierigkeitsgrad mit jeder Wortreihe steigt.\\
 Der Test ist geeignet, da er das allgemeine Intelligenzniveau nach einem einfachen und zuverlässigen Schema misst, beliebig oft wiederholbar und für alle Versuchspersonen gleicht und ebenfalls kurz und simpel genug ist, um in den Experimentablauf integriert werden zu können. Ebenfalls benötigt dieser Test keine Versuchsleiter mit spezieller Ausbildung zur Abnahme von Intelligenztests. 
 Da die Intelligenz im Zusammenhang mit Zeitwahrnehmung nur eine kleine Rolle spielt, reicht ein kurzer Test für dieses Experiment aus. 
+
 \subsubsection{Fragebögen}
+\textit{Überarbeitung: Daniel}\\
 Durch das Verfahren des Fragebogens können Daten schnell und umfangreich erfasst und auf diese zu späteren Zeitpunkten zurückgegriffen werden. Jede Versuchsperson beantwortet unabhängig vom anwesenden Versuchsleiter die gleichen Fragen unter denselben Konditionen. Weiterhin werden Antworten sorgfältiger und ohne Zeitdruck beantwortet.\\
 
 \label{subsec:fragebogen}
@@ -319,24 +291,20 @@ Es wurden Versuchspersonen zwischen 18 und 80 Jahren gesucht, wobei eine 17-jäh
 Das Durchschnittsalter aller Versuchspersonen liegt bei 31 Jahren.\\
 Die Verteilung der Geschlechter war nicht ausgeglichen, da sich überwiegend männliche Versuchspersonen (70,83\%) bewarben. Ebenfalls lagen laut dem verwendeten Intelligenztest rund 67\% der Versuchspersonen im Bereich der durchschnittlichen Intelligenz, bei 25\% ergab der Test eine hohe und bei 6\% eine sehr hohe Intelligenz. Lediglich 2\% schnitten unterdurchschnittlich mit einer niedrigen Intelligenz ab.\\
 Aus den in Fragebogen A abgefragten Störfaktoren wurden nicht-Muttersprachler wie auch psychische Erkrankungen individuell berücksichtigt. 
-Insgesamt wurden 48 gültige Ergebnisse für die Auswertung benötigt, von denen allerdings fünf aufgrund von unvollständigen Angaben auf Fragebogen C aus der Endauswertung ausgeschlossen werden mussten. Das hat zur Folge, dass nicht alle Szenarienreihenfolgen zweimal durchlaufen wurden, da aber nur ein relativ geringer Teil fehlt wurde dieser Faktor in der Auswertung nicht beachtet
+Insgesamt wurden 48 gültige Ergebnisse für die Auswertung benötigt, von denen allerdings fünf aufgrund von unvollständigen Angaben auf Fragebogen C aus der Endauswertung ausgeschlossen werden mussten. Das hat zur Folge, dass nicht alle Szenarienreihenfolgen zweimal durchlaufen wurden, da aber nur ein relativ geringer Teil fehlt wurde dieser Faktor in der Auswertung nicht beachtet.
 %da die Zeitwahrnehmung von Jugendlichen langsamer ist als die von Erwachsenen. Der Grund: Je mehr Neues und Emotionales man erlebt, desto mehr prägt es sich im Gedächtnis ein; und desto länger wirkt ein Zeitraum im Nachhinein. Das ergab die Studie "`Age effects in perception of time'' von Marc Wittmann und Sandra Lehnhoff aus dem Jahr 2005 \cite{AgeEffects}. Aufgrund dessen wurden ausschließlich erwachsene Versuchspersonen gesucht, die über dem Zeitraum der "`erste Male erleben'' hinaus sind. 
- 
 
 %da die vier Szenarien in vierundzwanzig verschiedenen Reihenfolgen dargestellt werden konnten. Diese sollten jeweils von zwei Personen durchgeführt werden. Deshalb haben wir 50 Versuchspersonen eingeladen, um am Experiment teilzunehmen. Falls es während des Expriments zu Ausfällen kommen sollte oder Ergebnisse unbrauchbar wären, hatten wir zwei Versuchspersonen zusätzlich. \\
 
-.
 %Das gilt auch für den Bildungsstand der Versuchspersonen 
 
 %Die Sprachkenntnisse waren uns dennoch wichtig, aufgrund des Mehrfach-Wortschatz Intelligenztests der auf guten Deutschkenntnissen basiert und wir die selben Voraussetzungen bei allen Versuchspersonen gewährleisten wollten. 
 
-
-
 \subsection{Suche}
-
+\textit{Überarbeitung: Jana, Daniel}\\
 Das Organisationsteam war für die Suche der Versuchspersonen verantwortlich. Die Kommunikation zwischen Versuchspersonen und Team verlief über eine speziell erstellte E-Mail-Adresse. Meldeten Personen Interesse am Projekt an, wurde für sie in vorher eingeteilten Terminslots, welche sich initial über einen Zeitraum von sechs Tagen erstreckten, ein passender Termin gefunden.
 Die meisten Versuchspersonen wurden über eine Anzeige auf der Website \textit{ebay-kleinanzeigen.de} auf dieses Projekt aufmerksam. Die Annonce wurden mehrmals in der Woche aktualisiert, sodass sie eine Großzahl von Menschen sehen konnte.\\
-Versuchspersonen im Bekanntenkreis anzuwerben war die zweiterfolgreichste Methode. Es wurde sich darauf geeinigt, keine Personen des engeren Familien- oder Freudeskreises teilnehmen zu lassen, da diese über Vorwissen der Forschungshypothese verfügen könnten oder sich aufgrund der emotionalen Bindung zu einem der Versuchsleiter ,,viel Mühe'' geben.\\
+Versuchspersonen im Bekanntenkreis anzuwerben war die zweiterfolgreichste Methode. Es wurde sich darauf geeinigt, keine Personen des engeren Familien- oder Freundeskreises teilnehmen zu lassen, da diese über Vorwissen der Forschungshypothese verfügen könnten oder sich aufgrund der emotionalen Bindung zu einem der Versuchsleiter ,,viel Mühe'' geben.\\
 Auf die in der Universität Bremen verteilten Flyer kamen die wenigsten Rückmeldungen. Es wurde der gleiche Text wie in der Internetannonce verwendet:\\
 
 \par
@@ -352,7 +320,7 @@ Wenn du Interesse hast uns bei unserem Experiment zu unterstützen, dann würden
 
 Unser Experiment werden wir an diesen 6 Terminen durchführen: \\
 
-Mo 19., Mi 21., Do 22., Fr 23., Sa 24. und Mo 26. Juni 2017 immer jeweils zwischen 10 und 18 Uhr, im Cartesium an der Universität Bremen. Die Dauer wird 30 Minuten bis 45 Minuten betragen.
+Mo 19., Mi 21., Do 22., Fr 23., Sa 24. und Mo 26. Juni 2017 immer jeweils zwischen 10 und 18 Uhr, im Cartesium an der Universität Bremen. Die Dauer wird 30 bis 45 Minuten betragen.
 
 Wir freuen uns auf hoffentlich zahlreiche Nachrichten!
 
@@ -373,6 +341,7 @@ Die darauffolgende Diskussion wird ebenfalls nur in der wissenschaftlichen Ausar
 
 
 \section{Fazit} % Autor: Chovi
+\textit{Autor: Chovi}\\
 %\subsection{Zusammenfassung}
 %Wie bereits vorgestellt, lautet unsere Forschungshypothese: "`Kann man das Zeitempfinden in der Virtuellen Welt durch bestimmte Zeitgeber manipulieren?''.
 %Um dies zu beantworten haben wir unsere eigene Virtual Reality entwickelt und die von uns ausgewählten auditiven und visuellen Zeitgeber integriert. Von beiden Varianten gab es je zwei Ausführungen, eine langsame von der wir erwartet haben, dass sie zeitdehnend auf die Wahrnehmung der Versuchsperson wirkt und eine schnelle die zeitverkürzend wirken soll. Unsere VR-Welt bestand aus vier Kreuzungen und jeder von diesen wurde ein Zeitgeber zugeteilt. Während unsere Versuchspersonen an der Ampel der jeweiligen Kreuzung warteten, waren sie diesen Zeitgebern ausgesetzt. 
@@ -399,7 +368,6 @@ Unabhängig von der Forschung der VR ist die menschliche Zeitwahrnehmung selbst 
 
 \label{subsec:kritik}
 \subsection{Methodenkritik}
-
 Bei Auswertung des Experimenablaufs fallen verschiedene Dinge auf, die anders hätten behandelt werden können.\\
 Die Versuchspersonen darum zu bitten, nach der VR die Szenarien zeitlich einzuschätzen ist problematisch, da sich die Versuchsperson an etwas erinnern sollte, dem sie während der VR möglicherweise keine Aufmerksamkeit geschenkt hat.
  Es ist entsprechend schwierig nach der VR die Länge der Szenarien einzuschätzen, selbst wenn die Szenarien in Fragebogen C beschrieben waren. Einige Versuchspersonen gaben zu, dass sie teilweise nicht mehr wussten, von welchem Szenario die Rede ist und eine Antwort geraten haben. Das wiederum führt zu Ungenauigkeiten im Datensatz. 
@@ -419,16 +387,11 @@ Eine Möglichkeit ist es, den Zeitraum des Aufenthalts zu verlängern und mehr Z
 Außerdem könnte man versuchen, langsame und schnelle Zeitgeber zu  kombinieren, um zu schauen, ob die zur Reizüberflutung und Überforderung führt oder ob so etwas wie ein "`inneres'' natürliches Zeitgefühl durch nicht eindeutige Beeinflussung bestehen bleibt.
 
 Das Gebiet im Gehirn, dass das Empfinden der Zeit reguliert, wurde von den Wissenschaftlern vom Medical College of Wisconsin in Milwaukee und des Veterans Affairs Medical Center in Albuquerque entdeckt. Es handelt sich um die Basalganglien, einer funktionellen Einheit von Kerngebieten im Gehirn, die der Bewegungskoordination dienlich sind. Ginge man davon aus, dass sich die Zeitwahrnehmung durch die VR signifikant verändern lassen könnte, dann wäre es vielleicht möglich krankhaft falsch funktionierende Zeitwahrnehmung, wie sie etwa bei den Aufmerksamkeitsdefizitsyndrom - Patienten gegeben ist, mit regelmäßigen VR-Besuchen zu behandeln. Unter der Voraussetzung, dass es  möglich ist, durch regelmäßigen Aufenthalt in der VR die Struktur der Basalganglien zu beeinflussen, könnten diese Störungen möglicherweise verbessert werden.
-
  
 Weiterhin gibt es da noch das auf unserem aufbauende Projekt von Mert Özenen. Dieses wird einen ähnlichen Ablauf wie unseres haben, nur das zusätzlich Umweltfaktoren, wie z.B. Sonne und Wind, durch entsprechende Beleuchtung und einem Ventilator simuliert werden.
 
-
-	
-
-
 \section{Abschließende Gedanken} % Autor: Jana, überarbeitet: Jana
-Autor: Jana, Überarbeitung: Jana
+\textit{Autor: Jana, Überarbeitung: Jana}\\
 	Wir sind in den verschiedenen Phasen des Projekts auf unterschiedliche Probleme gestoßen, von denen wir viele zeitnah lösen konnten. Allerdings gab es auch schwerwiegendere, deren Lösung für uns nicht gleich oder gar nicht offensichtlich war und die unseren ursprünglichen Zeitplan infolgedessen ungewollt stark beeinflusst haben.
 	Durch die Inkompatibilität der Oculus Rift und dem Computer der Virtusphere konnten wir unser Projekt nicht wie ursprünglich geplant in der Virtusphere stattfinden lassen und mussten auf herkömmliche Controller ausweichen. Diese Umstellung ist sehr ärgerlich, da viel Zeit in die Problemlösung investiert wurde und wir den Versuchspersonen letztendlich doch nicht das bieten konnten, mit dem wir sie ursprünglich geworben hatten. 
 Weiterhin zu kritisieren wäre eine nicht ganz ideale Arbeitsteilung, wodurch es gerade am Ende zu erheblichem Zeitverzug kam. Insbesondere das sog. \textit{Technikteam}, welches primär für die Erstellung der Blenderobjekte, das Einsetzen und das Animieren der Welt verantwortlich war, hat gleich zu Beginn des Projekts anstehende Aufgaben nicht sinnvoll verteilt. Alle Mitglieder waren gleichermaßen nur mit aktuellen Aufgaben beschäftigt, d.h., dass zunächst jeder für die Erstellung von Blenderobjekten verantwortlich war und so Kapazitäten und Zeit verschwendet wurde, da sich bisher noch keiner besonders gut mit der Software auskannte und sich alle gleichermaßen neu einarbeiten mussten. \\ 
@@ -439,28 +402,17 @@ Auch diese Fehleinschätzung zeigte sich im Nachhinein als kritisch und mag eben
 Besonders freuen wir uns im Nachhinein aber darüber, dass wir trotz teils erheblicher Probleme und Aussichtslosigkeit das Projekt zu Ende bringen konnten und es auch bis zum Schluss mit Ernsthaftigkeit getan haben. Gerade weil wir in der kritischen Phase des Projekt starke Probleme hatten, war die Frustration hoch. Nichtsdestoweniger haben wir anfallenden Probleme kreativ zu lösen versucht (bspw. der Versuch das Experiment auf das Laufband zu verschieben) und gewissenhaft versucht, das Projekt noch irgendwie zu retten anstatt es gleich aufzugeben. Und im Nachhinein stellen wir fest, dass gerade die kritischen Fehler uns, so ärgerlich sie auch sind, geholfen haben zu verstehen, wie Gruppenarbeit besser organisiert wäre bzw. haben wir durch das Experiment gelernt, auf welche Punkte besonders zu achten sind. Diese negativen Erfahrungen sind für uns von Bedeutung, da wir gerade auch durch diese viel gelernt haben.
 Nicht unerwähnt sollen allerdings auch die positiven Erfahungen sein, die wir innherhalb der Gruppe und gerade zum Schluss des Projekts mit den Versuchspersonen erfahren konnten. Besonders das Zwischenmenschliche, die Kommunikation und Gruppendynamik bewerten wir als sehr gut und eine Stärke der gesamten Gruppe. 
 
-
 %\section{gute sätze}
  %Die von uns verwendete Methode der Datensicherung und Versuchsdurchführung war aussagekräftig, da alle Durchläufe, sowie die dazugehörigen Erklärungen bei allen Versuchspersonen exakt gleich stattgefunden haben.
 
-
-
 %Die Messung der Wahrnehmung der einzelnen, von uns beeinflussten Szenarien, mittels Gravitationsfaktoren und auditiven Einflüssen. Durch die Anordnung der Szenarien nach der Zeit, zeigt sich, wie sehr wir die Wahrnehmung der Versuchspersonen beeinflussen konnten.  
 
-
-
-
 %Wir wollten herausfinden, ob das persönliche und optische Empfinden der Versuchspersonen gegenüber der Umgebung in den Szenarien, die Wahrnehmung der Versuchspersonen beeinflusst hat
-
 
 %Das Hinderniss, welches uns fast das gesamte Experiment über benachteiligte war, dass alle Experimentatoren wenig Kenntnisse über die Durchführung uns Ausführung eines wissenschaftlichen Experiments hatten. Es fehlte uns jegliches Vorwissen zu den Methoden eines Experiments und welche Kriterien zu beachten sind. Dies kostete uns am Anfang viel Zeit, die wir in die online Recherche investierten, sowie für die Absprache mit den erfahrenen Tutoren.
 
 %\section{Verlauf} % Autor: Marvin & Daniel
-	
-
-
-
- 		
+ 
 	%\subsection{Auswertung} % Marvin
 		Das Projekt abschließend folgte nach dem 26.06.2017, dem letzten Tag der Versuchsdurchführung, die Auswertung unserer Ergebnisse.
 		Zunächst mussten wir auch in dieser Phase einige zusätzliche Recherchen, vor allem zu mathematischen Verfahren für statistische Auswertung, betreiben. Ebenfalls sehr wichtig waren für uns die genauen Richtlinien zur Veröffentlichung eines wissenschaftlichen Papers. Hierzu erhielten wir ein maßgebendes Buch von unseren Dozenten. Wir unterteilten den Inhalt des Papers und dieses Berichts und teilten diese untereinander auf.\\
@@ -468,7 +420,6 @@ Nicht unerwähnt sollen allerdings auch die positiven Erfahungen sein, die wir i
 
 \clearpage
 	%\section{Versuchsaufbau und Durchführung} % Autor: Nizan	
-
 
 %
 \todo{Die Quellen zu diesem Text sind noch nicht ordnungsgemäß eingefügt, sondern auskommentiert in der Tex-Datei. Dies erfolgt noch in einer Bib-Datei und dann auch in zu erwartender Form.}
@@ -492,7 +443,6 @@ Nicht unerwähnt sollen allerdings auch die positiven Erfahungen sein, die wir i
 %$https://www.volkskrankheit.net/news/kinder-kindererkrankungen/zeitwahrnehmung-durch-adhs$
 %\\$https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=10&cad=rja&uact=8&ved=0ahUKEwjVoIy0w5PVAhUGuRQKHcf7BzMQFgh4MAk&url=http%3A%2F%2Fwww.fizyka.umk.pl%2Fpublications%2Fkmk%2F07-Duch-creativity.pdf&usg=AFQjCNFWbYAJULT6wNRbbp9krkfaVRISVQ$
 %compcreativ
-
 
 \newpage
 \section{Appendix} % = Anhang, Autor:  Alina
