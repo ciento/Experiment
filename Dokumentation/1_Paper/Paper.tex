@@ -11,21 +11,13 @@
 % 
 
 \documentclass{Paper}
-\usepackage{todonotes}
+%\usepackage{todonotes}
 \usepackage{xcolor}
-\usepackage{pgf-pie}
-\usepackage{pgfplots}
 \usepackage{float}
 \usepackage{textcomp}
 \usepackage{subfigure}
 \usepackage{filecontents}
-\usepackage{pgfplots, pgfplotstable}
-\usepgfplotslibrary{statistics}
-% define custom colours
-\definecolor{greenOfApproval}{HTML}{009933}
-\definecolor{redOfDisapproval}{HTML}{cc0000}
-\definecolor{yellowOfBrevity}{HTML}{000000}
-\definecolor{purpleOfLengthiness}{HTML}{6600cc}
+
 
 
 \begin{document}
@@ -37,15 +29,14 @@
 \tableofcontents
 \clearpage
 
-
-
-
-\section*{Abstract}
+\section*{Abstract}\addcontentsline{toc}{section}{Abstract}
 	\textit{Autor: Berna, Überarbeitung: Jana}\\
 Das Ziel dieses Projekts ist festzustellen, wie sich menschliche Zeitwahrnehmung in der Virtual Reality durch visuelle und akustische Zeitgeber manipulieren lässt und ob sich die Zeitwahrnehmung auch in der realen Welt nach einem Aufenthalt in der VR verändert.\\
 Dazu legten Versuchspersonen Zeiteinschätzungstest ab und wurden daraufhin in einer virtuellen Testumgebung und unwissend über die Forschungsfragen sowohl langsamen als auch schnellen Zeitgebern ausgesetzt. 
-Die persönliche Einschätzungen zur vergangenen Zeit hielten die Versuchspersonen anschließend in einem Fragebogen fest. Es wurden weitere Zeiteinschätzungstests durchgeführt und mit den Ergebnissen vor der VR verglichen, um Veränderungen in der Zeitwahrnehmung festzustellen (unter Berücksichtigung verschiedener individueller Störfaktoren).\\
+Die persönliche Einschätzungen zur vergangenen Zeit hielten die Versuchspersonen anschließend in einem Fragebogen fest. Es wurden weitere Zeiteinschätzungstests durchgeführt und mit den Ergebnissen vor der VR verglichen, um Veränderungen in der Zeitwahrnehmung festzustellen (unter Berücksichtigung verschiedener Störfaktoren).\\
 \textbf{hier Ergebnisse einfügen, sofern welche vorhanden}
+
+
 
 \section{Einleitung}
 
@@ -61,7 +52,7 @@ Aufgrund von weniger Schlafzeiten ergibt sich nun die Bildung der Freizeit und s
 Dem Menschen steht immer noch derselbe biologische Apparat zur Verfügung, Zeit vergeht also trotzdem gleichförmig und einheitlich. Doch ist das wirklich so oder gibt es bestimmte Indikatoren, die uns die Zeit als schneller oder langsamer vergehend vorkommen lassen? Kann man das Zeitempfinden also beeinflussen?
 
 \subsection{Fragestellung und Hypothesen}
-\textit{Autor: Kim, Überarbeitung: Jana}
+\textit{Autor: Kim, Überarbeitung: Jana}\\
 Daraus entwickelt sich die Fragestellung dieser Arbeit: ,,Wie stark lässt sich das menschliche Zeitempfinden durch in der VR eingesetzte visuelle und auditive Zeitgeber manipulieren und wie nachhaltig ist der Einfluss eines Aufenthalts in der VR auf das menschliche Zeitempfinden im realen Leben?''\\
 Als Zeitgeber sind hier Phänomene der allgemeinen Lebenswelt und physische Kräfte definiert, die unter Ausschluss der Uhrzeit die Zeit vorgeben.\\
 Von oben genannter Fragestellung ausgehend werden in dieser Arbeit zum einen \textit{Hypothese 1:} ,,Innerhalb der VR erlebte visuelle und auditive Zeitgeber verfälschen das Zeitempfinden einer Person entsprechend der gewählten Schnelligkeit'' und darüber hinaus \textit{Hypothese 2:} ,,Nach einem Aufenthalt in der VR ist das menschliche Zeitempfinden auch in der realen Welt verändert'' auf ihre Gültigkeit überprüft.
@@ -173,49 +164,45 @@ Zum Schluss werden zwei letzte Zeiteinschätzungstest durchgeführt (40 Sekunden
 \section{Ergebnisse}
 \subsection{Einfluss der Zeitgeber}
         \textit{Autor: Jovana, Jana. Überarbeitung: Svenja, Jana}\\
-Im Folgenden soll zunächst \textit{Hypothese 1} überprüft werden. Um einen Einfluss der verwendeten Zeitgeber festzustellen, wurden die Versuchspersonen darum gebeten, die vier Szenarien der Länge nach zu sortieren und deren jeweilige Zeit anzugeben. Aus diesen Daten kann man herleiten, welches der Szenarien am kürzesten und welches am längsten eingeschätzt wurde und ob diese Einschätzungen mit den erwarteten Wirkungen der Zeitgeber übereinstimmen.
-
+Im Folgenden soll zunächst \textit{Hypothese 1} überprüft werden. Um einen Einfluss der verwendeten Zeitgeber festzustellen, wurden die Versuchspersonen darum gebeten, die vier Szenarien der Länge nach zu sortieren und deren jeweilige Zeit in Sekunden anzugeben. Aus diesen Daten kann man herleiten, welches der Szenarien am kürzesten und welches am längsten eingeschätzt wurde und ob diese Einschätzungen mit den erwarteten Wirkungen der Zeitgeber übereinstimmen.
 \begin{figure}[H]
 \begin{minipage}[t]{0.49\linewidth}
 	\includegraphics[scale=0.7]{../Diagramme/einschaetzung/kuerzestes.png}
-	\caption{Welches war das kürzeste Szenario?}
+	\caption{Welches Szenario war das kürzeste?}
+	\label{SzenarienKurz}
 \end{minipage}
 %\end{figure}
 \hfill
 %\begin{figure}[H]
 \begin{minipage}[t]{0.49\linewidth}
 	\includegraphics[scale=0.7]{../Diagramme/einschaetzung/laengstes.png}
-	\caption{Welches war das längste Szenario?}
+	\caption{Welches Szenario war das längste?}
 	\label{SzenarienLang}
 \end{minipage}
 \end{figure}
 
-Auffällig ist, dass es bei der Wahl des kürzesten Szenarios keine eindeutige Mehrheit gibt, \textbf{x prozent} der Versuchspersonen gaben Szenario \textbf{a} an und nur \textbf{x prozent} behaupten das direkte Gegenteil. Eine ähnlich eindeutige Verteilung gibt es bei Szenario \textbf{c}, welches mit \textbf{x prozent} als das längste bewertet und nur mit \textbf{x prozent} als das kürzeste.\\
-Auffällig ist allerdings auch, dass die Meinungen bei Szenario \textbf{b} recht stark auseinandergehen. \textbf{x prozent} der Versuchspersonen sieht dieses Szenario als das längste und \textbf{x prozent} als das kürzeste an, es gibt nur wenig Verteilung im Mittelbereich.\\
-Visuelle und akustische Zeitgeber können getrennt betrachtet werden:
-
+Auffällig ist, dass es bei den meisten Szenarien keine eindeutige Meinung gibt, ob es länger oder kürzer war als die anderen. Einzig bei Szenario \textbf{a} gaben knapp 35\% der Versuchspersonen an, es sei das kürzeste gewesen und nur ca. 12\% behaupten das direkte Gegenteil. 
+Betrachtet man allerdings Szenario \textbf{c}, geben die Meinungen kein solch eindeutiges Bild, da es 21\% der Versuchspersonen als das kürzeste, aber 30\% als das längste einschätzen.  Noch extremer ist die Verteilung bei Szenario \textbf{b} (ca. 28\% bewerten es als das kürzeste und 35\% als das längste) und Szenario \textbf{d}  (ca. 16\%  schätzen es als das kürzeste, 23\% als das längste). Betrachtet man die Szenarien getrennt nach akustischen und visuellen Zeitgebern, ergibt sich folgende Verteilung:
 
 \begin{figure}[H]
 \begin{minipage}[t]{0.49\linewidth}
 	\includegraphics[scale=0.7]{../Diagramme/einschaetzung/laenge_akustisch.png}
-	\caption{Welches war das kürzeste Szenario?}
-	\label{SzenarienVisuellAkustisch}
+	\caption{Längenvergleich der akustischen Szenarien}
+	\label{SzenarienAkustisch}
 \end{minipage}
 %\end{figure}
 \hfill
 %\begin{figure}[H]
 \begin{minipage}[t]{0.49\linewidth}
 	\includegraphics[scale=0.45]{../Diagramme/einschaetzung/laenge_visuell.png}
-	\caption{Welches war das längste Szenario?}
-	\label{SzenarienVisuellAkustisch}
+	\caption{Längenvergleich der visuellen Szenarien}
+	\label{SzenarienVisuell}
 \end{minipage}
 \end{figure}
 
        
- Die akustischen Szenarien sind in Abb. \ref{SzenarienVisuellAkustisch} links, die visuellen rechts dargestellt. Hier sei nochmal erwähnt, dass jeweils die Szenarien \textbf{a} und \textbf{c} die kürzeren waren.\\
-Durch die akustischen Zeitgeber haben \textbf{x prozent} Szenario \textbf{a} kürzer eingeschätzt als Szenario \textbf{b}. Bei den visuellen Zeitgebern gibt es eine weniger eindeutige Meinung und das tatsächlich kürzere Szenario \textbf{c} haben nur \textbf{x prozent} erkannt.bab
-Nahezu die Hälfte aller Versuchspersonen haben Szenarien der schnellen Zeitgeber wirklich als schneller wahrgenommen. Dabei wurde das akustische Szenario \textbf{a} von 55,3\% als schneller eingestuft, das visuellen Szenario \textbf{c} allerdings nur von 46,8\%.\\
-      
+Hier sei nochmal angemerkt, dass die Szenarien \textbf{a} und \textbf{c} die schnellen Zeitgeber enthielten. Durch die akustischen Zeitgeber haben knapp 56\% der Versuchspersonen tatsächlich Szenario \textbf{a} als das schnellere wahrgenommen und ähnliche Ergebnisse gibt es auch bei den visuellen Szenarien: ca. 54\% empfanden Szenario \textbf{c} als schneller. 
+Die Szenarien der schnellen Zeitgeber wurden also von der Mehrheit der Versuchspersonen erkannt, allerdings fällt auch hier auf, dass die Verteilung mit jeweils etwas mehr als der Hälfte nicht sehr eindeutig ist. 
       
      \begin{figure}[H]
 	\includegraphics[scale=0.7]{../Diagramme/einschaetzung/laenge_durchschnitt_alle.png}
@@ -223,15 +210,8 @@ Nahezu die Hälfte aller Versuchspersonen haben Szenarien der schnellen Zeitgebe
 	\label{LaengeSzenarien}
 \end{figure}
 
-Abb. \ref{LaengeSzenarien} zeigt die Durchschnittwerte der Schätzungen, wie lange jedes Szenario dauerte. Szenario \textbf{d} wurde mit durchschnittlich 13 Sekunden als das Längste eingeschätzt. Knapp dahinter liegt \textbf{b} mit 12,5 Sekunden, gefolgt von \textbf{a} mit 6,5 und \textbf{c} mit 7 Sekunden.\\
-Aus diesen Daten kann geschlussfolgert werden, dass akustische Zeitgebern effektiver sind und Versuchspersonen durch diese erfolgreicher beeinflusst wurden. Die Vermutung, dass das Zeitgefühl durch schnelle Zeitgeber so beeinflusst wird, dass die Zeit gefühlt schneller vergeht, lässt sich anhand Abb. \ref{LaengeSzenarien}) eindeutig für die schnelleren Szenarien bestätigen.\\
-Der von den Versuchspersonen geschätzte Durchschnittswert der Szenarienlänge liegt für letztere jeweils deutlich unter der tatsächlichen Länge von 18 Sekunden. Das Ergebnis der langsamen Szenarien \textbf{b} und
-\textbf{d} unterscheidet sich stark von den Ergebnissen der schnellen Szenarien da diese auch als eindeutig länger eingeschätzt wurden, allerdings
-entsprechen sie nicht der zu Beginn festgelegten Vermutung, das Zeitemfpinden lasse sich durch langsame Zeitgeber manipulieren. Die tatsächliche Länge von 18 Sekunden wurde deutlich verfehlt, allerdings zeigt es dennoch
-die unterschiedliche Wirkungen von den schnellen und langsamen Zeitgebern.
-       
-       
-     
+Abb. \ref{LaengeSzenarien} zeigt die durchschnittlich geschätzten Längen jedes Szenarios. Auch hier fällt besonders auf, dass sich die ermittelten Zeiten nur sehr geringfügig voneinander unterscheiden und sich keines der Szenarien als besonders lang oder besonders kurz hervortut, auch wenn die schnellen Zeitgeber nach Abb. \ref{SzenarienAkustisch} und Abb. \ref{SzenarienVisuell} scheinbar ihre Wirkung taten.\\
+Aus den Daten lässt sich schlussfolgern, dass die akustischen Zeitgeber eine, wenn auch nur geringfügig, bessere Wirkung auf die Versuchspersonen hatten als die visuellen. Insbesondere zum schnellen Zeitgeber (Szenario \textbf{a}) gab es in denn Abb. \ref{SzenarienKurz} und \ref{SzenarienLang} eine vergleichsweise eindeutige Meinung. Allerdings fällt auch auf, dass die Durchschnittswerte der Abb. \ref{LaengeSzenarien} deutlich unter dem tatsächlichen Zeitwert der Szenarien (18 Sekunden) liegt und weder der Zeitgeber des akustischen noch des visuellen Szenarios die Schätzungen dahingehend manipuliert hat. Entsprechend kann ein Teil der \textit{Hypothese 1} für den schnellen akustischen Zeitgeber bestätigt werden, wohingegen scheinbar keiner der langsamen Zeitgeber eine Wirkung auf die Versuchspersonen hatte.
       
 \subsubsection{Spaß als Einflussfaktor}
 Im Weiteren soll festgestellt werden, inwieweit Spaß als Einflussfaktor auf die Zeitwahrnehmung eine Rolle spielt.
@@ -241,7 +221,7 @@ Im Weiteren soll festgestellt werden, inwieweit Spaß als Einflussfaktor auf die
 \begin{figure}[H]
 \begin{minipage}[t]{0.49\linewidth}
 	\includegraphics[scale=0.7]{../Diagramme/spass/spass.png}
-	\caption{Welches war das kürzeste Szenario?}
+	\caption{Einschätzung, wie viel Zeit in der VR verbracht wurde (mit Spaß)}
 	\label{spass}
 \end{minipage}
 %\end{figure}
@@ -249,12 +229,12 @@ Im Weiteren soll festgestellt werden, inwieweit Spaß als Einflussfaktor auf die
 %\begin{figure}[H]
 \begin{minipage}[t]{0.49\linewidth}
 	\includegraphics[scale=0.7]{../Diagramme/spass/keinSpass.png}
-	\caption{Welches war das längste Szenario?}
+	\caption{Einschätzung, wie viel Zeit in der VR verbracht wurde (ohne Spaß)}
 	\label{keinspass}
 \end{minipage}
 \end{figure}
 
-Abb. \ref{Spass} zeigt die Gruppe der Versuchspersonen, die angaben Spaß gehabt zu haben auf der linken und die anderen auf der rechten Seite. Von den \textbf{x VP}, die angaben Spaß gehabt zu haben, gibt eine starke Mehrheit von \textbf{x Prozent} an, dass die Dauer ihres VR-Aufenthalts im Intervall von 0-7 Minuten liegt. Aus der anderen Gruppe entschieden sich ebenfalls \textbf{x Prozent} für dieses Zeitintervall. Insgesamt entschieden sich also ca. 70\% der Versuchspersonen für eine Zeitspanne von bis zu 7 Minuten, da die Intervalle allerdings ungünstig gewählt wurden, bezieht sich dieses Paper im Folgenden nur noch auf die tatsächliche Dauer, die die Versuchspersonen in der VR verbracht haben.\\
+Abb. \ref{spass} und \ref{keinspass} zeigen die Einschätzungen der Versuchspersonen, wie viel Zeit sie in der VR verbracht haben. Die Gruppe, die dabei Spaß empfand, gab eine starke Mehrheit von knapp 68\% eine Dauer von 0-7 Minuten an. Aus der andere Gruppe entschieden sich sogar 80\% für dieses Zeitintervall. Da die Intervalle allerdings ungünstig gewählt wurden, bezieht sich dieses Paper im Folgenden und trotz der starken Mehrheit der Angaben nur noch auf die tatsächliche Dauer, die die Versuchspersonen in der VR verbracht haben.
 
 
       
@@ -265,12 +245,7 @@ Abb. \ref{Spass} zeigt die Gruppe der Versuchspersonen, die angaben Spaß gehabt
   %DURCHSCHNITT: 212,42 sek
         \end{figure}
         
-        Abb. \ref{ZeitKeinSpass} zeigt die tatsächlichen Zeiten, die die Versuchspersonen in der VR verbrachten, die keinen Spaß hatten. Das Minimum beträgt hier 165 Sekunden (2,75 Minuten) das Maximum beträgt 330 Sekunden (5,50 Minuten) und der Median entspricht 190 Sekunden (3,16 Minuten). Die ersten fünf Zeiten liegen verhältnismäßig nah beieinander. Die unteren beiden Balken betrachtend, hielten sich die betreffenden Versuchspersonen länger in der VR auf. 
-% + durchschnitt
-
-        Abb. \ref{ZeitSpass} zeigt die tatsächlichen Zeiten, die die Versuchspersonen in der VR verbrachten, die Spaß empfanden. Die Wertespanne erstreckt sich von 152 Sekunden (2,53 Minuten) bis 399 Sekunden (6,65 Minuten). Der Median liegt bei 221 Sekunden (3,68 Minuten). Die ersten größeren zeitlichen Sprünge lassen sich im Bereich der oberen zwölf Versuchspersonen beobachten, insbesondere hinsichtlich der ersten beiden. Der Wertebereich $[165-330]$ aus dem vorherigem Diagramm ist auch in das hier Betrachtete inkludiert. Somit sind abgesehen davon, dass es sich hier um weitaus mehr Beteiligte handelt, keine sonderlichen Verschiedenheiten zwischen den beiden Varianten bemerkbar.\\
-        Ebenfalls wurden gefragt, welches Szenario als das beste und welches als das schlechteste empfunden wurde, da nach der Ausgangsvermutung das ,,beste'' Szenario gleichermaßen das spaßigste sein müsste. 
-
+        Abb. \ref{ZeitKeinSpass} zeigt die tatsächlichen Zeiten, die die Versuchspersonen in der VR verbrachten, getrennt nach Spaß und keinem Spaß. Besonders fällt hier auf, dass die Versuchspersonen, die nach eigenen Angaben keinen Spaß hatten, im Durchschnitt auch tatsächlich weniger Zeit in der VR verbrachten. Einzig das absolute Minimum eines VR-Aufenthaltes gehört zu einer Person, die Spaß hatte. 
 
 \begin{figure}[H]
 \begin{minipage}[t]{0.49\linewidth}
@@ -288,12 +263,11 @@ Abb. \ref{Spass} zeigt die Gruppe der Versuchspersonen, die angaben Spaß gehabt
 \end{minipage}
 \end{figure}
 
-
-       Die Mehrheit der Versuchspersonen (\textbf{X prozent})stimmt Szenario \textbf{b} als das beste. Weit abgeschlagen mit nur einer Stimme steht Szenario \textbf{a} auf dem letzten Platz und entsprechend geben ca. 67\% Prozent der Versuchspersonen Szenario \textbf{a} auch als das schlechteste an. Hier deutlich abgeschlagen mit nur 6, 5 und 4 Stimmen sind die Szenarien \textbf{d}, \textbf{b} und \textbf{c}.\\
-Bei der Sortierung von \textit{gut} nach \textit{schlecht} fällt auf, dass gerade Szenario \textbf{a} wieder eine klare Tendenz hat und es als allgemein schlechter wahrgenommen wurde als alle anderen. Dagegen ist Szenario \textbf{b} erstplatziert \textbf{x prozent} bei der Wahl des besten Szenarios und wird mit nur \textbf{x prozent} als das schlechteste empfunden.\\
-Nach der These, dass das bestbewertetste Szenario, also das mit dem größten Spaßempfinden, auch das subjektiv kürzeste ist, müsste die meistgewählte Reihenfolge \textbf{b c d a} sein. Tatsächlich wurde \textbf{a} jedoch am häufigsten (16 von 48 Einschätzungen) an erster Stelle angegeben, \textbf{b} ist erst an zweiter Stelle zu finden (15 von 47 Einschätzungen).  	Auch im Vergleich mit den Abb. \ref{SzenarienKurz} und \ref{SzenarienLang} konnte damit die These, dass bei Spaßempfinden die Zeit gefühlt schneller vergeht, nicht belegt werden. Das am schlechtesten empfundene Szenario \textbf{a} wurde als eindeutig kürzestes festgelegt, was bedeutet, dass die kürzeste Zeitspanne in dem Fall am wenigsten Spaß hervorgerufen hat. Das Szenario \textbf{b} wurde bei der Wahl des schnellsten sowie auch der des langsamsten Szenarios an die zweite Stelle gewählt und lässt sich damit nicht sicher einordnen.\\
-
-
+Nach der Ausgangsvermutung, dass das subjektiv beste Szenario auch das ,,spaßigste'' und damit kürzeste sein müsste, gaben die Versuchspersonen eine Rangfolge der Szenarien ab.\\
+Auch hier schneidet insbesondere Szenario \textbf{a} mit einer klaren Meinung ab: nicht einmal 5\% empfinden es als das beste, wohingegen sich 65\% einig sind, es sei das subjektiv schlechteste. Szenario \textbf{b} wird hier eindeutiger bewertet als zuvor, da es knapp 42\% als das beste und 9\% als das schlechteste bewerten. Szenario \textbf{c} (28\% bewerten es als das beste und 9\% als das schlechteste) und Szenario \textbf{d} (26\% bewerten es als das beste und 16\% als das schlechteste) sind ebenfalls, wenn auch nicht in dem Maße wie die ersten beiden, recht eindeutig verteilt. 
+Nach der These, dass das bestbewertetste Szenario auch das subjektiv kürzeste ist, müsste die meistgewählte Reihenfolge \textbf{b c d a} sein. 
+Die tatsächlich angegebene Reihenfolge hingegen ist allerdings \textbf{a b c d} (vgl. Abb. \ref{SzenarienKurz}).
+In diesem Zusammenhang kann die These, dass bei Spaßempfinden die Zeit gefühlt schneller vergeht, nicht bestätigt werden, da insbesondere auch das schlechtbewertetste Szenario \textbf{a} wurde als eindeutig kürzeste gewählt wurde. 
 
 \subsection{Einfluss der VR auf das Zeitempfinden}
 \subsubsection{Zeitschätzungen vor der VR}
@@ -439,6 +413,10 @@ Im Allgemeinen kann man feststellen, dass keiner der berücksichtigten Einflussf
 	\caption{Gesamtheit der Zeiteinschätzungen}
 	\label{zeiteinschaetzungen}
 \end{figure}
+
+
+Es fällt auf, dass Versuchspersonen längere Zeitspannen (40 Sekunden) allgemein stärker überschätzten als kürzere (30 Sekunden). Diese längeren Zeitspannen wurden vor der VR um durchschnittlich 4,7 Sekunden und nach der VR sogar um 8,25 Sekunden überschätzt.
+
 
 
 Versuchspersonen fiel es ohne Gespräch leichter, kürzere Zeiten (30 Sekunden) zu schätzen als längere (40 Sekunden) \textbf{minimal abweichung} Durch Gespräche verschlechtert sich das Ergebnis \textbf{um soundsoviel}
