@@ -82,7 +82,7 @@
 \newcommand{\authorshort}{Averbuh, Becker, Brüning, Dörnbach, Escher, Kaurin, Kettenburg, Schmidt, Sen, Wahls}
 \newcommand{\thissemester}{SoSe 2017}
 \newcommand{\thistopic}{Bachelorprojekt}
-\newcommand{\thistitle}{¡Experiment! - Paper}
+\newcommand{\thistitle}{Über menschliche Zeitwahrnehmung in der Virtual Reality und Möglichkeiten, diese zu manipulieren}
 \newcommand{\shorttitle}{}
 \newcommand{\subtitle}{\thissemester \\Dozenten: \dozent}
 \newcommand{\dozent}{Thorsten Kluß, Jaime Maldonado, Kerstin Bub}

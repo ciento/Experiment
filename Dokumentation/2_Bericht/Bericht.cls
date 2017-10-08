@@ -86,7 +86,7 @@
 \newcommand{\shorttitle}{}
 \newcommand{\subtitle}{\thissemester \\Dozenten: \dozent}
 \newcommand{\dozent}{Thorsten Kluß, Jaime Maldonado, Kerstin Bub}
-\newcommand{\duedate}{07.07.2017}
+\newcommand{\duedate}{24.09.2017}
 
 \pagestyle{fancy}
 \thispagestyle{empty}
